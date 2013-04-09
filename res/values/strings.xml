@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Go to Cinema</string>
+    <string name="app_name">Mergi la cinema</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="calculateButtonTitle">Afla la ce filme poti merge!</string>
+    <string name="title_activity_cinema_list">CinemaList</string>
 
 </resources>
