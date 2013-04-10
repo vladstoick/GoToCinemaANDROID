@@ -51,8 +51,9 @@ public class CinemaList extends Activity {
 			roTitle.add(aparitii.get(i).roTitle);
 			System.out.println(roTitle.get(i));
 		}
-		final StableArrayAdapter adapter = new StableArrayAdapter(this,
-		        android.R.layout.simple_list_item_1, roTitle);
+//		final StableArrayAdapter adapter = new StableArrayAdapter(this,
+//		        android.R.layout.list_view_row, roTitle);
+		ArrayAdapter <String> adapter = new ArrayAdapter<String> ( this, R.layout.list_row_view,R.id.rowRoTitle,roTitle);
 		listview.setAdapter(adapter);
 	}
 
