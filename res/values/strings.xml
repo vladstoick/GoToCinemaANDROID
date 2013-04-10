@@ -6,5 +6,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="calculateButtonTitle">Afla la ce filme poti merge!</string>
     <string name="title_activity_cinema_list">CinemaList</string>
+    <string name="eroareLoading">error</string>
+    <string name="oraDefault">24:60</string>
+    <string name="changeHour">Schimba Ora</string>
+    <string name="title_activity_change_dialog">ChangeDialog</string>
 
 </resources>

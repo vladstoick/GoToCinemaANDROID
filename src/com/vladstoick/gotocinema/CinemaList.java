@@ -2,10 +2,12 @@ package com.vladstoick.gotocinema;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
+
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class CinemaList extends Activity {
@@ -14,7 +16,9 @@ public class CinemaList extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cinema_list);
-		ArrayList<AparitiiCinema> aparitii = MainActivity.getAparitii();
+		Intent intent = getIntent();
+		Date dateToBeUsed = (Date) intent.getSerializableExtra("DATE");
+		ArrayList<AparitiiCinema> aparitii = MainActivity.getAparitii(dateToBeUsed);
 		Collections.sort(aparitii,new ArrayComparator());
 		final ListView listview = (ListView) findViewById(R.id.listview);
 		AparitiiCinemaAdapter adapter = new AparitiiCinemaAdapter(this, R.layout.list_row_view, aparitii);

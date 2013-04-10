@@ -3,4 +3,8 @@
     <issue id="ShowToast">
         <ignore path="src\com\vladstoick\gotocinema\MainActivity.java" />
     </issue>
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="ValidFragment">
+        <ignore path="src\com\vladstoick\gotocinema\ChangeDialog.java" />
+    </issue>
 </lint>
