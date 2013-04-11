@@ -10,5 +10,7 @@
     <string name="oraDefault">24:60</string>
     <string name="changeHour">Schimba Ora</string>
     <string name="title_activity_change_dialog">ChangeDialog</string>
+    <string name="changeLocation">Schimba locatia</string>
+    <string name="title_activity_film_view">FilmView</string>
 
 </resources>

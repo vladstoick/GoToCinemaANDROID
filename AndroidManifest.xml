@@ -2,12 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vladstoick.gotocinema"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0" 
+    android:debuggable="true">
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="17" />
-
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    <permission
+        android:name="com.vladstoick.gotocinema.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+	<uses-permission android:name="com.vladstoick.gotocinema.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -79,13 +90,12 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SMS" />
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
-
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" 
-        >
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.vladstoick.gotocinema.MainActivity"
             android:label="@string/app_name" >
@@ -103,6 +113,13 @@
             android:name="com.vladstoick.gotocinema.ChangeDialog"
             android:label="@string/title_activity_change_dialog" >
         </activity>
+        <activity
+            android:name="com.vladstoick.gotocinema.FilmView"
+            android:label="Map" >
+        </activity>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCIHQ53GXahp5efDYCNuoVEapO2eHCuRQs" />
     </application>
 
 </manifest>

@@ -38,14 +38,15 @@ public class MainActivity extends FragmentActivity {
 		newV.execute ("http://warm-eyrie-7268.herokuapp.com/date.json" ) ;
 		Calendar c = Calendar.getInstance();
 		currentHour = (TextView) findViewById(R.id.hourUsed);
-		hourUsed = c.get(Calendar.HOUR);
+		hourUsed = c.get(Calendar.HOUR_OF_DAY);
 		minuteUsed = c.get(Calendar.MINUTE);
 		updateHour();
 		
     }
 	private static void updateHour()
 	{
-		currentHour.setText("Ora folosita "+hourUsed+":"+minuteUsed);
+		String deAfisat = Utils.getStringFromDate(Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed));
+		currentHour.setText("Ora folosita "+deAfisat);
 	}
     public void changeTime(View v)
     {
@@ -96,8 +97,6 @@ public class MainActivity extends FragmentActivity {
     	ArrayList <AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();
     	for(int i=0;i<list.size();i++)
     	{
-    		System.out.println(dateToBeUsed.getTime());
-    		System.out.println(list.get(i).ora.getTime());
     		if(dateToBeUsed.getTime()-list.get(i).ora.getTime()<0)
     			listToBeReturned.add(list.get(i));
     	}

@@ -15,7 +15,6 @@ public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema>{
 		this.layoutResourceId = textViewResourceId;
         this.context = context;
         this.data = data;
-        System.out.println(data.size());
 	}
 	@Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -40,7 +39,6 @@ public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema>{
         AparitiiCinema aparitie = data.get(position);
         holder.enTitle.setText(aparitie.enTitle);
         holder.roTitle.setText(aparitie.roTitle);
-        System.out.println(holder.ora.getText().toString());
         holder.ora.setText(Utils.getStringFromDate(aparitie.ora));
         holder.cinema.setText(aparitie.cinemaName);
         return row;
