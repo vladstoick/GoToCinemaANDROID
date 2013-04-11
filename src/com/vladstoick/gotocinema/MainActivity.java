@@ -88,8 +88,8 @@ public class MainActivity extends FragmentActivity {
     }
 	public void calculateCinema(View view)
     {
-    	Intent intent = new Intent(this, CinemaList.class);
-    	intent.putExtra("DATE", Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed));
+    	Intent intent = new Intent(this, CinemaList.class); 
+    	intent.putParcelableArrayListExtra("CINEMALISTDATA", getAparitii(Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed)));
         startActivity(intent);
     }
     public static ArrayList<AparitiiCinema> getAparitii(Date dateToBeUsed)

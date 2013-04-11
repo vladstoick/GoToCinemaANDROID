@@ -12,5 +12,6 @@
     <string name="title_activity_change_dialog">ChangeDialog</string>
     <string name="changeLocation">Schimba locatia</string>
     <string name="title_activity_film_view">FilmView</string>
+    <string name="title_activity_want_to">WantTo</string>
 
 </resources>
