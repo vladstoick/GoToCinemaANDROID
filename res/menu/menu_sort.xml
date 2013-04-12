@@ -4,5 +4,5 @@
           android:title="Sorteaza dupa distanta"
           android:showAsAction="ifRoom"/>
     <item android:id="@+id/help"
-          android:title="Sorteaza dupa ora de incepere" />
+          android:title="Sorteaza dupa ora de incepere"/>
 </menu>

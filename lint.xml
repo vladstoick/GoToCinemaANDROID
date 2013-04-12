@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
     <issue id="ShowToast">
-        <ignore path="src\com\vladstoick\gotocinema\MainActivity.java" />
+        <ignore path="src\com\vladstoick\gotocinema\MainActivity.java"/>
     </issue>
-    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore"/>
     <issue id="ValidFragment">
-        <ignore path="src\com\vladstoick\gotocinema\ChangeDialog.java" />
+        <ignore path="src\com\vladstoick\gotocinema\ChangeDialog.java"/>
     </issue>
 </lint>
