@@ -109,12 +109,10 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="com.vladstoick.gotocinema.CinemaList"
-                android:label="@string/title_activity_cinema_list">
+                android:name="com.vladstoick.gotocinema.CinemaList">
         </activity>
         <activity
-                android:name="com.vladstoick.gotocinema.ChangeDialog"
-                android:label="@string/title_activity_change_dialog">
+                android:name="com.vladstoick.gotocinema.ChangeDialog">
         </activity>
         <activity
                 android:name="com.vladstoick.gotocinema.FilmView"
@@ -125,10 +123,6 @@
                 android:name="com.google.android.maps.v2.API_KEY"
                 android:value="AIzaSyCIHQ53GXahp5efDYCNuoVEapO2eHCuRQs"/>
 
-        <activity
-                android:name="com.vladstoick.gotocinema.WantTo"
-                android:label="@string/title_activity_want_to">
-        </activity>
     </application>
 
 </manifest>

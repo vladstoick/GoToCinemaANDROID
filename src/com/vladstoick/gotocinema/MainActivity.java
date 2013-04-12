@@ -92,7 +92,7 @@ public class MainActivity extends FragmentActivity {
     public static ArrayList<AparitiiCinema> getAparitii(Date dateToBeUsed) {
         ArrayList<AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();
         for (int i = 0; i < list.size(); i++) {
-            if (dateToBeUsed.getTime() - list.get(i).ora.getTime() < 0)
+//            if (dateToBeUsed.getTime() - list.get(i).ora.getTime() < 0)
                 listToBeReturned.add(list.get(i));
         }
         return listToBeReturned;

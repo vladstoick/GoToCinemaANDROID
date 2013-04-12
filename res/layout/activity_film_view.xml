@@ -11,11 +11,16 @@
             android:text="Se afla la distanta de"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_marginBottom="10dp"/>
-
-    <fragment
-            android:id="@+id/mapView"
-            android:name="com.google.android.gms.maps.MapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+	 <com.mapquest.android.maps.MapView
+    android:id="@+id/mapQuestView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:apiKey="Fmjtd%7Cluub2quand%2Caw%3Do5-961gqy"/>
+	<WebView
+    android:id="@+id/itinerary"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  />
 
 </LinearLayout>
