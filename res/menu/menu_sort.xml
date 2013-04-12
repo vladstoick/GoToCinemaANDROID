@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/new_game"
-          android:title="Sorteaza dupa distanta"
-          android:showAsAction="ifRoom"/>
-    <item android:id="@+id/help"
-          android:title="Sorteaza dupa ora de incepere"/>
-</menu>
