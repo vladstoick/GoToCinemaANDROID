@@ -8,12 +8,16 @@ import java.util.Date;
 public class AparitiiCinema implements Parcelable {
     public String roTitle, enTitle, cinemaName;
     public Date ora;
-
-    public AparitiiCinema(String roTitle, String enTitle, String cinemaName, String oraString) {
+    public String nota, regizor,actori,gen;
+    public AparitiiCinema(String roTitle, String enTitle, String cinemaName, String oraString, String nota, String regizor, String actori,String gen) {
         this.roTitle = roTitle;
         this.enTitle = enTitle;
         this.cinemaName = cinemaName;
         this.ora = Utils.getDateFromHourAndMinuteString(oraString);
+        this.nota=nota;
+        this.regizor=regizor;
+        this.actori=actori;
+        this.gen=gen;
     }
 
     @Override
@@ -27,6 +31,10 @@ public class AparitiiCinema implements Parcelable {
         enTitle = in.readString();
         cinemaName = in.readString();
         ora = (Date) Utils.getDateFromHourAndMinuteString(in.readString());
+        nota = in.readString();
+        regizor=in.readString();
+        actori = in.readString();
+        gen = in.readString();
     }
 
     @Override
@@ -36,6 +44,10 @@ public class AparitiiCinema implements Parcelable {
         dest.writeString(enTitle);
         dest.writeString(cinemaName);
         dest.writeString(Utils.getStringFromDate(ora));
+        dest.writeString(nota);
+        dest.writeString(regizor);
+        dest.writeString(actori);
+        dest.writeString(gen);
     }
 
     public static final Parcelable.Creator<AparitiiCinema> CREATOR = new Parcelable.Creator<AparitiiCinema>() {
