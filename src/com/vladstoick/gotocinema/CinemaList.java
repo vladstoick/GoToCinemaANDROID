@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -43,5 +45,21 @@ public class CinemaList extends FragmentActivity {
         getMenuInflater().inflate(R.menu.cinema_list, menu);
         return true;
     }
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.action_sortByDistance:
+                System.out.println("Sort by Distance");
+                return true;
+            case R.id.action_sortByName:
+            	System.out.println("Sort by Name");
+                return true;
+            case R.id.action_sortByTime:
+            	System.out.println("Sort by time");
+            	return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }

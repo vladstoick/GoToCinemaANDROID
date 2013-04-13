@@ -10,4 +10,5 @@
     <string name="sortByTime">Sortează după oră</string>
     <string name="sortByDistance">Sortează după distanţă</string>
     <string name="sortByName">Sortează după numele fimului</string>
+    <string name="settings">Setări</string>
 </resources>

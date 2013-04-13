@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import org.json.JSONArray;
@@ -89,12 +91,30 @@ public class MainActivity extends FragmentActivity {
         startActivity(intent);
     }
 
-    public static ArrayList<AparitiiCinema> getAparitii(Date dateToBeUsed) {
+    private static ArrayList<AparitiiCinema> getAparitii(Date dateToBeUsed) {
         ArrayList<AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();
         for (int i = 0; i < list.size(); i++) {
-//            if (dateToBeUsed.getTime() - list.get(i).ora.getTime() < 0)
+            if (dateToBeUsed.getTime() - list.get(i).ora.getTime() < 0)
                 listToBeReturned.add(list.get(i));
         }
         return listToBeReturned;
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.settings, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.action_enterSettings:
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
