@@ -37,7 +37,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RequestTask newV = new RequestTask();
-        newV.execute("http://warm-eyrie-7268.herokuapp.com/date.json");
+        newV.execute("http://thawing-fortress-7476.herokuapp.com/date.json");
         Calendar c = Calendar.getInstance();
         currentHour = (TextView) findViewById(R.id.hourUsed);
         hourUsed = c.get(Calendar.HOUR_OF_DAY);

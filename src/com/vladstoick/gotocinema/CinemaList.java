@@ -11,10 +11,24 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class CinemaList extends FragmentActivity {
+	AparitiiCinemaAdapter adapter = null;
     static ArrayList<AparitiiCinema> aparitii = new ArrayList<AparitiiCinema>();
-
+    public class ArrayComparatorByTime implements Comparator<AparitiiCinema> {
+        @Override
+        public int compare(AparitiiCinema o1, AparitiiCinema o2) {
+            return (o1.ora).compareTo(o2.ora);
+        }
+    }
+    public class ArrayComparatorByName implements Comparator<AparitiiCinema> {
+    	@Override
+    	public int compare(AparitiiCinema o1, AparitiiCinema o2)
+    	{
+    		return (o1.enTitle).compareTo(o2.enTitle);
+    	}
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTitle("Filmele la care poti ajunge!");
@@ -22,9 +36,10 @@ public class CinemaList extends FragmentActivity {
         setContentView(R.layout.activity_cinema_list);
         Intent intent = getIntent();
         aparitii = intent.getParcelableArrayListExtra("CINEMALISTDATA");
-        Collections.sort(aparitii, new ArrayComparator());
+        System.out.println("lungime"+aparitii.size());
+        Collections.sort(aparitii, new ArrayComparatorByTime());
         final ListView listview = (ListView) findViewById(R.id.listview);
-        AparitiiCinemaAdapter adapter = new AparitiiCinemaAdapter(this, R.layout.list_row_view, aparitii);
+        adapter = new AparitiiCinemaAdapter(this, R.layout.list_row_view, aparitii);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new OnItemClickListener() {
             @Override
@@ -43,6 +58,10 @@ public class CinemaList extends FragmentActivity {
         getMenuInflater().inflate(R.menu.cinema_list, menu);
         return true;
     }
+    public void sortByName()
+    {
+    	 Collections.sort(aparitii, new ArrayComparatorByName());
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
@@ -51,8 +70,11 @@ public class CinemaList extends FragmentActivity {
                 System.out.println("Sort by Distance");
                 return true;
             case R.id.action_sortByName:
-            	System.out.println("Sort by Name");
-                return true;
+            {
+            	sortByName();
+            	adapter.notifyDataSetChanged();
+            	return true;
+            }
             case R.id.action_sortByTime:
             	System.out.println("Sort by time");
             	return true;
