@@ -60,7 +60,7 @@ public class CinemaList extends FragmentActivity {
     }
     public void sortByName()
     {
-    	 Collections.sort(aparitii, new ArrayComparatorByName());
+    	 
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -71,13 +71,16 @@ public class CinemaList extends FragmentActivity {
                 return true;
             case R.id.action_sortByName:
             {
-            	sortByName();
+            	Collections.sort(aparitii, new ArrayComparatorByName());
             	adapter.notifyDataSetChanged();
             	return true;
             }
             case R.id.action_sortByTime:
-            	System.out.println("Sort by time");
+            {
+            	Collections.sort(aparitii, new ArrayComparatorByTime());
+            	adapter.notifyDataSetChanged();
             	return true;
+            }
             default:
                 return super.onOptionsItemSelected(item);
         }
