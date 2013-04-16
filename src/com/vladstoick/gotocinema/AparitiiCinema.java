@@ -36,6 +36,8 @@ public class AparitiiCinema implements Parcelable {
         regizor=in.readString();
         actori = in.readString();
         gen = in.readString();
+        distanta = in.readString();
+        durataDrum = in.readString();
     }
 
     @Override
@@ -49,6 +51,8 @@ public class AparitiiCinema implements Parcelable {
         dest.writeString(regizor);
         dest.writeString(actori);
         dest.writeString(gen);
+        dest.writeString(distanta);
+        dest.writeString(durataDrum);
     }
 
     public static final Parcelable.Creator<AparitiiCinema> CREATOR = new Parcelable.Creator<AparitiiCinema>() {

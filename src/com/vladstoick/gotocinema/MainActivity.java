@@ -97,7 +97,7 @@ public class MainActivity extends FragmentActivity implements LocationListener {
     	else{
     		pd = ProgressDialog.show(this, "Calcuare distanţă", "Vă rugăm aşteptaţi", true);
     		RequestTask newV = new RequestTask(2,MainActivity.this);
-    		newV.execute("http://parsercinema.eu01.aws.af.cm/getDistance.php?lat=44.419560&lng=26.1266510");
+    		newV.execute("http://parsercinema.eu01.aws.af.cm/getDistance.php?lat="+locationUsed.getLatitude()+"&lng="+locationUsed.getLongitude());
     	}
        
     }
