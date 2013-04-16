@@ -23,6 +23,14 @@ public class CinemaList extends FragmentActivity {
             return (o1.ora).compareTo(o2.ora);
         }
     }
+    public class ArrayComparatorByDistance implements Comparator<AparitiiCinema> {
+        @Override
+        public int compare(AparitiiCinema o1, AparitiiCinema o2) {
+        	double km1 = Double.parseDouble(o1.distanta.substring(0, o1.distanta.length()-2));
+        	double km2 = Double.parseDouble(o2.distanta.substring(0, o2.distanta.length()-2));
+            return Double.compare(km1, km2) ;
+        }
+    }
     public class ArrayComparatorByName implements Comparator<AparitiiCinema> {
     	@Override
     	public int compare(AparitiiCinema o1, AparitiiCinema o2)
@@ -66,8 +74,12 @@ public class CinemaList extends FragmentActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.action_sortByDistance:
-                System.out.println("Sort by Distance");
-                return true;
+            {
+            	Collections.sort(aparitii, new ArrayComparatorByDistance());
+            	adapter.notifyDataSetChanged();
+            	listview.setSelection(0);
+            	return true;
+            }
             case R.id.action_sortByName:
             {
             	Collections.sort(aparitii, new ArrayComparatorByName());

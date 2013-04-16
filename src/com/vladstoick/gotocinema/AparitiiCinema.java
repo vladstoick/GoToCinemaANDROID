@@ -10,6 +10,7 @@ public class AparitiiCinema implements Parcelable {
     public Date ora;
     public String nota, regizor,actori,gen;
     public String distanta, durataDrum;
+    public String latCinema , lonCinema;
     public AparitiiCinema(String roTitle, String enTitle, String cinemaName, String oraString, String nota, String regizor, String actori,String gen) {
         this.roTitle = roTitle;
         this.enTitle = enTitle;
@@ -38,6 +39,8 @@ public class AparitiiCinema implements Parcelable {
         gen = in.readString();
         distanta = in.readString();
         durataDrum = in.readString();
+        latCinema = in.readString();
+        lonCinema = in.readString();
     }
 
     @Override
@@ -53,6 +56,8 @@ public class AparitiiCinema implements Parcelable {
         dest.writeString(gen);
         dest.writeString(distanta);
         dest.writeString(durataDrum);
+        dest.writeString(latCinema);
+        dest.writeString(lonCinema);
     }
 
     public static final Parcelable.Creator<AparitiiCinema> CREATOR = new Parcelable.Creator<AparitiiCinema>() {

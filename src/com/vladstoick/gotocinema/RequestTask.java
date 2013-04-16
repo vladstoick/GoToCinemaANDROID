@@ -80,11 +80,13 @@ class RequestTask extends AsyncTask<String, Void, String> {
         }
     }
     public static class Distance{
-    	String dur,dis;
-    	public Distance(String dur,String dis)
+    	String dur,dis,lon,lat;
+    	public Distance(String dur,String dis,String lon,String lat)
     	{
     		this.dur=dur;
     		this.dis=dis;
+    		this.lon=lon;
+    		this.lat=lat;
     	}
     }
     public static ArrayList<AparitiiCinema>  parse2(ArrayList<AparitiiCinema> filme, String result)
@@ -98,13 +100,15 @@ class RequestTask extends AsyncTask<String, Void, String> {
     		{
     			JSONObject oneObject = jArray.getJSONObject(i);
     			String numeCinema = oneObject.getString("name");
-    			hashMap.put(numeCinema,new Distance(oneObject.getString("min"), oneObject.getString("km")));
+    			hashMap.put(numeCinema,new Distance(oneObject.getString("min"), oneObject.getString("km"),oneObject.getString("lng_cinema"),oneObject.getString("lat_cinema")));
     		}
     		for(int i=0;i<filme.size();i++)
     		{
     			AparitiiCinema newObject = filme.get(i);
-    			newObject.distanta=hashMap.get(filme.get(i).cinemaName).dis;
-    			newObject.durataDrum=hashMap.get(filme.get(i).cinemaName).dur;
+    			newObject.distanta=hashMap.get(newObject.cinemaName).dis;
+    			newObject.durataDrum=hashMap.get(newObject.cinemaName).dur;
+    			newObject.latCinema=hashMap.get(newObject.cinemaName).lat;
+    			newObject.lonCinema=hashMap.get(newObject.cinemaName).lon;
     			filme.set(i,newObject);
     		}
     	}

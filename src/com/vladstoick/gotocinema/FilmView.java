@@ -40,7 +40,7 @@ public class FilmView extends Activity {
         int ore = timp / 3600;
         int minute = ( timp % 3600 )/60;
         distance.setText("Poţi ajunge în "+ore+":"+minute+" ("+currentInfo.distanta+")");
-
+        pozitieCinema = new LatLng(Double.parseDouble(currentInfo.latCinema),Double.parseDouble(currentInfo.lonCinema));
         mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.mapView)).getMap();
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pozitieCinema));
         mMap.animateCamera(CameraUpdateFactory.zoomBy(15));
