@@ -34,8 +34,13 @@ public class FilmView extends Activity {
         TextView actori = (TextView) findViewById(R.id.actori);
         actori.setText(currentInfo.actori);
         TextView regizor = (TextView) findViewById(R.id.regizor);
-        distance = (TextView) findViewById(R.id.distance);
         regizor.setText(currentInfo.regizor);
+        distance = (TextView) findViewById(R.id.distance);
+        int timp = Integer.parseInt(currentInfo.durataDrum);
+        int ore = timp / 3600;
+        int minute = ( timp % 3600 )/60;
+        distance.setText("Poţi ajunge în "+ore+":"+minute+" ("+currentInfo.distanta+")");
+
         mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.mapView)).getMap();
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pozitieCinema));
         mMap.animateCamera(CameraUpdateFactory.zoomBy(15));

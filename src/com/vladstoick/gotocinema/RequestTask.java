@@ -103,8 +103,8 @@ class RequestTask extends AsyncTask<String, Void, String> {
     		for(int i=0;i<filme.size();i++)
     		{
     			AparitiiCinema newObject = filme.get(i);
-    			System.out.println(hashMap.get(filme.get(i).cinemaName).dis);
     			newObject.distanta=hashMap.get(filme.get(i).cinemaName).dis;
+    			newObject.durataDrum=hashMap.get(filme.get(i).cinemaName).dur;
     			filme.set(i,newObject);
     		}
     	}
