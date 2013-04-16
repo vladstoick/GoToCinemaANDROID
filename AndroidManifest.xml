@@ -39,20 +39,25 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.vladstoick.gotocinema.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.vladstoick.gotocinema.CinemaList" >
+        <activity android:name="com.vladstoick.gotocinema.CinemaList"
+            android:label="@string/calculateName" 
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name="com.vladstoick.gotocinema.ChangeDialog" >
+        <activity android:name="com.vladstoick.gotocinema.ChangeDialog"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.vladstoick.gotocinema.FilmView"
-            android:label="Map" >
+            android:label="Map"
+            android:screenOrientation="portrait" >
         </activity>
 
         <meta-data
@@ -61,7 +66,8 @@
 
         <activity
             android:name="com.vladstoick.gotocinema.SettingsActivity"
-            android:label="@string/title_activity_settings" >
+            android:label="@string/title_activity_settings" 
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

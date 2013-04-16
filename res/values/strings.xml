@@ -11,4 +11,6 @@
     <string name="sortByDistance">Sortează după distanţă</string>
     <string name="sortByName">Sortează după numele fimului</string>
     <string name="settings">Setări</string>
+    <string name="calculateName">Filemele la care poţi merge</string>
+    <string name="openInMaps">Deschide în Google Maps</string>
 </resources>

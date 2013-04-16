@@ -15,7 +15,8 @@ import java.util.Comparator;
 
 public class CinemaList extends FragmentActivity {
 	AparitiiCinemaAdapter adapter = null;
-    static ArrayList<AparitiiCinema> aparitii = new ArrayList<AparitiiCinema>();
+	ListView listview = null;
+	static ArrayList<AparitiiCinema> aparitii = new ArrayList<AparitiiCinema>();
     public class ArrayComparatorByTime implements Comparator<AparitiiCinema> {
         @Override
         public int compare(AparitiiCinema o1, AparitiiCinema o2) {
@@ -31,14 +32,13 @@ public class CinemaList extends FragmentActivity {
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTitle("Filmele la care poti ajunge!");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cinema_list);
         Intent intent = getIntent();
         aparitii = intent.getParcelableArrayListExtra("CINEMALISTDATA");
         System.out.println("lungime"+aparitii.size());
         Collections.sort(aparitii, new ArrayComparatorByTime());
-        final ListView listview = (ListView) findViewById(R.id.listview);
+        listview =  (ListView) findViewById(R.id.listview);
         adapter = new AparitiiCinemaAdapter(this, R.layout.list_row_view, aparitii);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new OnItemClickListener() {
@@ -73,12 +73,14 @@ public class CinemaList extends FragmentActivity {
             {
             	Collections.sort(aparitii, new ArrayComparatorByName());
             	adapter.notifyDataSetChanged();
+            	listview.setSelection(0);
             	return true;
             }
             case R.id.action_sortByTime:
             {
             	Collections.sort(aparitii, new ArrayComparatorByTime());
             	adapter.notifyDataSetChanged();
+            	listview.setSelection(0);
             	return true;
             }
             default:

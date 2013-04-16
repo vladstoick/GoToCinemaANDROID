@@ -11,37 +11,39 @@
             android:id="@+id/note"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Imdb 7/7 Cinemagia 8/8"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_marginBottom="10dp"/>
     <TextView
             android:id="@+id/gen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gen : Drama, Comedie"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_marginBottom="10dp"/>
     <TextView
             android:id="@+id/actori"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cu: Alexandru Clapa, Ana Log"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_marginBottom="10dp"/>
     <TextView
             android:id="@+id/regizor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regizor: Doctor Love Eddy Stoica"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_marginBottom="10dp"/>
     <TextView
             android:id="@+id/distance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Se afla la distanta de 11.km(0:20)"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/openMap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/openInMaps"
+        android:onClick = "openInGoogleMaps" />
 	
     <fragment
             android:id="@+id/mapView"

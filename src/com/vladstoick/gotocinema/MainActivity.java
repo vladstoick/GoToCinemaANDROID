@@ -1,5 +1,6 @@
 package com.vladstoick.gotocinema;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -20,7 +21,7 @@ import java.util.Date;
 public class MainActivity extends FragmentActivity {
     static ArrayList<AparitiiCinema> list = new ArrayList<AparitiiCinema>();
     static TextView currentHour;
-
+    static ProgressDialog pd=null;
     static int hourUsed = 15;
     static int minuteUsed = 15;
     static Handler mHandler = new Handler() {
@@ -36,8 +37,6 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        RequestTask newV = new RequestTask();
-        newV.execute("http://thawing-fortress-7476.herokuapp.com/date.json");
         Calendar c = Calendar.getInstance();
         currentHour = (TextView) findViewById(R.id.hourUsed);
         hourUsed = c.get(Calendar.HOUR_OF_DAY);
@@ -63,9 +62,9 @@ public class MainActivity extends FragmentActivity {
         ft.commit();
     }
 
-    public static void fill(String result) {
+    public static ArrayList<AparitiiCinema> fill(String result) {
         try {
-
+        	list.clear();
             JSONObject jObject = new JSONObject(result);
             JSONArray jArray = jObject.getJSONArray("movies");
             for (int i = 0; i < jArray.length(); i++) {
@@ -86,15 +85,26 @@ public class MainActivity extends FragmentActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        finally{
+        	pd.dismiss();
+        }
+        return list;
     }
 
     public void calculateCinema(View view) {
-        Intent intent = new Intent(this, CinemaList.class);
-        intent.putParcelableArrayListExtra("CINEMALISTDATA", getAparitii(Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed)));
-        startActivity(intent);
+    	pd = ProgressDialog.show(this, "Preluare date", "Vă rugăm aşteptaţi", true);
+    	RequestTask newV = new RequestTask(1,MainActivity.this);
+    	newV.execute("http://parsercinema.eu01.aws.af.cm/date.json");
+//    	RequestTask newV = new RequestTask(1,MainActivity.this);
+//        newV.execute("http://parsercinema.eu01.aws.af.cm/date.json");
+//        Intent intent = new Intent(this, CinemaList.class);
+//        intent.putParcelableArrayListExtra("CINEMALISTDATA", getAparitii(Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed)));
+//        startActivity(intent);
+        
     }
 
-    private static ArrayList<AparitiiCinema> getAparitii(Date dateToBeUsed) {
+    public static ArrayList<AparitiiCinema> getAparitii(ArrayList<AparitiiCinema> list) {
+    	Date dateToBeUsed = Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed);
         ArrayList<AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();
         for (int i = 0; i < list.size(); i++) {
             if (dateToBeUsed.getTime() - list.get(i).ora.getTime() < 0)
