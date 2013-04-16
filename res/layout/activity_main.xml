@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="Large Text"
+            android:text="@string/defaultHourUsed"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
 
     <Button
@@ -39,12 +39,13 @@
             android:text="@string/changeLocation"/>
 
     <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/hourUsed"
-            android:layout_below="@+id/button1"
-            android:text="Locatia ta folosita:"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:id="@+id/locationUsed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:gravity="center"
+        android:text="@string/defaultLocationUsed"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

@@ -2,7 +2,9 @@ package com.vladstoick.gotocinema;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+
 
 public class Utils {
     static SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
@@ -29,5 +31,14 @@ public class Utils {
 
     public static String getStringFromDate(Date time) {
         return (String) formatter.format(time);
+    }
+
+    public static ArrayList<AparitiiCinema> getAparitii(ArrayList<AparitiiCinema> list, Date dateToBeUsed) {
+        ArrayList<AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();
+        for (int i = 0; i < list.size(); i++) {
+            if (dateToBeUsed.getTime() - list.get(i).ora.getTime() < 0)
+                listToBeReturned.add(list.get(i));
+        }
+        return listToBeReturned;
     }
 }

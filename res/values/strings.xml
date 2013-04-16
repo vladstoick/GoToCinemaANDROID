@@ -13,4 +13,6 @@
     <string name="settings">Setări</string>
     <string name="calculateName">Filemele la care poţi merge</string>
     <string name="openInMaps">Deschide în Google Maps</string>
+    <string name="defaultLocationUsed">Aplicaţia te localizează</string>
+    <string name="defaultHourUsed">Ora folosită : 20:24</string>
 </resources>

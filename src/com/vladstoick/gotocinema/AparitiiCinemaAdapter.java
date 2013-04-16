@@ -35,6 +35,7 @@ public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema> {
             holder.enTitle = (TextView) row.findViewById(R.id.rowEnTitle);
             holder.ora = (TextView) row.findViewById(R.id.rowOra);
             holder.cinema = (TextView) row.findViewById(R.id.rowCinema);
+            holder.distanta = (TextView) row.findViewById(R.id.rowKM);
             row.setTag(holder);
         } else {
             holder = (AparitiiCinemaRowHandler) row.getTag();
@@ -44,10 +45,12 @@ public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema> {
         holder.roTitle.setText(aparitie.roTitle);
         holder.ora.setText(Utils.getStringFromDate(aparitie.ora));
         holder.cinema.setText(aparitie.cinemaName);
+//        System.out.println(aparitie.distanta);
+        holder.distanta.setText(aparitie.distanta);
         return row;
     }
 
     static class AparitiiCinemaRowHandler {
-        TextView roTitle, enTitle, ora, cinema;
+        TextView roTitle, enTitle, ora, cinema,distanta;
     }
 }

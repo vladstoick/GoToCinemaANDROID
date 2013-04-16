@@ -9,6 +9,7 @@ public class AparitiiCinema implements Parcelable {
     public String roTitle, enTitle, cinemaName;
     public Date ora;
     public String nota, regizor,actori,gen;
+    public String distanta, durataDrum;
     public AparitiiCinema(String roTitle, String enTitle, String cinemaName, String oraString, String nota, String regizor, String actori,String gen) {
         this.roTitle = roTitle;
         this.enTitle = enTitle;

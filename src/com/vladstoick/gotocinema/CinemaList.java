@@ -36,7 +36,6 @@ public class CinemaList extends FragmentActivity {
         setContentView(R.layout.activity_cinema_list);
         Intent intent = getIntent();
         aparitii = intent.getParcelableArrayListExtra("CINEMALISTDATA");
-        System.out.println("lungime"+aparitii.size());
         Collections.sort(aparitii, new ArrayComparatorByTime());
         listview =  (ListView) findViewById(R.id.listview);
         adapter = new AparitiiCinemaAdapter(this, R.layout.list_row_view, aparitii);
