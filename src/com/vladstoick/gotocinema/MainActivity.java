@@ -10,21 +10,20 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-public class MainActivity extends FragmentActivity implements LocationListener {
+import com.slidingmenu.lib.app.SlidingFragmentActivity;
+public class MainActivity extends SlidingFragmentActivity implements LocationListener {
     static private TextView timeUsed,locationUsedText;
     static ProgressDialog pd=null;
     static private int hourUsed, minuteUsed;
-    static boolean  isUsingLocation = true,settedALocation = false;
+    static boolean  isUsingLocation = true,setALocation = false;
     private LocationManager locationManager;
     private String provider;
     static Location locationUsed;
@@ -35,9 +34,11 @@ public class MainActivity extends FragmentActivity implements LocationListener {
 	public static void setFilme(ArrayList<AparitiiCinema> filmeToBeFilled) {
 		filme = filmeToBeFilled;
 	}
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setBehindContentView(R.layout.activity_cinema_list);
+        getSlidingMenu().setBehindOffset(200);
         Calendar c = Calendar.getInstance();
         timeUsed = (TextView) findViewById(R.id.hourUsed);
         locationUsedText = (TextView) findViewById(R.id.locationUsed);
@@ -47,7 +48,8 @@ public class MainActivity extends FragmentActivity implements LocationListener {
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         Criteria criteria = new Criteria();
         provider = locationManager.getBestProvider(criteria, false);
-        Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+//        Location location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        Location location = locationManager.getLastKnownLocation(provider);
         if (location != null) {
             System.out.println("Provider " + provider + " has been selected.");
             onLocationChanged(location);
@@ -57,7 +59,12 @@ public class MainActivity extends FragmentActivity implements LocationListener {
         pd = ProgressDialog.show(this, "Preluare filme", "Vă rugăm aşteptaţi", true);
 		RequestTask newV = new RequestTask(1,MainActivity.this);
 		newV.execute("http://parsercinema.eu01.aws.af.cm/date.json");
-        
+//		SlidingMenu menu = new SlidingMenu(this);
+//	    menu.setMode(SlidingMenu.LEFT);
+//	    menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+//	    menu.setFadeDegree(0.35f);
+//	    menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+//	    menu.setMenu(R.layout.activity_film_view);
     }
     //HOUR SETUP
     static Handler mHandler = new Handler() {
@@ -90,7 +97,7 @@ public class MainActivity extends FragmentActivity implements LocationListener {
     }
     //BUTOTONS AND FUNCTIONALITY
     public void calculateCinema(View view) {
-    	if(settedALocation==false)
+    	if(setALocation==false)
     	{
     		Toast.makeText(this, "Aplicaţia încă te localizează", Toast.LENGTH_SHORT).show();
     	}
@@ -120,13 +127,12 @@ public class MainActivity extends FragmentActivity implements LocationListener {
     //LOCATION
 	@Override
 	public void onLocationChanged(Location location) {
-		// TODO Auto-generated method stub
 		System.out.println("location is"+location.getLongitude());
 		if(MainActivity.isUsingLocation==true)
 		{
 			locationUsed=location;
-			MainActivity.settedALocation=true;
-			System.out.println(settedALocation);
+			MainActivity.setALocation=true;
+			System.out.println(setALocation);
 			locationUsedText.setText("Poziţia folosită: locaţia ta");
 		}
 	}
