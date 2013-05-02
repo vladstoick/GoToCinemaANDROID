@@ -1,5 +1,6 @@
 package com.vladstoick.gotocinema;
 
+import android.annotation.SuppressLint;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -7,7 +8,8 @@ import java.util.Date;
 
 
 public class Utils {
-    static SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+    @SuppressLint("SimpleDateFormat")
+	static SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
 
     public static Date getDateFromHourAndMinuteInts(int hour, int minute) {
         try {
@@ -33,12 +35,12 @@ public class Utils {
         return (String) formatter.format(time);
     }
 
-//    public static ArrayList<AparitiiCinema> getAparitii(ArrayList<AparitiiCinema> list, Date dateToBeUsed) {
-//        ArrayList<AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();
-//        for (int i = 0; i < list.size(); i++) {
-//            if (dateToBeUsed.getTime() + (new Date(Integer.parseInt(list.get(i).durataDrum)*1000)).getTime() -list.get(i).ora.getTime() < 0)
-//                listToBeReturned.add(list.get(i));
-//        }
-//        return listToBeReturned;
-//    }
+    public static ArrayList<AparitiiCinema> getAparitii(ArrayList<AparitiiCinema> list, Date dateToBeUsed) {
+        ArrayList<AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();
+        for (int i = 0; i < list.size(); i++) {
+            if (dateToBeUsed.getTime() + (new Date(Integer.parseInt(list.get(i).durataDrum)*1000)).getTime() -list.get(i).ora.getTime() < 0)
+                listToBeReturned.add(list.get(i));
+        }
+        return listToBeReturned;
+    }
 }

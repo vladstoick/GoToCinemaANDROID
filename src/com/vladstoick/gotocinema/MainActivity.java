@@ -1,21 +1,32 @@
 package com.vladstoick.gotocinema;
 
+import java.util.ArrayList;
+
+import android.content.Context;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.View;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
 import com.slidingmenu.lib.SlidingMenu;
 
-public class MainActivity extends BaseActivity implements OnFragmentInteractionListener {
+public class MainActivity extends BaseActivity implements OnFragmentInteractionListener,LocationListener {
 	static String TAGCALCULATE ="CalculateMainMenuFragment";
 	private Fragment mContent;
-	
+	Location currentLocation=null;
+	static ArrayList<AparitiiCinema> allMovies;
+	private LocationFragmentListener locationListener;
 	public MainActivity(){
 		super(R.string.app_name);
-		
 	}
-	
+	public static void setAllMovies(ArrayList<AparitiiCinema> filmeParsed)
+	{
+		allMovies=filmeParsed;
+	}
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -37,6 +48,9 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 		
 		getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 		setSlidingActionBarEnabled(true);
+		currentLocation = findLocation();
+		RequestTask newV = new RequestTask(getSupportFragmentManager(),1);
+		newV.execute("http://parsercinema.eu01.aws.af.cm/date.json");
 	}
 	
 	@Override
@@ -50,6 +64,8 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 		getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
 		getSlidingMenu().showContent();
 	}
+	
+	//comunicare cu fragmente
 	public void showTimePicker(View view)
 	{
 	    SherlockDialogFragment newFragment = new TimePickerFragment();
@@ -59,13 +75,102 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 	@Override
 	public void onSettedATime(int hour, int minute) {
 		if( getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)!=null)
-		{
-			
 			((CalculateMainMenuFragment) getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)).setTime(hour,minute);
-		}
 		
 	}
+	@Override
+	public Location getCurrentLocation()
+	{
+		return currentLocation;
+	}
 	
+	//comunicare cu fragmente ended
+	
+	
+	
+	
+	
+	
+	public Location findLocation() {
+		Location location = null;
+	    try {
+	    	
+	        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+	        // getting GPS status
+	        boolean isGPSEnabled = locationManager
+	                .isProviderEnabled(LocationManager.GPS_PROVIDER);
+
+	        // getting network status
+	        boolean isNetworkEnabled = locationManager
+	                .isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+
+	        if (!isGPSEnabled && !isNetworkEnabled) {
+	            // no network provider is enabled
+	        } else {
+	            if (isNetworkEnabled) {
+	                locationManager.requestLocationUpdates(
+	                        LocationManager.NETWORK_PROVIDER,
+	                        20000,
+	                        10, this);
+	                Log.d("Network", "Network Enabled");
+	                if (locationManager != null) {
+	                    location = locationManager
+	                            .getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+	                }
+	            }
+	            // if GPS Enabled get lat/long using GPS Services
+	            if (isGPSEnabled) {
+	                if (location == null) {
+	                    locationManager.requestLocationUpdates(
+	                            LocationManager.GPS_PROVIDER,
+	                            20000,
+	                            10, this);
+	                    Log.d("GPS", "GPS Enabled");
+	                    if (locationManager != null) {
+	                        location = locationManager
+	                                .getLastKnownLocation(LocationManager.GPS_PROVIDER);
+	               
+	                    }
+	                }
+	            }
+	        }
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+
+	    return location;
+	}
+	@Override
+	public void onLocationChanged(Location location) {
+		
+		currentLocation=location;
+		try {
+			locationListener = (LocationFragmentListener) getSupportFragmentManager().findFragmentById(R.id.content_frame);
+		} catch (ClassCastException e) {
+			System.out.println("in a fragment that doesn't need this");
+		}
+		locationListener.updatedCurrentLocation(currentLocation);
+	}
+
+	@Override
+	public void onProviderDisabled(String provider) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onProviderEnabled(String provider) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onStatusChanged(String provider, int status, Bundle extras) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }
