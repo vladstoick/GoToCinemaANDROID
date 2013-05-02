@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.view.View;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
-import com.actionbarsherlock.app.SherlockFragment;
 import com.slidingmenu.lib.SlidingMenu;
 
 public class MainActivity extends BaseActivity implements OnFragmentInteractionListener {
@@ -56,10 +55,14 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 	    SherlockDialogFragment newFragment = new TimePickerFragment();
 	    newFragment.show(getSupportFragmentManager(), "timePicker");
 	}
+	
 	@Override
 	public void onSettedATime(int hour, int minute) {
 		if( getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)!=null)
-			((TimePickerFragment) getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)).updateTime(hour,minute);
+		{
+			
+			((CalculateMainMenuFragment) getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)).setTime(hour,minute);
+		}
 		
 	}
 	
