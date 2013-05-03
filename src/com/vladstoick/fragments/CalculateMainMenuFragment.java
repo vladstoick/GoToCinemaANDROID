@@ -1,10 +1,8 @@
 package com.vladstoick.fragments;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 
 import android.app.Activity;
-import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,14 +13,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
-import com.vladstoick.gotocinemaUtilityClasses.AparitiiCinema;
-import com.vladstoick.gotocinemaUtilityClasses.CinemaRestClient;
-import com.vladstoick.gotocinemaUtilityClasses.JSONParser;
-import com.vladstoick.gotocinemaUtilityClasses.LocationFragmentListener;
 import com.vladstoick.gotocinemaUtilityClasses.Utils;
 public class CalculateMainMenuFragment extends Fragment{
 	private OnFragmentInteractionListener mListener;

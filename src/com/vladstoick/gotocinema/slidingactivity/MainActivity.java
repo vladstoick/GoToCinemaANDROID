@@ -16,7 +16,8 @@ import com.actionbarsherlock.app.SherlockListFragment;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.slidingmenu.lib.SlidingMenu;
 import com.vladstoick.fragments.CalculateMainMenuFragment;
-import com.vladstoick.fragments.FilmFragment;
+import com.vladstoick.fragments.FilmDetailsFragment;
+import com.vladstoick.fragments.FilmMasterFragment;
 import com.vladstoick.fragments.SlidingMenuFragment;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
@@ -24,8 +25,6 @@ import com.vladstoick.gotocinema.dialogfragments.TimePickerFragment;
 import com.vladstoick.gotocinemaUtilityClasses.AparitiiCinema;
 import com.vladstoick.gotocinemaUtilityClasses.CinemaRestClient;
 import com.vladstoick.gotocinemaUtilityClasses.JSONParser;
-import com.vladstoick.gotocinemaUtilityClasses.LocationFragmentListener;
-import com.vladstoick.gotocinemaUtilityClasses.Utils;
 
 public class MainActivity extends BaseActivity implements OnFragmentInteractionListener, LocationListener {
 	static String TAGCALCULATE ="CalculateMainMenuFragment";
@@ -35,7 +34,6 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 	Location currentLocation=null;
 	String result;
 	static ArrayList<AparitiiCinema> allMovies;
-	private LocationFragmentListener locationListener;
 	public MainActivity(){
 		super(R.string.app_name);
 	}
@@ -110,12 +108,17 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 	}
 	@Override
 	public void openNewCinemaList(ArrayList<AparitiiCinema> moviesToBeShown){
-		SherlockListFragment newFragment = FilmFragment.newInstance(moviesToBeShown);
+		SherlockListFragment newFragment = FilmMasterFragment.newInstance(moviesToBeShown);
 		switchContent(newFragment);
 	}
 	@Override
 	public ArrayList<AparitiiCinema> getAllMovies() {
 		return allMovies;
+	}
+	@Override
+	public void openFilmViewWithData(AparitiiCinema data)	{
+		FilmMasterFragment newFragment = FilmDetailsFragment.newInstance(data);
+		switchContent(newFragment);
 	}
 	//comunicare cu fragmente ended
 	public Location findLocation() {

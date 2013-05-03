@@ -11,4 +11,5 @@ public interface OnFragmentInteractionListener {
 	public Location getCurrentLocation();
 	void openNewCinemaList(ArrayList<AparitiiCinema> moviesToBeShown);
 	public ArrayList<AparitiiCinema> getAllMovies();
+	public void openFilmViewWithData(AparitiiCinema data);
 }
