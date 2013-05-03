@@ -25,8 +25,9 @@ import com.vladstoick.gotocinemaUtilityClasses.AparitiiCinema;
 import com.vladstoick.gotocinemaUtilityClasses.CinemaRestClient;
 import com.vladstoick.gotocinemaUtilityClasses.JSONParser;
 import com.vladstoick.gotocinemaUtilityClasses.LocationFragmentListener;
+import com.vladstoick.gotocinemaUtilityClasses.Utils;
 
-public class MainActivity extends BaseActivity implements OnFragmentInteractionListener,LocationListener {
+public class MainActivity extends BaseActivity implements OnFragmentInteractionListener, LocationListener {
 	static String TAGCALCULATE ="CalculateMainMenuFragment";
 	static String TAGLOADING = "LoadingFragment";
 	ProgressDialogFragment progressDialog= new ProgressDialogFragment();
@@ -108,8 +109,8 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 		return currentLocation;
 	}
 	@Override
-	public void openNewCinemaList(String adress,ArrayList<AparitiiCinema> moviesToBeShown){
-		SherlockListFragment newFragment = FilmFragment.newInstance(adress,moviesToBeShown);
+	public void openNewCinemaList(ArrayList<AparitiiCinema> moviesToBeShown){
+		SherlockListFragment newFragment = FilmFragment.newInstance(moviesToBeShown);
 		switchContent(newFragment);
 	}
 	@Override
@@ -165,19 +166,28 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    }
-
 	    return location;
 	}
 	@Override
 	public void onLocationChanged(Location location) {
 		
 		currentLocation=location;
+		final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
 		try {
-			locationListener = (LocationFragmentListener) getSupportFragmentManager().findFragmentById(R.id.content_frame);
+			String link="getDistance.php?lat="+location.getLatitude()+"&lng="+location.getLongitude();
+			progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
+			CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
+	            @Override
+	            public void onSuccess(String resultString) {
+	            	System.out.println("SUCCES");
+	            	allMovies=JSONParser.parseMoviesAndDistances(resultString,allMovies);
+	            	progressDialog2.dismiss();
+
+	            }
+	        });
 		} catch (ClassCastException e) {
 			System.out.println("in a fragment that doesn't need this");
 		}
-		locationListener.updatedCurrentLocation(currentLocation);
 	}
 
 	@Override

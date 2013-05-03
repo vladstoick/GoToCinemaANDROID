@@ -1,5 +1,6 @@
 package com.vladstoick.fragments;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import android.app.Activity;
@@ -12,18 +13,24 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.vladstoick.gotocinema.R;
+import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
+import com.vladstoick.gotocinemaUtilityClasses.AparitiiCinema;
+import com.vladstoick.gotocinemaUtilityClasses.CinemaRestClient;
+import com.vladstoick.gotocinemaUtilityClasses.JSONParser;
 import com.vladstoick.gotocinemaUtilityClasses.LocationFragmentListener;
 import com.vladstoick.gotocinemaUtilityClasses.Utils;
-public class CalculateMainMenuFragment extends Fragment implements LocationFragmentListener{
+public class CalculateMainMenuFragment extends Fragment{
 	private OnFragmentInteractionListener mListener;
 	View view;
-	Location locationUsed,currentLocation;
 	static TextView timeUsed,locationUsedTextView;
 	static private int hourUsed, minuteUsed;
 	boolean hasALocation=false,isUsingCurrentLocation=true;
+	ProgressDialogFragment progressDialog= new ProgressDialogFragment();
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -37,37 +44,18 @@ public class CalculateMainMenuFragment extends Fragment implements LocationFragm
 		hourUsed = c.get(Calendar.HOUR_OF_DAY);
         minuteUsed = c.get(Calendar.MINUTE);
         updateHour();
-        if(mListener.getCurrentLocation()!=null)
-        {
-        	currentLocation = locationUsed = mListener.getCurrentLocation();
-        	hasALocation=true;
-        }
         final Button calculateBtn = (Button) view.findViewById(R.id.btnCalculate);
+     
         calculateBtn.setOnClickListener(new OnClickListener() {
             @Override
-            public void onClick(final View v) {
-            	System.out.println(mListener.getAllMovies().size());
-                mListener.openNewCinemaList("getDistance.php?lat="+locationUsed.getLatitude()+"&lng="+locationUsed.getLongitude(),Utils.getAparitii(mListener.getAllMovies(),
+            public void onClick(final View v) {         	
+            	if(mListener.getCurrentLocation()==null)
+            		Toast.makeText(getActivity(), "Aplicatia inca te localizeaza", Toast.LENGTH_SHORT).show();
+            	mListener.openNewCinemaList(Utils.getAparitii(mListener.getAllMovies(),
                 		Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed)));
             }
         });
 		return view;
-	}
-	private void setLocationUsed(Location location)
-	{
-		locationUsed=location;
-		if(isUsingCurrentLocation==true)
-			locationUsedTextView.setText("Locația folosită: locația ta");
-		else
-			locationUsedTextView.setText("Locația folosită: locația aleasă de tine");
-	}
-	@Override
-	public void updatedCurrentLocation(Location location) {
-		currentLocation=location;
-		if(hasALocation==false)
-			hasALocation=true;
-		if(isUsingCurrentLocation==true)
-			setLocationUsed(currentLocation);
 	}
 	private static void updateHour() {
         String deAfisat = Utils.getStringFromDate(Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed));

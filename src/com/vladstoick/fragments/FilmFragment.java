@@ -1,32 +1,49 @@
 package com.vladstoick.fragments;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import android.app.Activity;
 import android.os.Bundle;
 
 import com.actionbarsherlock.app.SherlockListFragment;
-import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
 import com.vladstoick.gotocinemaUtilityClasses.AparitiiCinema;
 import com.vladstoick.gotocinemaUtilityClasses.AparitiiCinemaAdapter;
-import com.vladstoick.gotocinemaUtilityClasses.CinemaRestClient;
-import com.vladstoick.gotocinemaUtilityClasses.JSONParser;
 
 public class FilmFragment extends SherlockListFragment {
 	AparitiiCinemaAdapter adapter = null;
-	private static final String ARG_LINK = "link1";
 	private static final String ARG_MOVIES = "movies";
-	private String link;
 	private OnFragmentInteractionListener mListener;
 	ProgressDialogFragment progressDialog= new ProgressDialogFragment();
 	ArrayList <AparitiiCinema> moviesToBeShown;
-	public static FilmFragment newInstance(String param1,ArrayList<AparitiiCinema> param2) {
+    public class ArrayComparatorByTime implements Comparator<AparitiiCinema> {
+        @Override
+        public int compare(AparitiiCinema o1, AparitiiCinema o2) {
+            return (o1.ora).compareTo(o2.ora);
+        }
+    }
+    public class ArrayComparatorByDistance implements Comparator<AparitiiCinema> {
+        @Override
+        public int compare(AparitiiCinema o1, AparitiiCinema o2) {
+        	double km1 = Double.parseDouble(o1.distanta.substring(0, o1.distanta.length()-2));
+        	double km2 = Double.parseDouble(o2.distanta.substring(0, o2.distanta.length()-2));
+            return Double.compare(km1, km2) ;
+        }
+    }
+    public class ArrayComparatorByName implements Comparator<AparitiiCinema> {
+    	@Override
+    	public int compare(AparitiiCinema o1, AparitiiCinema o2)
+    	{
+    		return (o1.enTitle).compareTo(o2.enTitle);
+    	}
+    }
+	public static FilmFragment newInstance(ArrayList<AparitiiCinema> param2) {
 		FilmFragment fragment = new FilmFragment();
 		Bundle args = new Bundle();
-		args.putString(ARG_LINK, param1);
 		args.putParcelableArrayList(ARG_MOVIES, param2);
 		fragment.setArguments(args);
 		return fragment;
@@ -39,17 +56,9 @@ public class FilmFragment extends SherlockListFragment {
 		super.onCreate(savedInstanceState);
 
 		if (getArguments() != null) {
-			link = getArguments().getString(ARG_LINK);
 			moviesToBeShown=getArguments().getParcelableArrayList(ARG_MOVIES);
-			progressDialog.show(getChildFragmentManager(),"Loading");
-			CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
-	            @Override
-	            public void onSuccess(String resultString) {
-	            	moviesToBeShown=JSONParser.parseMoviesAndDistances(resultString,moviesToBeShown);
-	                progressDialog.dismiss();
-	            }
-	        });
 		}
+		Collections.sort(moviesToBeShown, new ArrayComparatorByTime());
 		adapter = new AparitiiCinemaAdapter(getActivity(), R.layout.list_row_view, moviesToBeShown);
 		setListAdapter(adapter);
 	}
