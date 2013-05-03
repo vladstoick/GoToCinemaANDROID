@@ -324,8 +324,8 @@ int id homeAsUp 0x7f040006
 int id hourUsed 0x7f04003c
 int id hybrid 0x7f040018
 int id left 0x7f040010
-int id list 0x7f040040
 int id listMode 0x7f040002
+int id listview 0x7f040040
 int id locationUsed 0x7f04003f
 int id mapView 0x7f040047
 int id margin 0x7f040012

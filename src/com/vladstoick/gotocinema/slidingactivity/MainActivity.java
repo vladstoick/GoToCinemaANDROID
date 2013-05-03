@@ -117,7 +117,7 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 	}
 	@Override
 	public void openFilmViewWithData(AparitiiCinema data)	{
-		FilmMasterFragment newFragment = FilmDetailsFragment.newInstance(data);
+		FilmDetailsFragment newFragment = FilmDetailsFragment.newInstance(data);
 		switchContent(newFragment);
 	}
 	//comunicare cu fragmente ended

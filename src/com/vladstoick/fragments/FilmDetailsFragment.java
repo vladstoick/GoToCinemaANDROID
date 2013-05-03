@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
 import com.actionbarsherlock.app.SherlockFragment;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -23,10 +22,10 @@ public class FilmDetailsFragment extends SherlockFragment {
 	LatLng pozitieCinema = new LatLng(44.419560, 26.1266510);
     private GoogleMap mMap;
     static ProgressDialog pd=null;
-    static TextView distance;
+    TextView note,gen,actori,distanta,distance,regizor;
 	AparitiiCinema movie= null;
-	public static FilmMasterFragment newInstance(AparitiiCinema param1) {
-		FilmMasterFragment fragment = new FilmMasterFragment();
+	public static FilmDetailsFragment newInstance(AparitiiCinema param1) {
+		FilmDetailsFragment fragment = new FilmDetailsFragment();
 		Bundle args = new Bundle();
 		args.putParcelable(ARG_MOVIE, param1);
 		fragment.setArguments(args);
@@ -41,34 +40,38 @@ public class FilmDetailsFragment extends SherlockFragment {
 			Bundle savedInstanceState) {
 		view = inflater.inflate(R.layout.fragment_film_details, container,
 				false);
+		note = (TextView) view.findViewById(R.id.note);
+		gen = (TextView) view.findViewById(R.id.gen);
+        actori = (TextView) view.findViewById(R.id.actori);
+        regizor = (TextView) view.findViewById(R.id.regizor);
+        distance = (TextView) view.findViewById(R.id.distance);
+        movie=getArguments().getParcelable(ARG_MOVIE);
+		System.out.println(movie.actori);
+        note.setText(movie.nota);
+        gen.setText(movie.gen);
+        actori.setText(movie.actori);
+        regizor.setText(movie.regizor);
+        int timp = Integer.parseInt(movie.durataDrum);
+        int ore = timp / 3600;
+        int minute = ( timp % 3600 )/60;
+        distance.setText("Poţi ajunge în "+ore+":"+minute+" ("+movie.distanta+")");
+        pozitieCinema = new LatLng(Double.parseDouble(movie.latCinema),Double.parseDouble(movie.lonCinema));
+        SupportMapFragment mf = (SupportMapFragment) getFragmentManager().findFragmentById(R.id.mapView);
+        mMap = mf.getMap();
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(pozitieCinema));
+        mMap.animateCamera(CameraUpdateFactory.zoomBy(15));
+        mMap.setMyLocationEnabled(true);
+        mMap.addMarker(new MarkerOptions()
+                .position(pozitieCinema)
+                .title(movie.cinemaName));
 		return view;
 	}
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		if (getArguments() != null) {
-			movie=getArguments().getParcelable(ARG_MOVIE);
-			TextView note = (TextView) view.findViewById(R.id.note);
-	        note.setText(movie.nota);
-	        TextView gen = (TextView) view.findViewById(R.id.gen);
-	        gen.setText(movie.gen);
-	        TextView actori = (TextView) view.findViewById(R.id.actori);
-	        actori.setText(movie.actori);
-	        TextView regizor = (TextView) view.findViewById(R.id.regizor);
-	        regizor.setText(movie.regizor);
-	        distance = (TextView) view.findViewById(R.id.distance);
-	        int timp = Integer.parseInt(movie.durataDrum);
-	        int ore = timp / 3600;
-	        int minute = ( timp % 3600 )/60;
-	        distance.setText("Poţi ajunge în "+ore+":"+minute+" ("+movie.distanta+")");
-	        pozitieCinema = new LatLng(Double.parseDouble(movie.latCinema),Double.parseDouble(movie.lonCinema));
-	        mMap = ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.mapView)).getMap();
-	        mMap.moveCamera(CameraUpdateFactory.newLatLng(pozitieCinema));
-	        mMap.animateCamera(CameraUpdateFactory.zoomBy(15));
-	        mMap.setMyLocationEnabled(true);
-	        mMap.addMarker(new MarkerOptions()
-	                .position(pozitieCinema)
-	                .title(movie.cinemaName));
-		}
-	}
+//	@Override
+//	public void onCreate(Bundle savedInstanceState) {
+//		super.onCreate(savedInstanceState);
+//		if (getArguments() != null) {
+//			
+//
+//		}
+//	}
 }

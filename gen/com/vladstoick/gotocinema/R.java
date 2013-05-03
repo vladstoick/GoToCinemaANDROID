@@ -1196,8 +1196,8 @@ containing a value of this type.
         public static final int hourUsed=0x7f04003c;
         public static final int hybrid=0x7f040018;
         public static final int left=0x7f040010;
-        public static final int list=0x7f040040;
         public static final int listMode=0x7f040002;
+        public static final int listview=0x7f040040;
         public static final int locationUsed=0x7f04003f;
         public static final int mapView=0x7f040047;
         public static final int margin=0x7f040012;

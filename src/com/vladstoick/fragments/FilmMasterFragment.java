@@ -6,9 +6,7 @@ import java.util.Comparator;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockListFragment;
@@ -61,10 +59,11 @@ public class FilmMasterFragment extends SherlockListFragment {
 
 		if (getArguments() != null) {
 			moviesToBeShown=getArguments().getParcelableArrayList(ARG_MOVIES);
+			Collections.sort(moviesToBeShown, new ArrayComparatorByTime());
+			adapter = new AparitiiCinemaAdapter(getActivity(), R.layout.list_row_view, moviesToBeShown);
+			setListAdapter(adapter);
 		}
-		Collections.sort(moviesToBeShown, new ArrayComparatorByTime());
-		adapter = new AparitiiCinemaAdapter(getActivity(), R.layout.list_row_view, moviesToBeShown);
-		setListAdapter(adapter);
+		
 		setHasOptionsMenu(true);
 	}
 
