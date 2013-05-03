@@ -9,6 +9,7 @@ import com.vladstoick.gotocinemaUtilityClasses.AparitiiCinema;
 public interface OnFragmentInteractionListener {
 	public void onSettedATime(int hour,int minute);
 	public Location getCurrentLocation();
-	public void openNewCinemaList(String adress);
+	void openNewCinemaList(String adress,
+			ArrayList<AparitiiCinema> moviesToBeShown);
 	public ArrayList<AparitiiCinema> getAllMovies();
 }

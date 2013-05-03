@@ -46,7 +46,9 @@ public class CalculateMainMenuFragment extends Fragment implements LocationFragm
         calculateBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(final View v) {
-                mListener.openNewCinemaList("getDistance.php?lat="+locationUsed.getLatitude()+"&lng="+locationUsed.getLongitude());
+            	System.out.println(mListener.getAllMovies().size());
+                mListener.openNewCinemaList("getDistance.php?lat="+locationUsed.getLatitude()+"&lng="+locationUsed.getLongitude(),Utils.getAparitii(mListener.getAllMovies(),
+                		Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed)));
             }
         });
 		return view;

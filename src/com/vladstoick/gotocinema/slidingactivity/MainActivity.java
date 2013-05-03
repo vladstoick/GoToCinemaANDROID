@@ -104,27 +104,19 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 		
 	}
 	@Override
-	public Location getCurrentLocation()
-	{
+	public Location getCurrentLocation(){
 		return currentLocation;
 	}
 	@Override
-	public void openNewCinemaList(String adress){
-		SherlockListFragment newFragment = FilmFragment.newInstance(adress,null);
+	public void openNewCinemaList(String adress,ArrayList<AparitiiCinema> moviesToBeShown){
+		SherlockListFragment newFragment = FilmFragment.newInstance(adress,moviesToBeShown);
 		switchContent(newFragment);
 	}
 	@Override
 	public ArrayList<AparitiiCinema> getAllMovies() {
-		// TODO Auto-generated method stub
 		return allMovies;
 	}
 	//comunicare cu fragmente ended
-	
-	
-	
-	
-	
-	
 	public Location findLocation() {
 		Location location = null;
 	    try {
