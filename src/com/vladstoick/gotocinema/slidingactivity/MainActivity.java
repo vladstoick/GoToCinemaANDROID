@@ -7,19 +7,23 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.View;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
+import com.actionbarsherlock.app.SherlockListFragment;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.slidingmenu.lib.SlidingMenu;
 import com.vladstoick.fragments.CalculateMainMenuFragment;
+import com.vladstoick.fragments.FilmFragment;
 import com.vladstoick.fragments.SlidingMenuFragment;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.dialogfragments.TimePickerFragment;
 import com.vladstoick.gotocinemaUtilityClasses.AparitiiCinema;
 import com.vladstoick.gotocinemaUtilityClasses.CinemaRestClient;
+import com.vladstoick.gotocinemaUtilityClasses.JSONParser;
 import com.vladstoick.gotocinemaUtilityClasses.LocationFragmentListener;
 
 public class MainActivity extends BaseActivity implements OnFragmentInteractionListener,LocationListener {
@@ -65,7 +69,7 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 		CinemaRestClient.get("date.json", null, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String resultString) {
-                result=resultString;
+            	allMovies=JSONParser.parseMoviesList(resultString);
                 progressDialog.dismiss();
             }
         });
@@ -79,7 +83,10 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 	
 	public void switchContent(Fragment fragment){
 		mContent = fragment;
-		getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
+		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+		ft.replace(R.id.content_frame, fragment);
+		ft.addToBackStack(null);
+		ft.commit();
 		getSlidingMenu().showContent();
 	}
 	
@@ -101,7 +108,16 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 	{
 		return currentLocation;
 	}
-	
+	@Override
+	public void openNewCinemaList(String adress){
+		SherlockListFragment newFragment = FilmFragment.newInstance(adress,null);
+		switchContent(newFragment);
+	}
+	@Override
+	public ArrayList<AparitiiCinema> getAllMovies() {
+		// TODO Auto-generated method stub
+		return allMovies;
+	}
 	//comunicare cu fragmente ended
 	
 	
@@ -189,6 +205,7 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 		// TODO Auto-generated method stub
 		
 	}
+	
 	
 
 }

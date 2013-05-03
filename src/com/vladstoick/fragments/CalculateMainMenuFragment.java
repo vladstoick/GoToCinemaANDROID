@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.vladstoick.gotocinema.R;
@@ -40,6 +42,13 @@ public class CalculateMainMenuFragment extends Fragment implements LocationFragm
         	currentLocation = locationUsed = mListener.getCurrentLocation();
         	hasALocation=true;
         }
+        final Button calculateBtn = (Button) view.findViewById(R.id.btnCalculate);
+        calculateBtn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                mListener.openNewCinemaList("getDistance.php?lat="+locationUsed.getLatitude()+"&lng="+locationUsed.getLongitude());
+            }
+        });
 		return view;
 	}
 	private void setLocationUsed(Location location)
