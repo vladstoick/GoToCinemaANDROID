@@ -1182,43 +1182,51 @@ containing a value of this type.
         public static final int abs__textButton=0x7f04001c;
         public static final int abs__title=0x7f040024;
         public static final int abs__up=0x7f04000b;
-        public static final int action_settings=0x7f04004f;
-        public static final int actori=0x7f040043;
-        public static final int btnCalculate=0x7f04003e;
-        public static final int btnChangeTime=0x7f04003d;
-        public static final int content_frame=0x7f04003b;
+        public static final int action_forgot_password=0x7f040057;
+        public static final int action_settings=0x7f040056;
+        public static final int actori=0x7f04004a;
+        public static final int btnCalculate=0x7f040045;
+        public static final int btnChangeTime=0x7f040044;
+        public static final int content_frame=0x7f040042;
         public static final int disableHome=0x7f040009;
-        public static final int distance=0x7f040045;
+        public static final int distance=0x7f04004c;
         public static final int edit_query=0x7f04002f;
+        public static final int email=0x7f04003e;
         public static final int fullscreen=0x7f040013;
-        public static final int gen=0x7f040042;
+        public static final int gen=0x7f040049;
         public static final int homeAsUp=0x7f040006;
-        public static final int hourUsed=0x7f04003c;
+        public static final int hourUsed=0x7f040043;
         public static final int hybrid=0x7f040018;
         public static final int left=0x7f040010;
         public static final int listMode=0x7f040002;
-        public static final int listview=0x7f040040;
-        public static final int locationUsed=0x7f04003f;
-        public static final int mapView=0x7f040047;
+        public static final int listview=0x7f040047;
+        public static final int locationUsed=0x7f040046;
+        public static final int login=0x7f040040;
+        public static final int login_form=0x7f04003d;
+        public static final int login_status=0x7f04003b;
+        public static final int login_status_message=0x7f04003c;
+        public static final int mapView=0x7f04004e;
         public static final int margin=0x7f040012;
-        public static final int menu_frame=0x7f04004d;
+        public static final int menu_frame=0x7f040054;
         public static final int none=0x7f040015;
         public static final int normal=0x7f040001;
-        public static final int note=0x7f040041;
-        public static final int openMap=0x7f040046;
-        public static final int regizor=0x7f040044;
+        public static final int note=0x7f040048;
+        public static final int openMap=0x7f04004d;
+        public static final int password=0x7f04003f;
+        public static final int regizor=0x7f04004b;
         public static final int right=0x7f040011;
-        public static final int rowCinema=0x7f04004a;
-        public static final int rowEnTitle=0x7f040048;
-        public static final int rowKM=0x7f04004c;
-        public static final int rowOra=0x7f04004b;
-        public static final int rowRoTitle=0x7f040049;
+        public static final int rowCinema=0x7f040051;
+        public static final int rowEnTitle=0x7f04004f;
+        public static final int rowKM=0x7f040053;
+        public static final int rowOra=0x7f040052;
+        public static final int rowRoTitle=0x7f040050;
         public static final int satellite=0x7f040016;
         public static final int selected_view=0x7f040014;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
-        public static final int slidingmenumain=0x7f04004e;
+        public static final int sign_in_button=0x7f040041;
+        public static final int slidingmenumain=0x7f040055;
         public static final int tabMode=0x7f040003;
         public static final int terrain=0x7f040017;
         public static final int useLogo=0x7f040004;
@@ -1249,21 +1257,23 @@ containing a value of this type.
         public static final int abs__search_dropdown_item_icons_2line=0x7f030012;
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
-        public static final int content_frame=0x7f030015;
-        public static final int fragment_calculate=0x7f030016;
-        public static final int fragment_cinema_list=0x7f030017;
-        public static final int fragment_film_details=0x7f030018;
-        public static final int fragment_sliding_list=0x7f030019;
-        public static final int list_row_view=0x7f03001a;
-        public static final int menu_frame=0x7f03001b;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001c;
-        public static final int sherlock_spinner_item=0x7f03001d;
-        public static final int slidingmenumain=0x7f03001e;
+        public static final int activity_login=0x7f030015;
+        public static final int content_frame=0x7f030016;
+        public static final int fragment_calculate=0x7f030017;
+        public static final int fragment_cinema_list=0x7f030018;
+        public static final int fragment_film_details=0x7f030019;
+        public static final int fragment_sliding_list=0x7f03001a;
+        public static final int list_row_view=0x7f03001b;
+        public static final int menu_frame=0x7f03001c;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001d;
+        public static final int sherlock_spinner_item=0x7f03001e;
+        public static final int slidingmenumain=0x7f03001f;
     }
     public static final class menu {
         public static final int activity_main=0x7f0b0000;
         public static final int calculate_main_menu=0x7f0b0001;
-        public static final int main=0x7f0b0002;
+        public static final int login=0x7f0b0002;
+        public static final int main=0x7f0b0003;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1305,7 +1315,10 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abs__shareactionprovider_share_with_application=0x7f090007;
-        public static final int action_settings=0x7f09002d;
+        public static final int action_forgot_password=0x7f090037;
+        public static final int action_settings=0x7f09002c;
+        public static final int action_sign_in_register=0x7f090035;
+        public static final int action_sign_in_short=0x7f090036;
         public static final int app_name=0x7f09001e;
         /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=70] 
          */
@@ -1376,25 +1389,39 @@ containing a value of this type.
         public static final int defaultHourUsed=0x7f09002b;
         public static final int defaultLocationUsed=0x7f09002a;
         public static final int eroareLoading=0x7f090020;
-        public static final int hello_blank_fragment=0x7f09002f;
-        public static final int hello_world=0x7f09002e;
+        public static final int error_field_required=0x7f09003c;
+        public static final int error_incorrect_password=0x7f09003b;
+        public static final int error_invalid_email=0x7f090039;
+        public static final int error_invalid_password=0x7f09003a;
+        public static final int login_progress_signing_in=0x7f090038;
         public static final int openInMaps=0x7f090029;
         public static final int oraDefault=0x7f090021;
+        public static final int parola=0x7f09002e;
+        /**  Strings related to login 
+         */
+        public static final int prompt_email=0x7f090033;
+        public static final int prompt_password=0x7f090034;
         public static final int settings=0x7f090027;
+        public static final int signIn=0x7f090031;
         public static final int sortByDistance=0x7f090025;
         public static final int sortByName=0x7f090026;
         public static final int sortByTime=0x7f090024;
-        public static final int title_activity_sliding=0x7f09002c;
+        public static final int title_activity_login=0x7f090032;
+        public static final int username=0x7f090030;
+        public static final int wrong_password=0x7f09002d;
+        public static final int wrong_username=0x7f09002f;
     }
     public static final class style {
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
     
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
+
         
 
         Base application theme for API 11+. This theme completely replaces
@@ -1413,6 +1440,7 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0a005a;
+        public static final int LoginFormContainer=0x7f0a005b;
         public static final int Sherlock___TextAppearance_Small=0x7f0a0046;
         public static final int Sherlock___Theme=0x7f0a0051;
         public static final int Sherlock___Theme_DarkActionBar=0x7f0a0053;
