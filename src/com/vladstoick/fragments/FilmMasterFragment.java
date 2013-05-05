@@ -92,6 +92,6 @@ public class FilmMasterFragment extends SherlockListFragment {
 			mListener.openFilmViewWithData(moviesToBeShown.get(position));
 		}
 	}
-
+	
 
 }

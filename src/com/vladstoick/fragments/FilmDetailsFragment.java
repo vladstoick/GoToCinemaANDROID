@@ -21,7 +21,7 @@ public class FilmDetailsFragment extends SherlockFragment {
 	View view;
 	LatLng pozitieCinema = new LatLng(44.419560, 26.1266510);
     private GoogleMap mMap;
-    static ProgressDialog pd=null;
+    ProgressDialog pd=null;
     TextView note,gen,actori,distanta,distance,regizor;
 	AparitiiCinema movie= null;
 	public static FilmDetailsFragment newInstance(AparitiiCinema param1) {
@@ -66,6 +66,13 @@ public class FilmDetailsFragment extends SherlockFragment {
                 .title(movie.cinemaName));
 		return view;
 	}
+	  @Override
+	    public void onDestroyView() {
+	        super.onDestroyView();
+	        SupportMapFragment f = (SupportMapFragment) getFragmentManager().findFragmentById(R.id.mapView);
+	        if (f != null) 
+	            getFragmentManager().beginTransaction().remove(f).commit();
+	    }
 //	@Override
 //	public void onCreate(Bundle savedInstanceState) {
 //		super.onCreate(savedInstanceState);
