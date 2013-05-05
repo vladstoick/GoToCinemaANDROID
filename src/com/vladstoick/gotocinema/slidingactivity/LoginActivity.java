@@ -128,6 +128,11 @@ public class LoginActivity extends Activity {
 			params.put("username", mEmail);
 			params.put("password", mPassword);
 			client.post("http://cinemadistance.eu01.aws.af.cm/login",params, new AsyncHttpResponseHandler() {
+				 @Override
+			     public void onFailure(Throwable e, String response) {
+			         e.printStackTrace();
+			         System.out.println(response);
+			     }
 			    @Override
 			    public void onSuccess(String response) {
 			    	JSONObject jObject = null;
@@ -139,10 +144,13 @@ public class LoginActivity extends Activity {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+					
 			    	if(loginStatus==true)
 			    	{
 			    		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-			    		SharedPreferences sharedPref = ((Activity) getApplicationContext()).getPreferences(Context.MODE_PRIVATE);
+			    		intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+			    		SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+//			    		SharedPreferences sharedPref = (getApplicationContext()).getPreferences(Context.MODE_PRIVATE);
 			    		SharedPreferences.Editor editor = sharedPref.edit();
 			    		String key = null;
 						try {
@@ -153,11 +161,22 @@ public class LoginActivity extends Activity {
 						}
 			    		editor.putString("api_acces", key);
 			    		editor.commit();
+			    		finish();
 			    		startActivity(intent);
 			    	}
 			    	else
 			    	{
+			    		String error =null;
+			    		try {
+			    			error=jObject.getString("error");
+						} catch (JSONException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+			    		if(error == "email")
+			    		  		mEmailView.setError(getString(R.string.wrong_username));
 			    		
+			    			mPasswordView.setError(getString(R.string.wrong_password));
 			    	}
 			    	showProgress(false);
 			    }
@@ -165,7 +184,7 @@ public class LoginActivity extends Activity {
 
 		}
 	}
-
+	
 	/**
 	 * Shows the progress UI and hides the login form.
 	 */
