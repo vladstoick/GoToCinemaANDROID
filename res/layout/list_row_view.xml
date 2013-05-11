@@ -4,7 +4,7 @@
               android:layout_height="wrap_content"
               android:orientation="horizontal"
               android:gravity="left"
-              android:padding="10dp"
+            
               android:baselineAligned="true">
 
 	<LinearLayout
@@ -26,7 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:layout_weight="1"
-        android:orientation="vertical" >
+        android:orientation="vertical" 
+          android:padding="10dp">
 
         <TextView
                 android:id="@+id/rowEnTitle"
@@ -50,7 +51,8 @@
 
 	<RelativeLayout
 	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content" >
+	    android:layout_height="wrap_content"
+	      android:padding="10dp" >
     <TextView
             android:id="@+id/rowOra"
             android:layout_width="wrap_content"

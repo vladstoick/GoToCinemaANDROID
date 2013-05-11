@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockDialogFragment;
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.utils.StorageUtils;
@@ -47,7 +48,12 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 //		File cacheDir = StorageUtils.getCacheDirectory(getApplicationContext());
-		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext()).build();
+		DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory()
+				.cacheOnDisc()
+				.build();
+		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext())
+			.defaultDisplayImageOptions(options)
+			.build();
 		ImageLoader.getInstance().init(config);
 		super.onCreate(savedInstanceState);
 		if (savedInstanceState != null)
