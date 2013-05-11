@@ -1,5 +1,4 @@
 package com.vladstoick.gotocinema.slidingactivity;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
@@ -19,7 +18,6 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.nostra13.universalimageloader.utils.StorageUtils;
 import com.slidingmenu.lib.SlidingMenu;
 import com.vladstoick.fragments.CalculateMainMenuFragment;
 import com.vladstoick.fragments.FilmDetailsFragment;

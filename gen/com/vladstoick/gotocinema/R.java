@@ -1272,12 +1272,13 @@ containing a value of this type.
         public static final int fragment_film_details=0x7f03001a;
         public static final int fragment_search=0x7f03001b;
         public static final int fragment_sliding_list=0x7f03001c;
-        public static final int list_row_view=0x7f03001d;
-        public static final int menu_frame=0x7f03001e;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001f;
-        public static final int sherlock_spinner_item=0x7f030020;
-        public static final int sliding_row_view=0x7f030021;
-        public static final int slidingmenumain=0x7f030022;
+        public static final int fragment_user=0x7f03001d;
+        public static final int list_row_view=0x7f03001e;
+        public static final int menu_frame=0x7f03001f;
+        public static final int sherlock_spinner_dropdown_item=0x7f030020;
+        public static final int sherlock_spinner_item=0x7f030021;
+        public static final int sliding_row_view=0x7f030022;
+        public static final int slidingmenumain=0x7f030023;
     }
     public static final class menu {
         public static final int activity_main=0x7f0b0000;
@@ -1325,10 +1326,10 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abs__shareactionprovider_share_with_application=0x7f050018;
-        public static final int action_forgot_password=0x7f050038;
+        public static final int action_forgot_password=0x7f050039;
         public static final int action_settings=0x7f05002c;
-        public static final int action_sign_in_register=0x7f050036;
-        public static final int action_sign_in_short=0x7f050037;
+        public static final int action_sign_in_register=0x7f050037;
+        public static final int action_sign_in_short=0x7f050038;
         public static final int app_name=0x7f05001e;
         /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=70] 
          */
@@ -1399,25 +1400,26 @@ containing a value of this type.
         public static final int defaultHourUsed=0x7f05002b;
         public static final int defaultLocationUsed=0x7f05002a;
         public static final int eroareLoading=0x7f050020;
-        public static final int error_field_required=0x7f05003d;
-        public static final int error_incorrect_password=0x7f05003c;
-        public static final int error_invalid_email=0x7f05003a;
-        public static final int error_invalid_password=0x7f05003b;
-        public static final int login_progress_signing_in=0x7f050039;
+        public static final int error_field_required=0x7f05003e;
+        public static final int error_incorrect_password=0x7f05003d;
+        public static final int error_invalid_email=0x7f05003b;
+        public static final int error_invalid_password=0x7f05003c;
+        public static final int hello_blank_fragment=0x7f050033;
+        public static final int login_progress_signing_in=0x7f05003a;
         public static final int openInMaps=0x7f050029;
         public static final int oraDefault=0x7f050021;
         public static final int parola=0x7f05002e;
         /**  Strings related to login 
          */
-        public static final int prompt_email=0x7f050034;
-        public static final int prompt_password=0x7f050035;
+        public static final int prompt_email=0x7f050035;
+        public static final int prompt_password=0x7f050036;
         public static final int searchField=0x7f050032;
         public static final int settings=0x7f050027;
         public static final int signIn=0x7f050031;
         public static final int sortByDistance=0x7f050025;
         public static final int sortByName=0x7f050026;
         public static final int sortByTime=0x7f050024;
-        public static final int title_activity_login=0x7f050033;
+        public static final int title_activity_login=0x7f050034;
         public static final int username=0x7f050030;
         public static final int wrong_password=0x7f05002d;
         public static final int wrong_username=0x7f05002f;

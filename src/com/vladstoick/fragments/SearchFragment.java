@@ -53,7 +53,7 @@ public class SearchFragment extends SherlockFragment {
 	                    try {
 							JSONArray jResults = new JSONArray(response);
 							for(int i=0;i<jResults.length();i++)
-								results.add(jResults.getJSONObject(i).getString("username"));
+								results.add(jResults.getJSONObject(i).getString("nume")+" "+jResults.getJSONObject(i).getString("prenume"));
 						} catch (JSONException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
