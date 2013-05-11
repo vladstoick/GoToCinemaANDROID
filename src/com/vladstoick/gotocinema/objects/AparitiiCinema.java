@@ -13,6 +13,7 @@ import android.os.Parcelable;
 
 public class AparitiiCinema implements Parcelable {
     public String roTitle, enTitle, cinemaName;
+    public String imgUrl;
     public Date ora;
     public String nota, regizor,actori,gen;
     public String distanta="-", durataDrum="-";
@@ -54,9 +55,10 @@ public class AparitiiCinema implements Parcelable {
         durataDrum = in.readString();
         latCinema = in.readString();
         lonCinema = in.readString();
+        imgUrl=in.readString();
     }
 
-    public AparitiiCinema(String roTitle, String enTitle, String cinemaName, String oraString, String nota, String regizor, String actori,String gen) {
+    public AparitiiCinema(String roTitle, String enTitle, String cinemaName, String oraString, String nota, String regizor, String actori,String gen,String imgUrl) {
         this.roTitle = roTitle;
         this.enTitle = enTitle;
         this.cinemaName = cinemaName;
@@ -65,6 +67,7 @@ public class AparitiiCinema implements Parcelable {
         this.regizor=regizor;
         this.actori=actori;
         this.gen=gen;
+        this.imgUrl=imgUrl;
     }
 
     @Override
@@ -88,5 +91,6 @@ public class AparitiiCinema implements Parcelable {
         dest.writeString(durataDrum);
         dest.writeString(latCinema);
         dest.writeString(lonCinema);
+        dest.writeString(imgUrl);
     }
 }

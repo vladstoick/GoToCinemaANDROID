@@ -1190,6 +1190,7 @@ containing a value of this type.
         public static final int actori=0x7f04004a;
         public static final int btnCalculate=0x7f040045;
         public static final int btnChangeTime=0x7f040044;
+        public static final int cinemaPoster=0x7f040051;
         public static final int content_frame=0x7f040042;
         public static final int disableHome=0x7f04000d;
         public static final int distance=0x7f04004c;
@@ -1200,7 +1201,6 @@ containing a value of this type.
         public static final int homeAsUp=0x7f04000a;
         public static final int hourUsed=0x7f040043;
         public static final int hybrid=0x7f040004;
-        public static final int imageView1=0x7f040051;
         public static final int left=0x7f040014;
         public static final int listMode=0x7f040006;
         public static final int listview=0x7f040047;

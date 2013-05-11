@@ -2,21 +2,23 @@ package com.vladstoick.gotocinemaUtilityClasses;
 
 import java.util.ArrayList;
 
-
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.objects.AparitiiCinema;
 
 public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema> {
     static class AparitiiCinemaRowHandler {
         TextView roTitle, enTitle, ora, cinema,distanta;
+        ImageView imgView;
     }
     Context context;
     int layoutResourceId;
@@ -44,6 +46,7 @@ public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema> {
             holder.ora = (TextView) row.findViewById(R.id.rowOra);
             holder.cinema = (TextView) row.findViewById(R.id.rowCinema);
             holder.distanta = (TextView) row.findViewById(R.id.rowKM);
+            holder.imgView = (ImageView) row.findViewById(R.id.cinemaPoster);
             row.setTag(holder);
         } else {
             holder = (AparitiiCinemaRowHandler) row.getTag();
@@ -53,8 +56,8 @@ public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema> {
         holder.roTitle.setText(aparitie.roTitle);
         holder.ora.setText(Utils.getStringFromDate(aparitie.ora));
         holder.cinema.setText(aparitie.cinemaName);
-//        System.out.println(aparitie.distanta);
         holder.distanta.setText(aparitie.distanta);
+        ImageLoader.getInstance().displayImage(aparitie.imgUrl, holder.imgView);
         return row;
     }
 }

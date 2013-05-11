@@ -50,7 +50,8 @@ public class JSONParser {
                 String gen = oneObject.getString("gen");
                 String actori = oneObject.getString("actori");
                 String regizor = oneObject.getString("regizor");
-                AparitiiCinema aparitie = new AparitiiCinema(titluRo, titluEn, cinema, oraString, nota, regizor, actori, gen);
+                String imgUrl = oneObject.getString("image");
+                AparitiiCinema aparitie = new AparitiiCinema(titluRo, titluEn, cinema, oraString, nota, regizor, actori, gen,imgUrl);
                 list.add(aparitie);
             }
 

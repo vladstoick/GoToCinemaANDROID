@@ -318,6 +318,7 @@ int id action_settings 0x7f04005a
 int id actori 0x7f04004a
 int id btnCalculate 0x7f040045
 int id btnChangeTime 0x7f040044
+int id cinemaPoster 0x7f040051
 int id content_frame 0x7f040042
 int id disableHome 0x7f04000d
 int id distance 0x7f04004c
@@ -328,7 +329,6 @@ int id gen 0x7f040049
 int id homeAsUp 0x7f04000a
 int id hourUsed 0x7f040043
 int id hybrid 0x7f040004
-int id imageView1 0x7f040051
 int id left 0x7f040014
 int id listMode 0x7f040006
 int id listview 0x7f040047
