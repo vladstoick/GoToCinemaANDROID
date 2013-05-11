@@ -17,13 +17,6 @@ public class TimePickerFragment extends SherlockDialogFragment
 	private OnFragmentInteractionListener mListener;
 
 	@Override
-	public Dialog onCreateDialog(Bundle savedInstanceState) {
-		final Calendar c = Calendar.getInstance();
-		int hour = c.get(Calendar.HOUR_OF_DAY);
-		int minute = c.get(Calendar.MINUTE);
-		return new TimePickerDialog(getActivity(), this, hour, minute, DateFormat.is24HourFormat(getActivity()));
-	}
-	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
 		try {
@@ -33,6 +26,13 @@ public class TimePickerFragment extends SherlockDialogFragment
 					+ " must implement OnFragmentInteractionListener");
 		}
 	}
+	@Override
+	public Dialog onCreateDialog(Bundle savedInstanceState) {
+		final Calendar c = Calendar.getInstance();
+		int hour = c.get(Calendar.HOUR_OF_DAY);
+		int minute = c.get(Calendar.MINUTE);
+		return new TimePickerDialog(getActivity(), this, hour, minute, DateFormat.is24HourFormat(getActivity()));
+	}
 
 	@Override
 	public void onDetach() {
@@ -40,6 +40,7 @@ public class TimePickerFragment extends SherlockDialogFragment
 		mListener = null;
 	}
 
+	@Override
 	public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 		mListener.onSettedATime(hourOfDay, minute);
 	}

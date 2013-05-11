@@ -14,16 +14,26 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.vladstoick.gotocinema.R;
-import com.vladstoick.gotocinemaUtilityClasses.AparitiiCinema;
+import com.vladstoick.gotocinema.objects.AparitiiCinema;
 
 public class FilmDetailsFragment extends SherlockFragment {
 	private static final String ARG_MOVIE = "movie";
-	View view;
-	LatLng pozitieCinema = new LatLng(44.419560, 26.1266510);
-    private GoogleMap mMap;
-    ProgressDialog pd=null;
-    TextView note,gen,actori,distanta,distance,regizor;
-	AparitiiCinema movie= null;
+	private static String getStringForTime(int timp)
+	  {
+		  int ora = timp/3600;
+		  int minute = (timp%3600)/60;
+		  String oraString,minuteString;
+		  if(ora<10)
+			  oraString="0"+ora;
+		  else
+			  oraString=ora+"";
+		  if(minute<10)
+			  minuteString="0"+minute;
+		  else
+			  minuteString=minute+"";
+		return oraString+':'+minuteString;
+		  
+	}
 	public static FilmDetailsFragment newInstance(AparitiiCinema param1) {
 		FilmDetailsFragment fragment = new FilmDetailsFragment();
 		Bundle args = new Bundle();
@@ -31,11 +41,17 @@ public class FilmDetailsFragment extends SherlockFragment {
 		fragment.setArguments(args);
 		return fragment;
 	}
+    View view;
+    LatLng pozitieCinema = new LatLng(44.419560, 26.1266510);
+    private GoogleMap mMap;
+	ProgressDialog pd=null;
+	TextView note,gen,actori,distanta,distance,regizor;
+	AparitiiCinema movie= null;
+
 	public FilmDetailsFragment() {
 		// Required empty public constructor
 	}
-
-	@Override
+	  @Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		view = inflater.inflate(R.layout.fragment_film_details, container,
@@ -52,9 +68,7 @@ public class FilmDetailsFragment extends SherlockFragment {
         actori.setText(movie.actori);
         regizor.setText(movie.regizor);
         int timp = Integer.parseInt(movie.durataDrum);
-        int ore = timp / 3600;
-        int minute = ( timp % 3600 )/60;
-        distance.setText("Poţi ajunge în "+ore+":"+minute+" ("+movie.distanta+")");
+        distance.setText("Poţi ajunge în "+getStringForTime(timp)+" ("+movie.distanta+")");
         pozitieCinema = new LatLng(Double.parseDouble(movie.latCinema),Double.parseDouble(movie.lonCinema));
         SupportMapFragment mf = (SupportMapFragment) getFragmentManager().findFragmentById(R.id.mapView);
         mMap = mf.getMap();
@@ -73,12 +87,4 @@ public class FilmDetailsFragment extends SherlockFragment {
 	        if (f != null) 
 	            getFragmentManager().beginTransaction().remove(f).commit();
 	    }
-//	@Override
-//	public void onCreate(Bundle savedInstanceState) {
-//		super.onCreate(savedInstanceState);
-//		if (getArguments() != null) {
-//			
-//
-//		}
-//	}
 }

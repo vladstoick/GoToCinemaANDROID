@@ -1,12 +1,15 @@
 package com.vladstoick.gotocinema.slidingactivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.ListFragment;
+import android.view.inputmethod.InputMethodManager;
 
+import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.slidingmenu.lib.SlidingMenu;
+import com.slidingmenu.lib.SlidingMenu.OnOpenListener;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
 import com.vladstoick.fragments.SlidingMenuFragment;
 import com.vladstoick.gotocinema.R;
@@ -16,7 +19,7 @@ import com.vladstoick.gotocinema.R;
 public class BaseActivity extends SlidingFragmentActivity {
 	
 	private int mTitleRes;
-	protected ListFragment mFrag;
+	protected SherlockFragment mFrag;
 	
 	public BaseActivity(int titleRes){
 		mTitleRes = titleRes;
@@ -40,10 +43,29 @@ public class BaseActivity extends SlidingFragmentActivity {
 		sm.setBehindOffset(200);
 		sm.setFadeDegree(0.35f);
 		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
-		
+		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+		sm.setOnOpenListener(new OnOpenListener() {
+			@Override
+			public void onOpen() {
+				InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+				try{
+					imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+				}
+				catch(NullPointerException e)
+				{
+					e.printStackTrace();
+				}
+			}	
+		});
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		getSupportActionBar().setIcon(R.drawable.ic_launcher);
 
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu){
+		getSupportMenuInflater().inflate(R.menu.activity_main, menu);
+		return true;
 	}
 	
 	@Override
@@ -54,11 +76,5 @@ public class BaseActivity extends SlidingFragmentActivity {
 			return true;
 		}
 		return onOptionsItemSelected(item);
-	}
-	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu){
-		getSupportMenuInflater().inflate(R.menu.activity_main, menu);
-		return true;
 	}
 }

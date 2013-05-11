@@ -18,12 +18,26 @@ import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
 import com.vladstoick.gotocinemaUtilityClasses.Utils;
 public class CalculateMainMenuFragment extends Fragment{
+	private static void updateHour() {
+        String deAfisat = Utils.getStringFromDate(Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed));
+        timeUsed.setText("Ora folosita " + deAfisat);
+    }
 	private OnFragmentInteractionListener mListener;
 	View view;
 	static TextView timeUsed,locationUsedTextView;
 	static private int hourUsed, minuteUsed;
 	boolean hasALocation=false,isUsingCurrentLocation=true;
 	ProgressDialogFragment progressDialog= new ProgressDialogFragment();
+	@Override
+	public void onAttach(Activity activity) {
+		super.onAttach(activity);
+		try {
+			mListener = (OnFragmentInteractionListener) activity;
+		} catch (ClassCastException e) {
+			throw new ClassCastException(activity.toString()
+					+ " must implement OnFragmentInteractionListener");
+		}
+	}
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -50,31 +64,17 @@ public class CalculateMainMenuFragment extends Fragment{
         });
 		return view;
 	}
-	private static void updateHour() {
-        String deAfisat = Utils.getStringFromDate(Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed));
-        timeUsed.setText("Ora folosita " + deAfisat);
-    }
+
+	@Override
+	public void onDetach() {
+		super.onDetach();
+		mListener = null;
+	}
 	public void setTime(int hour, int minute)
 	{
 		hourUsed=hour;
 		minuteUsed=minute;
 		updateHour();
-	}
-
-	@Override
-	public void onAttach(Activity activity) {
-		super.onAttach(activity);
-		try {
-			mListener = (OnFragmentInteractionListener) activity;
-		} catch (ClassCastException e) {
-			throw new ClassCastException(activity.toString()
-					+ " must implement OnFragmentInteractionListener");
-		}
-	}
-	@Override
-	public void onDetach() {
-		super.onDetach();
-		mListener = null;
 	}
 
 }

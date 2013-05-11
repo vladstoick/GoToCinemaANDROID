@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionBarColor">#002635</color>
+    <color name="actionBarTextColor">#FFFFFF</color>
+    <color name="slidingMenuColor">#013440</color>
+</resources>

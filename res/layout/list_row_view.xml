@@ -6,6 +6,21 @@
               android:gravity="left"
               android:padding="10dp">
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"
+        android:src="@drawable/abs__ab_solid_dark_holo" />
+
+	<LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+    </LinearLayout>
     <LinearLayout
         android:layout_width="0dip"
         android:layout_height="wrap_content"
@@ -47,7 +62,7 @@
         android:id="@+id/rowKM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="11.1 km"
+        
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_below="@id/rowOra" />
 	</RelativeLayout>
