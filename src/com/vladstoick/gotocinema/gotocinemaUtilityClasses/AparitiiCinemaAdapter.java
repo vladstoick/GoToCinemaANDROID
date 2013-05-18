@@ -19,10 +19,10 @@ public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema> {
         TextView roTitle, enTitle, ora, cinema,distanta;
         ImageView imgView;
     }
-    Context context;
-    int layoutResourceId;
+    private final Context context;
+    private final int layoutResourceId;
 
-    ArrayList<AparitiiCinema> data = new ArrayList<AparitiiCinema>();
+    private ArrayList<AparitiiCinema> data = new ArrayList<AparitiiCinema>();
 
     public AparitiiCinemaAdapter(Context context, int textViewResourceId, ArrayList<AparitiiCinema> data) {
         super(context, textViewResourceId, data);

@@ -23,7 +23,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class LoginActivity extends SherlockActivity {
-	public static final String EXTRA_EMAIL = "com.example.android.authenticatordemo.extra.EMAIL";
+	private static final String EXTRA_EMAIL = "com.example.android.authenticatordemo.extra.EMAIL";
 
 	/**
 	 * Keep track of the login task to ensure we can cancel it if requested.
@@ -39,7 +39,7 @@ public class LoginActivity extends SherlockActivity {
 	private View mLoginStatusView;
 	private TextView mLoginStatusMessageView;
 
-	public void attemptLogin() {
+	void attemptLogin() {
 
 		// Reset errors.
 		mEmailView.setError(null);

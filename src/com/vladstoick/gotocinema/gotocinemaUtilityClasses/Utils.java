@@ -12,7 +12,7 @@ import java.util.Date;
 
 public class Utils {
     @SuppressLint("SimpleDateFormat")
-	static SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+    private static final SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
 
     public static ArrayList<AparitiiCinema> getAparitii(ArrayList<AparitiiCinema> list, Date dateToBeUsed) {
         ArrayList<AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();

@@ -7,7 +7,7 @@ import com.loopj.android.http.RequestParams;
 public class CinemaRestClient {
 	  private static final String BASE_URL = "http://cinemadistance.eu01.aws.af.cm/";
 
-	  private static AsyncHttpClient client = new AsyncHttpClient();
+	  private static final AsyncHttpClient client = new AsyncHttpClient();
 
 	  public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
 	      client.get(getAbsoluteUrl(url), params, responseHandler);

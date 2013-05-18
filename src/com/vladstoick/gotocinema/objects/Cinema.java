@@ -1,7 +1,11 @@
 package com.vladstoick.gotocinema.objects;
 
 public class Cinema {
-	public String distance,duration,latCinema,lngCinema,name;
+	public final String distance;
+    public final String duration;
+    public final String latCinema;
+    public final String lngCinema;
+    private final String name;
 	public Cinema(String distance,String durata,String latCinema,String lngCinema,String name)
 	{
 		this.distance=distance;

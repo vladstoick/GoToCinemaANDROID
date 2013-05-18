@@ -48,15 +48,17 @@ public class JSONParser {
                 String titluRo = movie.getString("titluRo");
                 String gen = movie.getString("gen");
                 JSONArray showtimesArray = movie.getJSONArray("showtimes");
-                for(int showtimeI = 0; showtimeI < showtimesArray.length(); i++ )
+                for(int showtimeI = 0; showtimeI < showtimesArray.length(); showtimeI++ )
                 {
-                    JSONObject showTime = showtimesArray.getJSONObject(i);
-                    String cinema = showTime.getString("cinema");
-                    String oraString = showTime.getString("ora");
+                    JSONObject showTime = showtimesArray.getJSONObject(showtimeI);
+                    String cinema = showTime.getString("place");
+                    String oraString = showTime.getString("hour");
                     AparitiiCinema aparitie = new AparitiiCinema(titluRo, titluEn, cinema, oraString, nota, regizor, actori, gen,imgUrl);
                     list.add(aparitie);
                 }
+
             }
+            System.out.println(list.size());
 
         } catch (Exception e) {
             e.printStackTrace();

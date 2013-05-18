@@ -15,13 +15,13 @@ import com.vladstoick.gotocinema.R;
 
 
 
-public class BaseActivity extends SlidingFragmentActivity {
+class BaseActivity extends SlidingFragmentActivity {
 	
-	private int mTitleRes;
-	protected SherlockFragment mFrag;
+	private final int mTitleRes;
+	private SherlockFragment mFrag;
 	
-	public BaseActivity(int titleRes){
-		mTitleRes = titleRes;
+	BaseActivity(int titleRes){
+		mTitleRes = R.string.app_name;
 	}
 
 	@Override

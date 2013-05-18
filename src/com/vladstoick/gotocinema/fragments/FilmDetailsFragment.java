@@ -40,13 +40,18 @@ public class FilmDetailsFragment extends SherlockFragment {
 		fragment.setArguments(args);
 		return fragment;
 	}
-    View view;
-    LatLng pozitieCinema = new LatLng(44.419560, 26.1266510);
+    private View view;
+    private LatLng pozitieCinema = new LatLng(44.419560, 26.1266510);
     ProgressDialog pd=null;
-	TextView note,gen,actori,distanta,distance,regizor;
-	AparitiiCinema movie= null;
+	private TextView note;
+    private TextView gen;
+    private TextView actori;
+    TextView distanta;
+    private TextView distance;
+    private TextView regizor;
+	private AparitiiCinema movie= null;
 
-	public FilmDetailsFragment() {
+	private FilmDetailsFragment() {
 		// Required empty public constructor
 	}
 	  @Override

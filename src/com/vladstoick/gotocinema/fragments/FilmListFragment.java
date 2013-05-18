@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class FilmListFragment extends SherlockListFragment {
-	public class ArrayComparatorByDistance implements Comparator<AparitiiCinema> {
+	private class ArrayComparatorByDistance implements Comparator<AparitiiCinema> {
         @Override
         public int compare(AparitiiCinema o1, AparitiiCinema o2) {
         	double km1 = Double.parseDouble(o1.distanta.substring(0, o1.distanta.length()-2));
@@ -24,14 +24,14 @@ public class FilmListFragment extends SherlockListFragment {
             return Double.compare(km1, km2) ;
         }
     }
-	public class ArrayComparatorByName implements Comparator<AparitiiCinema> {
+	private class ArrayComparatorByName implements Comparator<AparitiiCinema> {
     	@Override
     	public int compare(AparitiiCinema o1, AparitiiCinema o2)
     	{
     		return (o1.enTitle).compareTo(o2.enTitle);
     	}
     }
-	public class ArrayComparatorByTime implements Comparator<AparitiiCinema> {
+	private class ArrayComparatorByTime implements Comparator<AparitiiCinema> {
         @Override
         public int compare(AparitiiCinema o1, AparitiiCinema o2) {
             return (o1.ora).compareTo(o2.ora);
@@ -44,12 +44,12 @@ public class FilmListFragment extends SherlockListFragment {
 		fragment.setArguments(args);
 		return fragment;
 	}
-	AparitiiCinemaAdapter adapter = null;
+	private AparitiiCinemaAdapter adapter = null;
     private static final String ARG_MOVIES = "movies";
     private OnFragmentInteractionListener mListener;
     ProgressDialogFragment progressDialog= new ProgressDialogFragment();
-	ArrayList <AparitiiCinema> moviesToBeShown;
-	public FilmListFragment() {
+	private ArrayList <AparitiiCinema> moviesToBeShown;
+	private FilmListFragment() {
 	}
 
 	@Override

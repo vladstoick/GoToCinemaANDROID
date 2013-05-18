@@ -20,9 +20,9 @@ import java.util.ArrayList;
 
 
 public class SearchFragment extends SherlockFragment {
-	View view=null;
-	EditText searchInput=null;
-	ListView searchResults;
+	private View view=null;
+	private EditText searchInput=null;
+	private ListView searchResults;
 	public SearchFragment() {
 		// Required empty public constructor
 	}
@@ -94,7 +94,7 @@ public class SearchFragment extends SherlockFragment {
 //		});
 		return view;
 	}
-	public void updateSearchResults(ArrayList<String> results)
+	void updateSearchResults(ArrayList<String> results)
 	{
 		searchResults.setAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, results));
 	}

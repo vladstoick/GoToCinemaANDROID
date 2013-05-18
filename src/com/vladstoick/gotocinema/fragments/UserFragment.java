@@ -15,8 +15,9 @@ public class UserFragment extends Fragment {
 		return new UserFragment();
 
 	}
-    OnFragmentInteractionListener mListener;
-	public UserFragment() {
+    private OnFragmentInteractionListener mListener;
+	@SuppressWarnings("WeakerAccess")
+    private UserFragment() {
 		// Required empty public constructor
 	}
 

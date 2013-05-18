@@ -22,8 +22,9 @@ public class CalculateMainMenuFragment extends Fragment{
         timeUsed.setText("Ora folosita " + deAfisat);
     }
 	private OnFragmentInteractionListener mListener;
-	View view;
-	static TextView timeUsed,locationUsedTextView;
+	private View view;
+	private static TextView timeUsed;
+    private static TextView locationUsedTextView;
 	static private int hourUsed, minuteUsed;
 	boolean hasALocation=false,isUsingCurrentLocation=true;
 	ProgressDialogFragment progressDialog= new ProgressDialogFragment();

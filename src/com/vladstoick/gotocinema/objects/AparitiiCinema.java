@@ -10,10 +10,15 @@ import java.util.Hashtable;
 
 
 public class AparitiiCinema implements Parcelable {
-    public String roTitle, enTitle, cinemaName;
-    public String imgUrl;
-    public Date ora;
-    public String nota, regizor,actori,gen;
+    public final String roTitle;
+    public final String enTitle;
+    public final String cinemaName;
+    public final String imgUrl;
+    public final Date ora;
+    public final String nota;
+    public final String regizor;
+    public final String actori;
+    public final String gen;
     public String distanta="-", durataDrum="-";
     public String latCinema="-" , lonCinema="-";
     public static final Parcelable.Creator<AparitiiCinema> CREATOR = new Parcelable.Creator<AparitiiCinema>() {

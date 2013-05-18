@@ -14,12 +14,12 @@ import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
 
 public class SlidingMenuFragment extends SherlockFragment{
-	String[] list_contents = {
+	private final String[] list_contents = {
 			"Profilul tău",
 			"Cauta alt utilizator",
 			"Calculează",
 		};
-	View view=null;
+	private View view=null;
 	private OnFragmentInteractionListener mListener;
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState){
