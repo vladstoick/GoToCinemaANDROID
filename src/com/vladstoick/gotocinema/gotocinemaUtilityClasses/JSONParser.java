@@ -36,21 +36,26 @@ public class JSONParser {
 		ArrayList<AparitiiCinema> list = new ArrayList<AparitiiCinema>();
         try {
         	list.clear();
-            JSONArray jArray = new JSONArray(result);
-            for (int i = 0; i < jArray.length(); i++) {
+            JSONArray moviesArray= new JSONArray(result);
+            for (int i = 0; i < moviesArray.length(); i++) {
 
-                JSONObject oneObject = jArray.getJSONObject(i);
-                String titluRo = oneObject.getString("titluRo");
-                String titluEn = oneObject.getString("titluEn");
-                String cinema = oneObject.getString("cinema");
-                String oraString = oneObject.getString("ora");
-                String nota =oneObject.getString("nota");
-                String gen = oneObject.getString("gen");
-                String actori = oneObject.getString("actori");
-                String regizor = oneObject.getString("regizor");
-                String imgUrl = oneObject.getString("image");
-                AparitiiCinema aparitie = new AparitiiCinema(titluRo, titluEn, cinema, oraString, nota, regizor, actori, gen,imgUrl);
-                list.add(aparitie);
+                JSONObject movie = moviesArray.getJSONObject(i);
+                String actori = movie.getString("actori");
+                String imgUrl = movie.getString("image");
+                String nota =movie.getString("nota");
+                String regizor = movie.getString("regizor");
+                String titluEn = movie.getString("titluEn");
+                String titluRo = movie.getString("titluRo");
+                String gen = movie.getString("gen");
+                JSONArray showtimesArray = movie.getJSONArray("showtimes");
+                for(int showtimeI = 0; showtimeI < showtimesArray.length(); i++ )
+                {
+                    JSONObject showTime = showtimesArray.getJSONObject(i);
+                    String cinema = showTime.getString("cinema");
+                    String oraString = showTime.getString("ora");
+                    AparitiiCinema aparitie = new AparitiiCinema(titluRo, titluEn, cinema, oraString, nota, regizor, actori, gen,imgUrl);
+                    list.add(aparitie);
+                }
             }
 
         } catch (Exception e) {

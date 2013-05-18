@@ -42,8 +42,7 @@ public class FilmDetailsFragment extends SherlockFragment {
 	}
     View view;
     LatLng pozitieCinema = new LatLng(44.419560, 26.1266510);
-    private GoogleMap mMap;
-	ProgressDialog pd=null;
+    ProgressDialog pd=null;
 	TextView note,gen,actori,distanta,distance,regizor;
 	AparitiiCinema movie= null;
 
@@ -70,7 +69,7 @@ public class FilmDetailsFragment extends SherlockFragment {
         distance.setText("Poţi ajunge în "+getStringForTime(timp)+" ("+movie.distanta+")");
         pozitieCinema = new LatLng(Double.parseDouble(movie.latCinema),Double.parseDouble(movie.lonCinema));
         SupportMapFragment mf = (SupportMapFragment) getFragmentManager().findFragmentById(R.id.mapView);
-        mMap = mf.getMap();
+          GoogleMap mMap = mf.getMap();
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pozitieCinema));
         mMap.animateCamera(CameraUpdateFactory.zoomBy(15));
         mMap.setMyLocationEnabled(true);

@@ -16,215 +16,213 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.slidingmenu.lib.SlidingMenu;
-import com.vladstoick.gotocinema.fragments.*;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.dialogfragments.TimePickerFragment;
-import com.vladstoick.gotocinema.objects.AparitiiCinema;
-import com.vladstoick.gotocinema.objects.Cinema;
+import com.vladstoick.gotocinema.fragments.*;
 import com.vladstoick.gotocinema.gotocinemaUtilityClasses.CinemaRestClient;
 import com.vladstoick.gotocinema.gotocinemaUtilityClasses.JSONParser;
+import com.vladstoick.gotocinema.objects.AparitiiCinema;
+import com.vladstoick.gotocinema.objects.Cinema;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class MainActivity extends BaseActivity implements OnFragmentInteractionListener, LocationListener {
-	static String TAGCALCULATE ="CalculateMainMenuFragment";
-	static String TAGLOADING = "LoadingFragment";
-	static ImageLoader imageLoader=ImageLoader.getInstance();
-	ProgressDialogFragment progressDialog= new ProgressDialogFragment();
-	private Fragment mContent;
-	Location currentLocation=null;
-	String result;
-	static Hashtable<String, Cinema> cinemas = new Hashtable<String, Cinema>();
-	static ArrayList<AparitiiCinema> allMovies= new ArrayList<AparitiiCinema>();
-	
-	@Override
-	public void onCreate(Bundle savedInstanceState){
+    private static final String TAGCALCULATE ="CalculateMainMenuFragment";
+    private static final String TAGLOADING = "LoadingFragment";
+    static ImageLoader imageLoader=ImageLoader.getInstance();
+    private final ProgressDialogFragment progressDialog= new ProgressDialogFragment();
+    private Fragment mContent;
+    private Location currentLocation=null;
+    String result;
+    private static Hashtable<String, Cinema> cinemas = new Hashtable<String, Cinema>();
+    private static ArrayList<AparitiiCinema> allMovies= new ArrayList<AparitiiCinema>();
+
+    @Override
+    public void onCreate(Bundle savedInstanceState){
 //		File cacheDir = StorageUtils.getCacheDirectory(getApplicationContext());
-		DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory()
-				.cacheOnDisc()
-				.build();
-		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext())
-			.defaultDisplayImageOptions(options)
-			.build();
-		ImageLoader.getInstance().init(config);
-		super.onCreate(savedInstanceState);
-		if (savedInstanceState != null)
-			mContent = getSupportFragmentManager().getFragment(savedInstanceState, "mContent");
-		if (mContent == null)
-			mContent = new CalculateMainMenuFragment();
-		
-		setContentView(R.layout.content_frame);
-		getSupportFragmentManager()		.beginTransaction()	.replace(R.id.content_frame, mContent , TAGCALCULATE).commit();		
-		setBehindContentView(R.layout.menu_frame);
-		getSupportFragmentManager()		.beginTransaction()		.replace(R.id.menu_frame, new SlidingMenuFragment()).commit();
-		
-		getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
-		setSlidingActionBarEnabled(true);
-		currentLocation = findLocation();
-		
-		progressDialog.show(getSupportFragmentManager(),TAGLOADING);
-		CinemaRestClient.get("/movies", null, new AsyncHttpResponseHandler() {
-			@Override
-			public void onFailure(Throwable error,
-                    String content)
-			{
-				error.printStackTrace();
-				System.out.println(content);
-			}
+        DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory()
+                .cacheOnDisc()
+                .build();
+        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext())
+                .defaultDisplayImageOptions(options)
+                .build();
+        ImageLoader.getInstance().init(config);
+        super.onCreate(savedInstanceState);
+        if (savedInstanceState != null)
+            mContent = getSupportFragmentManager().getFragment(savedInstanceState, "mContent");
+        if (mContent == null)
+            mContent = new CalculateMainMenuFragment();
+
+        setContentView(R.layout.content_frame);
+        getSupportFragmentManager()		.beginTransaction()	.replace(R.id.content_frame, mContent , TAGCALCULATE).commit();
+        setBehindContentView(R.layout.menu_frame);
+        getSupportFragmentManager()		.beginTransaction()		.replace(R.id.menu_frame, new SlidingMenuFragment()).commit();
+
+        getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        setSlidingActionBarEnabled(true);
+        currentLocation = findLocation();
+
+        progressDialog.show(getSupportFragmentManager(),TAGLOADING);
+        CinemaRestClient.get("/movies", null, new AsyncHttpResponseHandler() {
+            @Override
+            public void onFailure(Throwable error,
+                                  String content)
+            {
+                error.printStackTrace();
+                System.out.println(content);
+            }
             @Override
             public void onSuccess(String resultString) {
-            	allMovies=JSONParser.parseMoviesList(resultString);
-            	System.out.println(allMovies.size());
-            	if(cinemas.size()>10)
-            	{
-            		allMovies=AparitiiCinema.merge(allMovies,cinemas);
-            	}
+                allMovies=JSONParser.parseMoviesList(resultString);
+                System.out.println(allMovies.size());
+                if(cinemas.size()>10)
+                {
+                    allMovies=AparitiiCinema.merge(allMovies,cinemas);
+                }
                 progressDialog.dismiss();
             }
         });
-	}
-	public static void setAllMovies(ArrayList<AparitiiCinema> filmeParsed)
-	{
-		allMovies=filmeParsed;
-	}
-	public MainActivity(){
-		super(R.string.app_name);
-	}
-	
-	@Override
-	public void onSettedATime(int hour, int minute) {
-		if( getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)!=null)
-			((CalculateMainMenuFragment) getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)).setTime(hour,minute);
-		
-	}
-	@Override
-	public void onStatusChanged(String provider, int status, Bundle extras) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void openFilmViewWithData(AparitiiCinema data)	{
-		FilmDetailsFragment newFragment = FilmDetailsFragment.newInstance(data);
-		switchContent(newFragment,true);
-	}
-	@Override
-	public void openNewCinemaList(ArrayList<AparitiiCinema> moviesToBeShown){
-		SherlockListFragment newFragment = FilmListFragment.newInstance(moviesToBeShown);
-		switchContent(newFragment,true);
-	}
-	@Override
-	public void showCalculateFragment()
-	{
-		CalculateMainMenuFragment newFragment = new CalculateMainMenuFragment();
-		switchContent(newFragment, false);
-	}
-	@Override
-	public void showProfileWithId(int id) {
-	}
-	@Override
-	public Cinema getCinemaInfoForCinemaFor(String name)
-	{
-		return null;
-	}
-	@Override
-	public void showSearchFragment(){
-		SearchFragment newFragment = new SearchFragment();
-		switchContent(newFragment,false);
-	}
+    }
+    public static void setAllMovies(ArrayList<AparitiiCinema> filmeParsed)
+    {
+        allMovies=filmeParsed;
+    }
+    public MainActivity(){
+        super(R.string.app_name);
+    }
 
-	//comunicare cu fragmente
-	public void showTimePicker(View view)
-	{
-	    SherlockDialogFragment newFragment = new TimePickerFragment();
-	    newFragment.show(getSupportFragmentManager(), "timePicker");
-	}
+    @Override
+    public void onSettedATime(int hour, int minute) {
+        if( getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)!=null)
+            ((CalculateMainMenuFragment) getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)).setTime(hour,minute);
 
-	public void switchContent(Fragment fragment,boolean addToBack){
-		mContent = fragment;
-		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-		ft.replace(R.id.content_frame, fragment);
-		if(addToBack==true)
-		ft.addToBackStack(null);
-		ft.commit();
-		getSlidingMenu().showContent();
-	}
-	public Location findLocation() {
-		Location location = null;
-	    try {
-	    	
-	        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-	        boolean isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-	        boolean isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
-	        if (!isGPSEnabled && !isNetworkEnabled) 
-	        	Toast.makeText(getApplicationContext(), "NO LOCATION METHOD", Toast.LENGTH_LONG).show();
-	        else
-	            if (isNetworkEnabled) 
-	                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 20000,10, this);
-	                if (locationManager != null) 
-	                    location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);            
-	            if (isGPSEnabled) 
-	                if (location == null) 
-	                    locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 20000, 10, this);
-	                    if (locationManager != null) 
-	                        location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	    }
-	    return location;
-	}
-	
-	@Override
-	public ArrayList<AparitiiCinema> getAllMovies() {
-		return allMovies;
-	}
-	
-	@Override
-	public Location getCurrentLocation(){
-		return currentLocation;
-	}
+    }
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+        // TODO Auto-generated method stub
 
-	
-	@Override
-	public void onLocationChanged(Location location) {
-		
-		currentLocation=location;
-		final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
-		try {
-			String link="/distance/googleMaps?lat="+location.getLatitude()+"&lng="+location.getLongitude();
-			progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
-			CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
-	            @Override
-	            public void onSuccess(String resultString) {
-	            	cinemas=JSONParser.parseMoviesAndDistances(resultString);
-	            	if(allMovies.size()>10)
-	            	{
-	            		System.out.println(allMovies.size());
-	            		allMovies=AparitiiCinema.merge(allMovies,cinemas);
-	            	}
+    }
+    @Override
+    public void openFilmViewWithData(AparitiiCinema data)	{
+        FilmDetailsFragment newFragment = FilmDetailsFragment.newInstance(data);
+        switchContent(newFragment,true);
+    }
+    @Override
+    public void openNewCinemaList(ArrayList<AparitiiCinema> moviesToBeShown){
+        SherlockListFragment newFragment = FilmListFragment.newInstance(moviesToBeShown);
+        switchContent(newFragment,true);
+    }
+    @Override
+    public void showCalculateFragment()
+    {
+        CalculateMainMenuFragment newFragment = new CalculateMainMenuFragment();
+        switchContent(newFragment, false);
+    }
+    @Override
+    public void showProfileWithId(int id) {
+    }
+    @Override
+    public Cinema getCinemaInfoForCinemaFor(String name)
+    {
+        return null;
+    }
+    @Override
+    public void showSearchFragment(){
+        SearchFragment newFragment = new SearchFragment();
+        switchContent(newFragment,false);
+    }
 
-	            	progressDialog2.dismiss();
+    //comunicare cu fragmente
+    public void showTimePicker(View view)
+    {
+        SherlockDialogFragment newFragment = new TimePickerFragment();
+        newFragment.show(getSupportFragmentManager(), "timePicker");
+    }
 
-	            }
-	        });
-		} catch (ClassCastException e) {
-			System.out.println("in a fragment that doesn't need this");
-		}
-	}
-	@Override
-	public void onProviderDisabled(String provider) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void onProviderEnabled(String provider) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void onSaveInstanceState(Bundle outState){
-		super.onSaveInstanceState(outState);
-		getSupportFragmentManager().putFragment(outState, "mContent", mContent);
-	}
+    void switchContent(Fragment fragment, boolean addToBack){
+        mContent = fragment;
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.content_frame, fragment);
+        if(addToBack)
+            ft.addToBackStack(null);
+        ft.commit();
+        getSlidingMenu().showContent();
+    }
+    Location findLocation() {
+        Location location = null;
+        try {
+
+            LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+            boolean isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+            boolean isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+            if (!isGPSEnabled && !isNetworkEnabled)
+                Toast.makeText(getApplicationContext(), "NO LOCATION METHOD", Toast.LENGTH_LONG).show();
+            else
+            if (isNetworkEnabled)
+                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 20000,10, this);
+            location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+            if (isGPSEnabled)
+                if (location == null)
+                    locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 20000, 10, this);
+            location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return location;
+    }
+
+    @Override
+    public ArrayList<AparitiiCinema> getAllMovies() {
+        return allMovies;
+    }
+
+    @Override
+    public Location getCurrentLocation(){
+        return currentLocation;
+    }
+
+
+    @Override
+    public void onLocationChanged(Location location) {
+
+        currentLocation=location;
+        final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
+        try {
+            String link="/distance/googleMaps?lat="+location.getLatitude()+"&lng="+location.getLongitude();
+            progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
+            CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
+                @Override
+                public void onSuccess(String resultString) {
+                    cinemas=JSONParser.parseMoviesAndDistances(resultString);
+                    if(allMovies.size()>10)
+                    {
+                        System.out.println(allMovies.size());
+                        allMovies=AparitiiCinema.merge(allMovies,cinemas);
+                    }
+
+                    progressDialog2.dismiss();
+
+                }
+            });
+        } catch (ClassCastException e) {
+            System.out.println("in a fragment that doesn't need this");
+        }
+    }
+    @Override
+    public void onProviderDisabled(String provider) {
+        // TODO Auto-generated method stub
+
+    }
+    @Override
+    public void onProviderEnabled(String provider) {
+        // TODO Auto-generated method stub
+
+    }
+    @Override
+    public void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        getSupportFragmentManager().putFragment(outState, "mContent", mContent);
+    }
 }

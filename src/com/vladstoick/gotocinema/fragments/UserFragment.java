@@ -12,8 +12,8 @@ import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
 
 public class UserFragment extends Fragment {
 	public static UserFragment newInstance(String param1, String param2) {
-		UserFragment fragment = new UserFragment();
-		return fragment;
+		return new UserFragment();
+
 	}
     OnFragmentInteractionListener mListener;
 	public UserFragment() {

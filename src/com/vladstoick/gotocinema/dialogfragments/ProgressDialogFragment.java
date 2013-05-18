@@ -11,8 +11,7 @@ import android.view.KeyEvent;
 public class ProgressDialogFragment extends DialogFragment {
 	 
 	public static ProgressDialogFragment newInstance() {
-		ProgressDialogFragment frag = new ProgressDialogFragment ();
-		return frag;
+		return new ProgressDialogFragment ();
 	}
  
 	@Override
@@ -29,12 +28,9 @@ public class ProgressDialogFragment extends DialogFragment {
 			@Override
 			public boolean onKey(DialogInterface dialog, int keyCode,
 					KeyEvent event) {
-				
-				if( keyCode == KeyEvent.KEYCODE_BACK){					
-					return true;
-				}
-				return false;
-			}    
+
+                return keyCode == KeyEvent.KEYCODE_BACK;
+            }
 		
 		};
 		dialog.setOnKeyListener(keyListener);
