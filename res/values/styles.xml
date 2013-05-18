@@ -9,7 +9,7 @@
 	    <item name="background">@color/actionBarColor</item>
   	 	<item name="android:background">@color/actionBarColor</item>
    		<item name="backgroundSplit">@color/actionBarColor</item>
-   	 	<item name="android:backgroundSplit">@color/actionBarColor</item>
+   	 	<!--<item name="android:backgroundSplit">@color/actionBarColor</item>-->
    	 	<item name="android:titleTextStyle">@style/GoToCinemaTheme.ActionBarTextStyle</item>
    	 	<item name="titleTextStyle">@style/GoToCinemaTheme.ActionBarTextStyle</item>
 	</style>

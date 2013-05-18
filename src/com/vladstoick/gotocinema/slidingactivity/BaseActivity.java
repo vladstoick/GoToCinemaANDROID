@@ -4,14 +4,13 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.view.inputmethod.InputMethodManager;
-
 import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.SlidingMenu.OnOpenListener;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
-import com.vladstoick.fragments.SlidingMenuFragment;
+import com.vladstoick.gotocinema.fragments.SlidingMenuFragment;
 import com.vladstoick.gotocinema.R;
 
 

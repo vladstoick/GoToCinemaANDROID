@@ -1,6 +1,4 @@
 package com.vladstoick.gotocinema.slidingactivity;
-import java.util.ArrayList;
-import java.util.Hashtable;
 
 import android.content.Context;
 import android.location.Location;
@@ -11,7 +9,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.Toast;
-
 import com.actionbarsherlock.app.SherlockDialogFragment;
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -19,18 +16,17 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.slidingmenu.lib.SlidingMenu;
-import com.vladstoick.fragments.CalculateMainMenuFragment;
-import com.vladstoick.fragments.FilmDetailsFragment;
-import com.vladstoick.fragments.FilmListFragment;
-import com.vladstoick.fragments.SearchFragment;
-import com.vladstoick.fragments.SlidingMenuFragment;
+import com.vladstoick.gotocinema.fragments.*;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.dialogfragments.TimePickerFragment;
 import com.vladstoick.gotocinema.objects.AparitiiCinema;
 import com.vladstoick.gotocinema.objects.Cinema;
-import com.vladstoick.gotocinemaUtilityClasses.CinemaRestClient;
-import com.vladstoick.gotocinemaUtilityClasses.JSONParser;
+import com.vladstoick.gotocinema.gotocinemaUtilityClasses.CinemaRestClient;
+import com.vladstoick.gotocinema.gotocinemaUtilityClasses.JSONParser;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
 
 public class MainActivity extends BaseActivity implements OnFragmentInteractionListener, LocationListener {
 	static String TAGCALCULATE ="CalculateMainMenuFragment";

@@ -1,14 +1,12 @@
 package com.vladstoick.gotocinema.objects;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.vladstoick.gotocinema.gotocinemaUtilityClasses.Utils;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Hashtable;
-
-import com.vladstoick.gotocinemaUtilityClasses.Utils;
-
-
-import android.os.Parcel;
-import android.os.Parcelable;
 
 
 public class AparitiiCinema implements Parcelable {

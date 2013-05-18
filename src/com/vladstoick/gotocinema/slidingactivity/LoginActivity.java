@@ -1,8 +1,5 @@
 package com.vladstoick.gotocinema.slidingactivity;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
@@ -17,12 +14,13 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.actionbarsherlock.app.SherlockActivity;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.vladstoick.gotocinema.R;
-import com.vladstoick.gotocinemaUtilityClasses.CinemaRestClient;
+import com.vladstoick.gotocinema.gotocinemaUtilityClasses.CinemaRestClient;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class LoginActivity extends SherlockActivity {
 	public static final String EXTRA_EMAIL = "com.example.android.authenticatordemo.extra.EMAIL";

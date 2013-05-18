@@ -1,16 +1,15 @@
 package com.vladstoick.gotocinema.dialogfragments;
 
-import java.util.Calendar;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.widget.TimePicker;
-
 import com.actionbarsherlock.app.SherlockDialogFragment;
 import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
+
+import java.util.Calendar;
 
 public class TimePickerFragment extends SherlockDialogFragment
 	implements TimePickerDialog.OnTimeSetListener {

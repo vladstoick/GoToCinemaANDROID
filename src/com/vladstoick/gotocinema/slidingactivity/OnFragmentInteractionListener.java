@@ -1,12 +1,10 @@
 package com.vladstoick.gotocinema.slidingactivity;
 
-import java.util.ArrayList;
-
+import android.location.Location;
 import com.vladstoick.gotocinema.objects.AparitiiCinema;
 import com.vladstoick.gotocinema.objects.Cinema;
 
-
-import android.location.Location;
+import java.util.ArrayList;
 
 
 public interface OnFragmentInteractionListener {
