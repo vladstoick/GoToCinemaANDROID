@@ -8,18 +8,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.gotocinemaUtilityClasses.CinemaRestClient;
+import com.vladstoick.gotocinema.gotocinemaUtilityClasses.PostsAdapter;
+import com.vladstoick.gotocinema.objects.Post;
 import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
+import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 public class UserFragment extends Fragment {
     private final static String ARG_USERID="userid";
     private View view;
     private String userID="0";
+    private ArrayList<Post> posts = new ArrayList<Post>();
 	public static UserFragment newInstance(String userID) {
         UserFragment fragment = new UserFragment();
         Bundle args = new Bundle();
@@ -60,7 +67,22 @@ public class UserFragment extends Fragment {
                     ImageView userProfileImgIV = (ImageView) view.findViewById(R.id.userProfileImg);
                     ImageLoader.getInstance().displayImage(userProfileImg, userProfileImgIV);
                     fullnameTV.setText(fullname);
-                }catch(Exception e)
+                    JSONArray wallPosts = wall.getJSONArray("wall_posts");
+                    for(int i=0;i<wallPosts.length();i++)
+                    {
+                        JSONObject wallPost=wallPosts.getJSONObject(i);
+                        String content = wallPost.getString("content");
+                        String title = wallPost.getString("title");
+                        JSONObject senderInfo = wallPost.getJSONObject("sender");
+                        String posterId = senderInfo.getString("id");
+                        String posterImage = senderInfo.getString("image");
+                        String posterFullname = senderInfo.getString("fullname");
+                        Post wallpost = new Post(posterId,posterImage,posterFullname,content,title);
+                        posts.add(i,wallpost);
+                    }
+                    ListView wallPostsLV= (ListView) view.findViewById(R.id.wallPostsListView);
+                    wallPostsLV.setAdapter( new PostsAdapter(getActivity(), R.layout.list_row_profile, posts));
+            }catch(Exception e)
                 {
                     e.printStackTrace();
                 }

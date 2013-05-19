@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserFragment"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
@@ -19,5 +20,11 @@
             android:paddingLeft="10dp"
             android:gravity="center_vertical"
             android:text="@string/loading" />
+
     </LinearLayout>
+    <ListView
+            android:layout_marginTop="20dp"
+            android:id="@+id/wallPostsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 </LinearLayout>
