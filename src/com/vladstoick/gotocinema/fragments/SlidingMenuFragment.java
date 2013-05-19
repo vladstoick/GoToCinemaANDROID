@@ -34,7 +34,7 @@ public class SlidingMenuFragment extends SherlockFragment{
 			        switch(position)
 			        {
 			        	case 0: {
-			        		
+			        		mListener.showOwnProfile();
 			        		break;
 			        	}
 			        	case 1: {

@@ -85,7 +85,6 @@ public class LoginActivity extends SherlockActivity {
 				 @Override
 			     public void onFailure(Throwable e, String response) {
 			         e.printStackTrace();
-			         System.out.println(response);
 			     }
 			    @Override
 			    public void onSuccess(String response) {
@@ -102,17 +101,20 @@ public class LoginActivity extends SherlockActivity {
 			    	{
 			    		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 			    		intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-			    		SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+			    		SharedPreferences sharedPref = getSharedPreferences("appPref",Context.MODE_PRIVATE);
 //			    		SharedPreferences sharedPref = (getApplicationContext()).getPreferences(Context.MODE_PRIVATE);
 			    		SharedPreferences.Editor editor = sharedPref.edit();
 			    		String key = null;
+                        String userid = null;
 						try {
 							key = jObject.getString("key");
+                            userid = jObject.getString("user_id");
 						} catch (JSONException e) {
 		
 							e.printStackTrace();
 						}
 			    		editor.putString("api_acces", key);
+                        editor.putString("user_id",userid);
 			    		editor.commit();
                         startActivity(intent);
 			    		finish();
@@ -144,11 +146,12 @@ public class LoginActivity extends SherlockActivity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_login);
-		SharedPreferences settings =  getPreferences(Context.MODE_PRIVATE);
+		SharedPreferences settings =  getSharedPreferences("appPref",Context.MODE_PRIVATE);
 	    String apiKey = settings.getString("api_acces", "0");
-	    if(apiKey!="0")
+        String user_id = settings.getString("user_id","0");
+	    if(apiKey!="0" && user_id!="0")
 	    {
-    		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
     		intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
     		startActivity(intent);
 	    }

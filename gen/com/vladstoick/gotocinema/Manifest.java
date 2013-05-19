@@ -3,5 +3,5 @@
 package com.vladstoick.gotocinema;
 
 /* This stub is only used by the IDE. It is NOT the Manifest class actually packed into the APK */
-final class Manifest {
+public final class Manifest {
 }

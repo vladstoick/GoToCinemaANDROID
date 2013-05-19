@@ -1,6 +1,7 @@
 package com.vladstoick.gotocinema.slidingactivity;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -31,6 +32,7 @@ import java.util.Hashtable;
 public class MainActivity extends BaseActivity implements OnFragmentInteractionListener, LocationListener {
     private static final String TAGCALCULATE ="CalculateMainMenuFragment";
     private static final String TAGLOADING = "LoadingFragment";
+    private String userID,userAPI;
     static ImageLoader imageLoader=ImageLoader.getInstance();
     private final ProgressDialogFragment progressDialog= new ProgressDialogFragment();
     private Fragment mContent;
@@ -41,7 +43,11 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 
     @Override
     public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
 //		File cacheDir = StorageUtils.getCacheDirectory(getApplicationContext());
+        SharedPreferences settings =  this.getSharedPreferences("appPref",Context.MODE_PRIVATE);
+        userAPI = settings.getString("api_acces", "0");
+        userID = settings.getString("user_id","0");
         DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory()
                 .cacheOnDisc()
                 .build();
@@ -49,7 +55,7 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
                 .defaultDisplayImageOptions(options)
                 .build();
         ImageLoader.getInstance().init(config);
-        super.onCreate(savedInstanceState);
+
         if (savedInstanceState != null)
             mContent = getSupportFragmentManager().getFragment(savedInstanceState, "mContent");
         if (mContent == null)
@@ -71,12 +77,10 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
                                   String content)
             {
                 error.printStackTrace();
-                System.out.println(content);
             }
             @Override
             public void onSuccess(String resultString) {
                 allMovies=JSONParser.parseMoviesList(resultString);
-                System.out.println(allMovies.size());
                 if(cinemas.size()>10)
                 {
                     allMovies=AparitiiCinema.merge(allMovies,cinemas);
@@ -122,6 +126,13 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
     }
     @Override
     public void showProfileWithId(int id) {
+    }
+    @Override
+    public void showOwnProfile()
+    {
+
+        UserFragment newFragment = UserFragment.newInstance(userID);
+        switchContent(newFragment,false);
     }
     @Override
     public Cinema getCinemaInfoForCinemaFor(String name)
@@ -198,7 +209,6 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
                     cinemas=JSONParser.parseMoviesAndDistances(resultString);
                     if(allMovies.size()>10)
                     {
-                        System.out.println(allMovies.size());
                         allMovies=AparitiiCinema.merge(allMovies,cinemas);
                     }
 
@@ -207,7 +217,6 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
                 }
             });
         } catch (ClassCastException e) {
-            System.out.println("in a fragment that doesn't need this");
         }
     }
     @Override
