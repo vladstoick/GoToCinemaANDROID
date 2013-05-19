@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AppData/Local/Android/android-sdk/extras/google/gcm/gcm-server/lib/json_simple-1.1.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/android-sdk/extras/google/gcm/gcm-server/lib/mockito-all-1.8.5.jar!/" />
+      <root url="jar://$USER_HOME$/AppData/Local/Android/android-sdk/extras/google/gcm/gcm-server/lib/junit.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

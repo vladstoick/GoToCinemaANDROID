@@ -27,6 +27,8 @@
     <orderEntry type="module" module-name="library" />
     <orderEntry type="module" module-name="google-play-services_lib1" />
     <orderEntry type="library" name="google-play-services" level="project" />
+    <orderEntry type="library" name="src" level="project" />
+    <orderEntry type="module" module-name="gcm-client" />
   </component>
 </module>
 

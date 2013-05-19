@@ -125,7 +125,9 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
         switchContent(newFragment, false);
     }
     @Override
-    public void showProfileWithId(int id) {
+    public void showProfileWithId(String id) {
+        UserFragment newFragment = UserFragment.newInstance(id);
+        switchContent(newFragment,true);
     }
     @Override
     public void showOwnProfile()

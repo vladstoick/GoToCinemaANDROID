@@ -14,7 +14,7 @@ public interface OnFragmentInteractionListener {
 	public void openFilmViewWithData(AparitiiCinema data);
 	void openNewCinemaList(ArrayList<AparitiiCinema> moviesToBeShown);
 	public void showCalculateFragment();
-	public void showProfileWithId(int id);
+	public void showProfileWithId(String id);
     public void showOwnProfile();
 	public void showSearchFragment();
 	public Cinema getCinemaInfoForCinemaFor(String name);
