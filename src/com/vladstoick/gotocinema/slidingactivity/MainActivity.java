@@ -32,7 +32,7 @@ import java.util.Hashtable;
 public class MainActivity extends BaseActivity implements OnFragmentInteractionListener, LocationListener {
     private static final String TAGCALCULATE ="CalculateMainMenuFragment";
     private static final String TAGLOADING = "LoadingFragment";
-    private String userID,userAPI;
+    private String userID;
     static ImageLoader imageLoader=ImageLoader.getInstance();
     private final ProgressDialogFragment progressDialog= new ProgressDialogFragment();
     private Fragment mContent;
@@ -46,7 +46,7 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
         super.onCreate(savedInstanceState);
 //		File cacheDir = StorageUtils.getCacheDirectory(getApplicationContext());
         SharedPreferences settings =  this.getSharedPreferences("appPref",Context.MODE_PRIVATE);
-        userAPI = settings.getString("api_acces", "0");
+        String userAPI = settings.getString("api_acces", "0");
         userID = settings.getString("user_id","0");
         DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory()
                 .cacheOnDisc()
@@ -137,6 +137,11 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
         switchContent(newFragment,false);
     }
     @Override
+    public void showPostFragment(String userID)
+    {
+
+    }
+    @Override
     public Cinema getCinemaInfoForCinemaFor(String name)
     {
         return null;
@@ -218,7 +223,8 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
 
                 }
             });
-        } catch (ClassCastException e) {
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
     @Override

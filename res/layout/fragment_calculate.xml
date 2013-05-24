@@ -33,14 +33,5 @@
             android:layout_below="@+id/btnChangeTime"
             android:text="@string/calculateButtonTitle"/>
 
-    <TextView
-        android:id="@+id/locationUsed"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnCalculate"
-        android:layout_below="@+id/btnCalculate"
-        android:gravity="center"
-        android:text="@string/defaultLocationUsed"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

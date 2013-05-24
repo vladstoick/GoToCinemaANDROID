@@ -13,19 +13,35 @@
                    android:layout_height="75dp"
                    android:id="@+id/userProfileImg"
                    />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical">
         <TextView
             android:id="@+id/fullname"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:paddingLeft="10dp"
-            android:gravity="center_vertical"
+
+
             android:text="@string/loading" />
+        <TextView
+            android:id="@+id/dob"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/loading"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </LinearLayout>
 
     </LinearLayout>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/post"
+            android:id="@+id/posteaza"
+           />
     <ListView
-            android:layout_marginTop="20dp"
             android:id="@+id/wallPostsListView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"/>
 </LinearLayout>

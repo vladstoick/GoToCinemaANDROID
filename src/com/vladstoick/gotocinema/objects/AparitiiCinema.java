@@ -36,6 +36,7 @@ public class AparitiiCinema implements Parcelable {
     	System.out.println(cinemas.size());
     	for(int i=0;i<movies.size();i++)
 		{
+
 			AparitiiCinema newObject = movies.get(i);
 			newObject.distanta=cinemas.get(newObject.cinemaName).distance;
 			newObject.durataDrum=cinemas.get(newObject.cinemaName).duration;

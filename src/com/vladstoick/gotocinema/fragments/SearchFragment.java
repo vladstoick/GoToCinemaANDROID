@@ -25,24 +25,18 @@ import static android.widget.AdapterView.OnItemClickListener;
 
 
 public class SearchFragment extends SherlockFragment {
-	private View view=null;
-	private EditText searchInput=null;
+    private EditText searchInput=null;
     private OnFragmentInteractionListener mListener;
-    ArrayList<String> searchId=new ArrayList<String>();
+    private ArrayList<String> searchId=new ArrayList<String>();
 	private ListView searchResults;
 	public SearchFragment() {
 		// Required empty public constructor
 	}
 
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-	}
-
-	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		view = inflater.inflate(R.layout.fragment_search, container, false);
+        View view = inflater.inflate(R.layout.fragment_search, container, false);
 		searchInput = (EditText) view.findViewById(R.id.searchInput);
 		searchResults = (ListView) view.findViewById(R.id.searchResults);
 		searchInput.addTextChangedListener(new TextWatcher(){

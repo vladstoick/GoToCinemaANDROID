@@ -5,13 +5,13 @@ public class Cinema {
     public final String duration;
     public final String latCinema;
     public final String lngCinema;
-    private final String name;
-	public Cinema(String distance,String durata,String latCinema,String lngCinema,String name)
+
+    public Cinema(String distance,String durata,String latCinema,String lngCinema,String name)
 	{
 		this.distance=distance;
 		this.duration=durata;
 		this.latCinema=latCinema;
 		this.lngCinema=lngCinema;
-		this.name=name;
+        String name1 = name;
 	}
 }

@@ -40,39 +40,32 @@ public class FilmDetailsFragment extends SherlockFragment {
 		fragment.setArguments(args);
 		return fragment;
 	}
-    private View view;
-    private LatLng pozitieCinema = new LatLng(44.419560, 26.1266510);
-    ProgressDialog pd=null;
-	private TextView note;
-    private TextView gen;
-    private TextView actori;
-    TextView distanta;
-    private TextView distance;
-    private TextView regizor;
-	private AparitiiCinema movie= null;
 
-	private FilmDetailsFragment() {
+    ProgressDialog pd=null;
+    TextView distanta;
+
+    private FilmDetailsFragment() {
 		// Required empty public constructor
 	}
 	  @Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		view = inflater.inflate(R.layout.fragment_film_details, container,
-				false);
-		note = (TextView) view.findViewById(R.id.note);
-		gen = (TextView) view.findViewById(R.id.gen);
-        actori = (TextView) view.findViewById(R.id.actori);
-        regizor = (TextView) view.findViewById(R.id.regizor);
-        distance = (TextView) view.findViewById(R.id.distance);
-        movie=getArguments().getParcelable(ARG_MOVIE);
+          View view = inflater.inflate(R.layout.fragment_film_details, container,
+                  false);
+          TextView note = (TextView) view.findViewById(R.id.note);
+          TextView gen = (TextView) view.findViewById(R.id.gen);
+          TextView actori = (TextView) view.findViewById(R.id.actori);
+          TextView regizor = (TextView) view.findViewById(R.id.regizor);
+          TextView distance = (TextView) view.findViewById(R.id.distance);
+          AparitiiCinema movie = getArguments().getParcelable(ARG_MOVIE);
 		System.out.println(movie.actori);
         note.setText(movie.nota);
         gen.setText(movie.gen);
         actori.setText(movie.actori);
         regizor.setText(movie.regizor);
         int timp = Integer.parseInt(movie.durataDrum);
-        distance.setText("Poţi ajunge în "+getStringForTime(timp)+" ("+movie.distanta+")");
-        pozitieCinema = new LatLng(Double.parseDouble(movie.latCinema),Double.parseDouble(movie.lonCinema));
+        distance.setText("Poţi ajunge în " + getStringForTime(timp) + " (" + movie.distanta + ")");
+          LatLng pozitieCinema = new LatLng(Double.parseDouble(movie.latCinema), Double.parseDouble(movie.lonCinema));
         SupportMapFragment mf = (SupportMapFragment) getFragmentManager().findFragmentById(R.id.mapView);
           GoogleMap mMap = mf.getMap();
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pozitieCinema));

@@ -22,10 +22,8 @@ public class CalculateMainMenuFragment extends Fragment{
         timeUsed.setText("Ora folosita " + deAfisat);
     }
 	private OnFragmentInteractionListener mListener;
-	private View view;
-	private static TextView timeUsed;
-    private static TextView locationUsedTextView;
-	static private int hourUsed, minuteUsed;
+    private static TextView timeUsed;
+    static private int hourUsed, minuteUsed;
 	boolean hasALocation=false,isUsingCurrentLocation=true;
 	ProgressDialogFragment progressDialog= new ProgressDialogFragment();
 	@Override
@@ -42,11 +40,10 @@ public class CalculateMainMenuFragment extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		view = inflater.inflate(
-				R.layout.fragment_calculate, container,
-				false);
+        View view = inflater.inflate(
+                R.layout.fragment_calculate, container,
+                false);
 		timeUsed = (TextView) view.findViewById(R.id.hourUsed);
-		locationUsedTextView = (TextView) view.findViewById(R.id.locationUsed);
 		Calendar c = Calendar.getInstance();
 		hourUsed = c.get(Calendar.HOUR_OF_DAY);
         minuteUsed = c.get(Calendar.MINUTE);
@@ -58,7 +55,8 @@ public class CalculateMainMenuFragment extends Fragment{
             public void onClick(final View v) {         	
             	if(mListener.getCurrentLocation()==null)
             		Toast.makeText(getActivity(), "Aplicatia inca te localizeaza", Toast.LENGTH_SHORT).show();
-            	mListener.openNewCinemaList(Utils.getAparitii(mListener.getAllMovies(),
+                else
+            	    mListener.openNewCinemaList(Utils.getAparitii(mListener.getAllMovies(),
                 		Utils.getDateFromHourAndMinuteInts(hourUsed, minuteUsed)));
             }
         });

@@ -1,15 +1,15 @@
 package com.vladstoick.gotocinema.fragments;
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import com.actionbarsherlock.app.SherlockFragment;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.vladstoick.gotocinema.R;
@@ -22,10 +22,10 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class UserFragment extends Fragment {
+public class UserFragment extends SherlockFragment {
     private final static String ARG_USERID="userid";
     private View view;
-    private String userID="0";
+    String userID = "";
     private ArrayList<Post> posts = new ArrayList<Post>();
 	public static UserFragment newInstance(String userID) {
         UserFragment fragment = new UserFragment();
@@ -40,22 +40,13 @@ public class UserFragment extends Fragment {
     private UserFragment() {
 		// Required empty public constructor
 	}
-
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		if (getArguments() != null) {
-
-		}
-	}
-
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_user, container, false);
-        userID =getArguments().getString(ARG_USERID);
-        CinemaRestClient.get("user/"+userID+"/wall",null,new AsyncHttpResponseHandler(){
+        userID = getArguments().getString(ARG_USERID);
+        CinemaRestClient.get("user/"+ userID +"/wall",null,new AsyncHttpResponseHandler(){
             @Override
             public void onSuccess(String response) {
                 JSONObject wall = null;
@@ -63,20 +54,24 @@ public class UserFragment extends Fragment {
                     wall = new JSONObject(response);
                     String fullname = wall.getString("fullname");
                     String userProfileImg = wall.getString("image");
+                    String dob = wall.getString("DOB");
+                    TextView dobTV = (TextView) view.findViewById(R.id.dob);
                     TextView fullnameTV=((TextView) view.findViewById(R.id.fullname));
                     ImageView userProfileImgIV = (ImageView) view.findViewById(R.id.userProfileImg);
                     ImageLoader.getInstance().displayImage(userProfileImg, userProfileImgIV);
                     fullnameTV.setText(fullname);
+                    dobTV.setText("Data naşterii:"+dob);
                     JSONArray wallPosts = wall.getJSONArray("wall_posts");
                     for(int i=0;i<wallPosts.length();i++)
                     {
                         JSONObject wallPost=wallPosts.getJSONObject(i);
                         String content = wallPost.getString("content");
                         String title = wallPost.getString("title");
+
                         JSONObject senderInfo = wallPost.getJSONObject("sender");
                         String posterId = senderInfo.getString("id");
                         String posterImage = senderInfo.getString("image");
-                        String posterFullname = senderInfo.getString("fullname");
+                        String posterFullname = senderInfo.getString("fullname")+":";
                         Post wallpost = new Post(posterId,posterImage,posterFullname,content,title);
                         posts.add(i,wallpost);
                     }
@@ -89,15 +84,17 @@ public class UserFragment extends Fragment {
 
             }
         });
+        final Button calculateBtn = (Button) view.findViewById(R.id.posteaza);
+
+        calculateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                mListener.showPostFragment(userID);
+            }
+        });
         return view;
 	}
 
-	// TODO: Rename method, update argument and hook method into UI event
-	public void onButtonPressed(Uri uri) {
-		if (mListener != null) {
-//			mListener.onFragmentInteraction(uri);
-		}
-	}
 
 	@Override
 	public void onAttach(Activity activity) {

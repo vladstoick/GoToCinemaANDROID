@@ -129,7 +129,7 @@ public class LoginActivity extends SherlockActivity {
 							 
 							e.printStackTrace();
 						}
-			    		if(error == "email")
+			    		if(error.equals("email"))
 			    		  		mEmailView.setError(getString(R.string.wrong_username));
 			    		
 			    			mPasswordView.setError(getString(R.string.wrong_password));
@@ -149,7 +149,7 @@ public class LoginActivity extends SherlockActivity {
 		SharedPreferences settings =  getSharedPreferences("appPref",Context.MODE_PRIVATE);
 	    String apiKey = settings.getString("api_acces", "0");
         String user_id = settings.getString("user_id","0");
-	    if(apiKey!="0" && user_id!="0")
+	    if(!apiKey.equals("0") && !user_id.equals("0"))
 	    {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
     		intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);

@@ -18,9 +18,8 @@ import com.vladstoick.gotocinema.R;
 class BaseActivity extends SlidingFragmentActivity {
 	
 	private final int mTitleRes;
-	private SherlockFragment mFrag;
-	
-	BaseActivity(int titleRes){
+
+    BaseActivity(int titleRes){
 		mTitleRes = R.string.app_name;
 	}
 
@@ -32,7 +31,7 @@ class BaseActivity extends SlidingFragmentActivity {
 		
 		setBehindContentView(R.layout.menu_frame);
 		FragmentTransaction ft = this.getSupportFragmentManager().beginTransaction();
-		mFrag = new SlidingMenuFragment();
+        SherlockFragment mFrag = new SlidingMenuFragment();
 		ft.replace(R.id.menu_frame, mFrag);
 		ft.commit();
 		

@@ -3,11 +3,12 @@ package com.vladstoick.gotocinema.objects;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * Created by vlad on 5/19/13.
- */
 public class Post implements Parcelable {
-    public final String posterID,posterImg,posterFullname,postContent,postTitle;
+    private final String posterID;
+    public final String posterImg;
+    public final String posterFullname;
+    private final String postContent;
+    public final String postTitle;
     public static final Parcelable.Creator<Post> CREATOR = new Parcelable.Creator<Post>() {
         @Override
         public Post createFromParcel(Parcel in) {

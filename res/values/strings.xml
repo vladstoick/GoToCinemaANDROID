@@ -21,7 +21,8 @@
     <string name="wrong_username">Userul este greșit</string>
     <string name="username">Username</string>
     <string name="signIn">Logheză-te</string>
-    <string name="searchField">Introdu numele utilizatorului</string>
+    <string name="post">Postează pe profilul acestui utilizator</string>
+    <string name="searchField">Introduceţi numele utilizatorului</string>
     <string name="loading">Loading...</string>
 
 </resources>

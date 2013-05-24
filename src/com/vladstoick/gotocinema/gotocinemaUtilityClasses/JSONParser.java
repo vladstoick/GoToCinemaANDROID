@@ -62,8 +62,6 @@ public class JSONParser {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        finally{
-        }
         return list;
 	}
 }

@@ -17,9 +17,9 @@ public class Utils {
     public static ArrayList<AparitiiCinema> getAparitii(ArrayList<AparitiiCinema> list, Date dateToBeUsed) {
         ArrayList<AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();
         System.out.println(list.get(1).durataDrum);
-        for (int i = 0; i < list.size(); i++) 
-            if (dateToBeUsed.getTime() + (new Date(Integer.parseInt(list.get(i).durataDrum)*1000)).getTime() -list.get(i).ora.getTime() < 0)
-                listToBeReturned.add(list.get(i));
+        for (AparitiiCinema aList : list)
+            if (dateToBeUsed.getTime() + (new Date(Integer.parseInt(aList.durataDrum) * 1000)).getTime() - aList.ora.getTime() < 0)
+                listToBeReturned.add(aList);
         return listToBeReturned;
     }
 

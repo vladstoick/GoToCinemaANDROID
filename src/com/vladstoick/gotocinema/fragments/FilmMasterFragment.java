@@ -17,8 +17,7 @@ import java.util.Comparator;
 
 
 public class FilmMasterFragment extends SherlockListFragment {
-	private AparitiiCinemaAdapter adapter = null;
-	private static final String ARG_MOVIES = "movies";
+    private static final String ARG_MOVIES = "movies";
 	private OnFragmentInteractionListener mListener;
 	ProgressDialogFragment progressDialog= new ProgressDialogFragment();
 	private ArrayList <AparitiiCinema> moviesToBeShown;
@@ -60,7 +59,7 @@ public class FilmMasterFragment extends SherlockListFragment {
 		if (getArguments() != null) {
 			moviesToBeShown=getArguments().getParcelableArrayList(ARG_MOVIES);
 			Collections.sort(moviesToBeShown, new ArrayComparatorByTime());
-			adapter = new AparitiiCinemaAdapter(getActivity(), R.layout.list_row_view, moviesToBeShown);
+            AparitiiCinemaAdapter adapter = new AparitiiCinemaAdapter(getActivity(), R.layout.list_row_view, moviesToBeShown);
 			setListAdapter(adapter);
 		}
 		

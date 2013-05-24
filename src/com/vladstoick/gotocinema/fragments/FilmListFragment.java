@@ -44,7 +44,7 @@ public class FilmListFragment extends SherlockListFragment {
 		fragment.setArguments(args);
 		return fragment;
 	}
-	private AparitiiCinemaAdapter adapter = null;
+
     private static final String ARG_MOVIES = "movies";
     private OnFragmentInteractionListener mListener;
     ProgressDialogFragment progressDialog= new ProgressDialogFragment();
@@ -70,7 +70,7 @@ public class FilmListFragment extends SherlockListFragment {
 		if (getArguments() != null) {
 			moviesToBeShown=getArguments().getParcelableArrayList(ARG_MOVIES);
 			Collections.sort(moviesToBeShown, new ArrayComparatorByTime());
-			adapter = new AparitiiCinemaAdapter(getActivity(), R.layout.list_row_view, moviesToBeShown);
+            AparitiiCinemaAdapter adapter = new AparitiiCinemaAdapter(getActivity(), R.layout.list_row_view, moviesToBeShown);
 			setListAdapter(adapter);
 		}
 		setHasOptionsMenu(true);

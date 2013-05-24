@@ -18,4 +18,5 @@ public interface OnFragmentInteractionListener {
     public void showOwnProfile();
 	public void showSearchFragment();
 	public Cinema getCinemaInfoForCinemaFor(String name);
+    public void showPostFragment(String userId);
 }
