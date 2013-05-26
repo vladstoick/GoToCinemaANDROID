@@ -25,8 +25,8 @@ import java.util.ArrayList;
 public class UserFragment extends SherlockFragment {
     private final static String ARG_USERID="userid";
     private View view;
-    String userID = "";
-    private ArrayList<Post> posts = new ArrayList<Post>();
+    private String userID = "";
+    private final ArrayList<Post> posts = new ArrayList<Post>();
 	public static UserFragment newInstance(String userID) {
         UserFragment fragment = new UserFragment();
         Bundle args = new Bundle();
@@ -49,7 +49,7 @@ public class UserFragment extends SherlockFragment {
         CinemaRestClient.get("user/"+ userID +"/wall",null,new AsyncHttpResponseHandler(){
             @Override
             public void onSuccess(String response) {
-                JSONObject wall = null;
+                JSONObject wall;
                 try{
                     wall = new JSONObject(response);
                     String fullname = wall.getString("fullname");
@@ -89,7 +89,7 @@ public class UserFragment extends SherlockFragment {
         calculateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                mListener.showPostFragment(userID);
+//                mListener.showPostFragment(userID);
             }
         });
         return view;

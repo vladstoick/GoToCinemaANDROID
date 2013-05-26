@@ -2,7 +2,6 @@ package com.vladstoick.gotocinema.slidingactivity;
 
 import android.location.Location;
 import com.vladstoick.gotocinema.objects.AparitiiCinema;
-import com.vladstoick.gotocinema.objects.Cinema;
 
 import java.util.ArrayList;
 
@@ -17,6 +16,4 @@ public interface OnFragmentInteractionListener {
 	public void showProfileWithId(String id);
     public void showOwnProfile();
 	public void showSearchFragment();
-	public Cinema getCinemaInfoForCinemaFor(String name);
-    public void showPostFragment(String userId);
 }

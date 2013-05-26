@@ -27,7 +27,7 @@ import static android.widget.AdapterView.OnItemClickListener;
 public class SearchFragment extends SherlockFragment {
     private EditText searchInput=null;
     private OnFragmentInteractionListener mListener;
-    private ArrayList<String> searchId=new ArrayList<String>();
+    private final ArrayList<String> searchId=new ArrayList<String>();
 	private ListView searchResults;
 	public SearchFragment() {
 		// Required empty public constructor

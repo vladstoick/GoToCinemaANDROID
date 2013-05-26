@@ -12,6 +12,5 @@ public class Cinema {
 		this.duration=durata;
 		this.latCinema=latCinema;
 		this.lngCinema=lngCinema;
-        String name1 = name;
-	}
+    }
 }

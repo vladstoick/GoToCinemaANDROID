@@ -34,12 +34,13 @@ public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
-        AparitiiCinemaRowHandler holder = null;
+        AparitiiCinemaRowHandler holder;
         if (row == null) {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
             row = inflater.inflate(layoutResourceId, parent, false);
 
             holder = new AparitiiCinemaRowHandler();
+
             holder.roTitle = (TextView) row.findViewById(R.id.rowRoTitle);
             holder.enTitle = (TextView) row.findViewById(R.id.rowEnTitle);
             holder.ora = (TextView) row.findViewById(R.id.rowOra);

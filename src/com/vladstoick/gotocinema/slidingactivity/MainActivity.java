@@ -3,13 +3,10 @@ package com.vladstoick.gotocinema.slidingactivity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
-import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockDialogFragment;
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -29,7 +26,7 @@ import com.vladstoick.gotocinema.objects.Cinema;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
-public class MainActivity extends BaseActivity implements OnFragmentInteractionListener, LocationListener {
+public class MainActivity extends BaseActivity implements OnFragmentInteractionListener {
     private static final String TAGCALCULATE ="CalculateMainMenuFragment";
     private static final String TAGLOADING = "LoadingFragment";
     private String userID;
@@ -96,7 +93,31 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
     public MainActivity(){
         super(R.string.app_name);
     }
+    @Override
+    public void onLocationChanged(Location location) {
 
+        currentLocation=location;
+        final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
+        try {
+            String link="/distance/googleMaps?lat="+location.getLatitude()+"&lng="+location.getLongitude();
+            progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
+            CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
+                @Override
+                public void onSuccess(String resultString) {
+                    cinemas=JSONParser.parseMoviesAndDistances(resultString);
+                    if(allMovies.size()>10)
+                    {
+                        allMovies=AparitiiCinema.merge(allMovies,cinemas);
+                    }
+
+                    progressDialog2.dismiss();
+
+                }
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     @Override
     public void onSettedATime(int hour, int minute) {
         if( getSupportFragmentManager().findFragmentByTag(TAGCALCULATE)!=null)
@@ -136,16 +157,7 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
         UserFragment newFragment = UserFragment.newInstance(userID);
         switchContent(newFragment,false);
     }
-    @Override
-    public void showPostFragment(String userID)
-    {
 
-    }
-    @Override
-    public Cinema getCinemaInfoForCinemaFor(String name)
-    {
-        return null;
-    }
     @Override
     public void showSearchFragment(){
         SearchFragment newFragment = new SearchFragment();
@@ -168,29 +180,6 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
         ft.commit();
         getSlidingMenu().showContent();
     }
-    Location findLocation() {
-        Location location = null;
-        try {
-
-            LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-            boolean isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-            boolean isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
-            if (!isGPSEnabled && !isNetworkEnabled)
-                Toast.makeText(getApplicationContext(), "NO LOCATION METHOD", Toast.LENGTH_LONG).show();
-            else
-            if (isNetworkEnabled)
-                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 20000,10, this);
-            location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-            if (isGPSEnabled)
-                if (location == null)
-                    locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 20000, 10, this);
-            location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return location;
-    }
-
     @Override
     public ArrayList<AparitiiCinema> getAllMovies() {
         return allMovies;
@@ -201,45 +190,4 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
         return currentLocation;
     }
 
-
-    @Override
-    public void onLocationChanged(Location location) {
-
-        currentLocation=location;
-        final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
-        try {
-            String link="/distance/googleMaps?lat="+location.getLatitude()+"&lng="+location.getLongitude();
-            progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
-            CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
-                @Override
-                public void onSuccess(String resultString) {
-                    cinemas=JSONParser.parseMoviesAndDistances(resultString);
-                    if(allMovies.size()>10)
-                    {
-                        allMovies=AparitiiCinema.merge(allMovies,cinemas);
-                    }
-
-                    progressDialog2.dismiss();
-
-                }
-            });
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    @Override
-    public void onProviderDisabled(String provider) {
-        // TODO Auto-generated method stub
-
-    }
-    @Override
-    public void onProviderEnabled(String provider) {
-        // TODO Auto-generated method stub
-
-    }
-    @Override
-    public void onSaveInstanceState(Bundle outState){
-        super.onSaveInstanceState(outState);
-        getSupportFragmentManager().putFragment(outState, "mContent", mContent);
-    }
 }
