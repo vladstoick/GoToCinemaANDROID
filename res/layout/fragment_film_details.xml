@@ -47,8 +47,7 @@
         android:id="@+id/openMap"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/openInMaps"
-        android:onClick = "openInGoogleMaps" />
+        android:text="@string/openInMaps" />
 	
     <fragment
             android:id="@+id/mapView"

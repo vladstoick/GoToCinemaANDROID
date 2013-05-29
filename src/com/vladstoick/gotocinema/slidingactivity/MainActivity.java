@@ -45,8 +45,7 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
         progressDialog.show(getSupportFragmentManager(),TAGLOADING);
         CinemaRestClient.get("/movies", null, new AsyncHttpResponseHandler() {
             @Override
-            public void onFailure(Throwable error,
-                                  String content)
+            public void onFailure(Throwable error, String content)
             {
                 error.printStackTrace();
             }

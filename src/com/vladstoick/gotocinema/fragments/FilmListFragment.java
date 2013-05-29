@@ -4,12 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
+import com.vladstoick.gotocinema.gotocinemaUtilityClasses.AparitiiCinemaAdapter;
 import com.vladstoick.gotocinema.objects.AparitiiCinema;
 import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
-import com.vladstoick.gotocinema.gotocinemaUtilityClasses.AparitiiCinemaAdapter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -62,7 +63,6 @@ public class FilmListFragment extends SherlockListFragment {
 					+ " must implement OnFragmentInteractionListener");
 		}
 	}
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -73,6 +73,7 @@ public class FilmListFragment extends SherlockListFragment {
             AparitiiCinemaAdapter adapter = new AparitiiCinemaAdapter(getActivity(), R.layout.list_row_view, moviesToBeShown);
 			setListAdapter(adapter);
 		}
+
 		setHasOptionsMenu(true);
 	}
 

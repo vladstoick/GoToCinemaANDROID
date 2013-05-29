@@ -14,7 +14,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockFragment;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -39,20 +38,19 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
         DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory().cacheOnDisc().build();
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext()).defaultDisplayImageOptions(options).build();
         ImageLoader.getInstance().init(config);
-        SherlockFragment mContent = null;
         if (savedInstanceState != null)
-            mContent = (SherlockFragment) getSupportFragmentManager().getFragment(savedInstanceState, "content_frame");
+            mContent = getSupportFragmentManager().getFragment(savedInstanceState, "content_frame");
         if (mContent == null)
             mContent = new CalculateMainMenuFragment();
         mDrawerList = findViewById(R.id.left_drawer);
         getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, mContent, TAGCALCULATE).commit();
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerToggle = new ActionBarDrawerToggle(
-                this,                  /* host Activity */
-                mDrawerLayout,         /* DrawerLayout object */
-                R.drawable.ic_drawer,  /* nav drawer icon to replace 'Up' caret */
-                R.string.drawer_open,  /* "open drawer" description */
-                R.string.drawer_close  /* "close drawer" description */
+                this,
+                mDrawerLayout,
+                R.drawable.ic_drawer,
+                R.string.drawer_open,
+                R.string.drawer_close
         ) {
             public void onDrawerClosed(View view) {
             }
@@ -67,8 +65,6 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
                 }
             }
         };
-
-        // Set the drawer toggle as the DrawerListener
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);

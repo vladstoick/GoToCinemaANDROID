@@ -1,11 +1,16 @@
 package com.vladstoick.gotocinema.fragments;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import com.actionbarsherlock.app.SherlockFragment;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -14,6 +19,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.gotocinema.objects.AparitiiCinema;
+import com.vladstoick.gotocinema.slidingactivity.OnFragmentInteractionListener;
 
 public class FilmDetailsFragment extends SherlockFragment {
 	private static final String ARG_MOVIE = "movie";
@@ -43,7 +49,17 @@ public class FilmDetailsFragment extends SherlockFragment {
 
     ProgressDialog pd=null;
     TextView distanta;
-
+    private OnFragmentInteractionListener mListener;
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        try {
+            mListener = (OnFragmentInteractionListener) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement OnFragmentInteractionListener");
+        }
+    }
     private FilmDetailsFragment() {
 		// Required empty public constructor
 	}
@@ -65,7 +81,7 @@ public class FilmDetailsFragment extends SherlockFragment {
         regizor.setText(movie.regizor);
         int timp = Integer.parseInt(movie.durataDrum);
         distance.setText("Poţi ajunge în " + getStringForTime(timp) + " (" + movie.distanta + ")");
-          LatLng pozitieCinema = new LatLng(Double.parseDouble(movie.latCinema), Double.parseDouble(movie.lonCinema));
+        final LatLng pozitieCinema = new LatLng(Double.parseDouble(movie.latCinema), Double.parseDouble(movie.lonCinema));
         SupportMapFragment mf = (SupportMapFragment) getFragmentManager().findFragmentById(R.id.mapView);
           GoogleMap mMap = mf.getMap();
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pozitieCinema));
@@ -74,6 +90,15 @@ public class FilmDetailsFragment extends SherlockFragment {
         mMap.addMarker(new MarkerOptions()
                 .position(pozitieCinema)
                 .title(movie.cinemaName));
+        view.findViewById(R.id.openMap).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Location currentLocation = mListener.getCurrentLocation();
+                Intent navigation = new Intent(Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?saddr="+currentLocation.getLatitude()+","+currentLocation.getLongitude()
+                +"&daddr="+pozitieCinema.latitude+","+pozitieCinema.longitude));
+                startActivity(navigation);
+            }
+        });
 		return view;
 	}
 	  @Override
@@ -83,4 +108,9 @@ public class FilmDetailsFragment extends SherlockFragment {
 	        if (f != null) 
 	            getFragmentManager().beginTransaction().remove(f).commit();
 	    }
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mListener = null;
+    }
 }
