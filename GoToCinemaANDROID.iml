@@ -21,14 +21,29 @@
     </content>
     <orderEntry type="jdk" jdkName="Android 4.2.2 Google APIs" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="libs" level="project" />
-    <orderEntry type="library" name="android-support-v4" level="project" />
-    <orderEntry type="module" module-name="actionbarsherlock" />
-    <orderEntry type="module" module-name="library" />
     <orderEntry type="module" module-name="google-play-services_lib1" />
     <orderEntry type="library" name="google-play-services" level="project" />
     <orderEntry type="library" name="src" level="project" />
-    <orderEntry type="module" module-name="gcm-client" />
+    <orderEntry type="library" name="android-support-v4" level="application" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/android-async-http-1.4.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/universal-image-loader-1.8.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="actionbarsherlock" />
   </component>
 </module>
 

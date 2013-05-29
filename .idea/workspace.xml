@@ -30,21 +30,32 @@
       </layout>
     </layouts>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/gotocinemaUtilityClasses/AparitiiCinemaAdapter.java" afterPath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/gotocinemaUtilityClasses/AparitiiCinemaAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/drawer_shadow.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/drawer_shadow.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/drawer_shadow.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_drawer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_drawer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_drawer.png" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\.idea\libraries\android_support_v4.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\.idea\libraries\android_support_v41.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/BaseActivity.java" afterPath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/objects/Cinema.java" afterPath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/objects/Cinema.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/CalculateMainMenuFragment.java" afterPath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/CalculateMainMenuFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoToCinemaANDROID.iml" afterPath="$PROJECT_DIR$/GoToCinemaANDROID.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/OnFragmentInteractionListener.java" afterPath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/OnFragmentInteractionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/gotocinemaUtilityClasses/PostsAdapter.java" afterPath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/gotocinemaUtilityClasses/PostsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/SearchFragment.java" afterPath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/SearchFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/UserFragment.java" afterPath="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/UserFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/menu_frame.xml" afterPath="$PROJECT_DIR$/res/layout/menu_frame.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GoToCinemaANDROID.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369560435574" ignored="false" />
+    <file path="/Dummy.txt" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369844155582" ignored="false" />
     <file path="/UserFragment.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369335849534" ignored="false" />
     <file path="/fragment.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369159076695" ignored="false" />
     <file path="/FilmMasterFragment.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368860835339" ignored="false" />
@@ -52,9 +63,9 @@
     <file path="/AndroidManifest.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368956068652" ignored="false" />
     <file path="/list_row_view.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368881596420" ignored="false" />
     <file path="/ProgressDialogFragment.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368881663714" ignored="false" />
-    <file path="/MainActivity.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369334443760" ignored="false" />
+    <file path="/MainActivity.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369845478026" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/project.properties" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368900688239" ignored="false" />
-    <file path="/BaseActivity.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368881959675" ignored="false" />
+    <file path="/BaseActivity.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369849233124" ignored="false" />
     <file path="/abs__screen_action_bar_overlay.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368882294042" ignored="false" />
     <file path="/activity_login.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369122510502" ignored="false" />
     <file path="/LoginActivity.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368950437023" ignored="false" />
@@ -65,13 +76,15 @@
     <file path="/fragment_user.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369335676094" ignored="false" />
     <file path="/fragment_calculate.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368948549486" ignored="false" />
     <file path="/SlidingMenuFragment.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368949017224" ignored="false" />
-    <file path="/strings.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369335180969" ignored="false" />
+    <file path="/strings.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369847404593" ignored="false" />
     <file path="/list_row_profile.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368954098370" ignored="false" />
     <file path="/Post.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368952677896" ignored="false" />
     <file path="/PostsAdapter.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368953846799" ignored="false" />
     <file path="/SearchFragment.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1368957268359" ignored="false" />
-    <file path="/CalculateMainMenuFragment.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369326658055" ignored="false" />
+    <file path="/CalculateMainMenuFragment.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369845261858" ignored="false" />
     <file path="/AparitiiCinema.java" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369333164634" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369844602485" ignored="false" />
+    <file path="/menu_frame.xml" changelist="c4c56a17-caf2-466d-8a2b-6ceb7f1fcc75" time="1369845717494" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,10 +152,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="5" selection-start="5269" selection-end="5269" vertical-scroll-proportion="1.9534883">
+            <state line="20" column="54" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".project" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.project">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/BaseActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="49" selection-start="4736" selection-end="4736" vertical-scroll-proportion="0.4262295">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,30 +190,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnFragmentInteractionListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/OnFragmentInteractionListener.java">
+      <file leaf-file-name="FilmDetailsFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/FilmDetailsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="223" selection-end="272" vertical-scroll-proportion="0.0">
+            <state line="17" column="13" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/BaseActivity.java">
+      <file leaf-file-name="FilmListFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/FilmListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="0" selection-start="4114" selection-end="4114" vertical-scroll-proportion="0.0">
+            <state line="17" column="13" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculateMainMenuFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/CalculateMainMenuFragment.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.340/NavigationDrawer/src/com/example/android/navigationdrawerexample/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="75" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.0">
+            <state line="142" column="26" selection-start="6193" selection-end="6200" vertical-scroll-proportion="-8.28">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SlidingMenuFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/SlidingMenuFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="44" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_frame.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/menu_frame.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="24" selection-start="506" selection-end="506" vertical-scroll-proportion="-8.16">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -195,22 +265,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/LoginActivity.java" />
         <option value="$PROJECT_DIR$/project.properties" />
         <option value="$PROJECT_DIR$/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/res/layout/fragment_calculate.xml" />
-        <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/CalculateMainMenuFragment.java" />
         <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/objects/AparitiiCinema.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/fragment_user.xml" />
         <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/objects/Cinema.java" />
         <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/SearchFragment.java" />
         <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/gotocinemaUtilityClasses/AparitiiCinemaAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/gotocinemaUtilityClasses/PostsAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/BaseActivity.java" />
         <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/UserFragment.java" />
         <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/OnFragmentInteractionListener.java" />
+        <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/CalculateMainMenuFragment.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/menu_frame.xml" />
+        <option value="$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/BaseActivity.java" />
       </list>
     </option>
   </component>
@@ -312,54 +382,6 @@
               <option name="myItemId" value="gotocinema" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slidingactivity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="objects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinemaUtilityClasses" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -383,34 +405,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actionbarsherlock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -419,48 +413,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actionbarsherlock1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actionbarsherlock1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.actionbarsherlock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actionbarsherlock1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.actionbarsherlock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -478,7 +430,7 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/universal-image-loader-1.8.4.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0123456789ABCDEF" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -497,11 +449,15 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.vladstoick.gotocinema.gotocinemaUtilityClasses" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-xhdpi" />
+      <recent name="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-mdpi" />
+      <recent name="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi" />
+      <recent name="C:\Users\vlad\workspace\GoToCinemaANDROID\res" />
+      <recent name="C:\Users\vlad\workspace\JakeWharton-ActionBarSherlock-071a61c\actionbarsherlock\gen" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.vladstoick.gotocinema" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\vlad\workspace\JakeWharton-ActionBarSherlock-071a61c\actionbarsherlock\gen" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.GoToCinemaANDROID">
@@ -680,7 +636,9 @@
       <workItem from="1369244519420" duration="1280000" />
       <workItem from="1369324611759" duration="11696000" />
       <workItem from="1369411450165" duration="1291000" />
-      <workItem from="1369560428773" duration="522000" />
+      <workItem from="1369560428773" duration="1094000" />
+      <workItem from="1369844061724" duration="29000" />
+      <workItem from="1369844154314" duration="5171000" />
     </task>
     <task id="LOCAL-00001" summary="finally works">
       <created>1368902344141</created>
@@ -690,7 +648,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42292000" />
+    <option name="totallyTimeSpent" value="48064000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -717,28 +675,28 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.8431591" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23915462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259177" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46496108" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32369298" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1409545" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6351502" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16221985" sideWeight="0.84204674" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15795328" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16221985" sideWeight="0.8431591" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15684094" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.8409344" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.8409344" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.60177976" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39822024" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -805,117 +763,120 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/gotocinemaUtilityClasses/CinemaRestClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="27" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/content_frame.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="1" selection-start="40" selection-end="40" vertical-scroll-proportion="-0.68">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/calculate_main_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/objects/Cinema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/vladstoick/gotocinema/BuildConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/SearchFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/gotocinemaUtilityClasses/AparitiiCinemaAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="39" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="117" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.25257143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="29" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/CalculateMainMenuFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="75" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/UserFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="13" selection-start="4222" selection-end="4222" vertical-scroll-proportion="0.70725036">
-          <folding>
-            <element signature="e#4056#4232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/gotocinemaUtilityClasses/PostsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="29" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.39534885">
+        <state line="19" column="55" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/OnFragmentInteractionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="223" selection-end="272" vertical-scroll-proportion="0.0">
+        <state line="12" column="55" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/BaseActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="4114" selection-end="4114" vertical-scroll-proportion="0.0">
+        <state line="15" column="0" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="59" selection-start="1075" selection-end="1108" vertical-scroll-proportion="-18.36">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings_activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="44" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/SlidingMenuFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="5" selection-start="5269" selection-end="5269" vertical-scroll-proportion="1.9534883">
+        <state line="20" column="54" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.340/NavigationDrawer/src/com/example/android/navigationdrawerexample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="26" selection-start="6193" selection-end="6200" vertical-scroll-proportion="-8.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/FilmDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/fragments/FilmListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/menu_frame.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="24" selection-start="506" selection-end="506" vertical-scroll-proportion="-8.16">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vladstoick/gotocinema/slidingactivity/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="49" selection-start="4736" selection-end="4736" vertical-scroll-proportion="0.4262295">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -975,7 +936,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Android|GoToCinemaANDROID</last-edited>
+          <last-edited>GoToCinemaANDROID</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -999,7 +960,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>src</last-edited>
+          <last-edited>android</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
