@@ -40,19 +40,13 @@ public class LoginActivity extends SherlockActivity {
 	private TextView mLoginStatusMessageView;
 
 	void attemptLogin() {
-
-		// Reset errors.
 		mEmailView.setError(null);
 		mPasswordView.setError(null);
-
-		// Store values at the time of the login attempt.
 		mEmail = mEmailView.getText().toString();
         String mPassword = mPasswordView.getText().toString();
 
 		boolean cancel = false;
 		View focusView = null;
-
-		// Check for a valid password.
 		if (TextUtils.isEmpty(mPassword)) {
 			mPasswordView.setError(getResources().getString(R.string.wrong_password));
 			focusView = mPasswordView;
@@ -62,20 +56,14 @@ public class LoginActivity extends SherlockActivity {
 			focusView = mPasswordView;
 			cancel = true;
 		}
-
-		// Check for a valid email address.
 		if (TextUtils.isEmpty(mEmail)) {
 			mEmailView.setError(getString(R.string.wrong_username));
 			focusView = mEmailView;
 			cancel = true;
 		} 
 		if (cancel) {
-			// There was an error; don't attempt login and focus the first
-			// form field with an error.
 			focusView.requestFocus();
 		} else {
-			// Show a progress spinner, and kick off a background task to
-			// perform the user login attempt.
 			mLoginStatusMessageView.setText(R.string.login_progress_signing_in);
 			showProgress(true);
 			RequestParams params = new RequestParams();
@@ -189,9 +177,6 @@ public class LoginActivity extends SherlockActivity {
 	
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB_MR2)
 	private void showProgress(final boolean show) {
-		// On Honeycomb MR2 we have the ViewPropertyAnimator APIs, which allow
-		// for very easy animations. If available, use these APIs to fade-in
-		// the progress spinner.
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
 			int shortAnimTime = getResources().getInteger(
 					android.R.integer.config_shortAnimTime);

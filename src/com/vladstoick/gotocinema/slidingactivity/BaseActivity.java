@@ -16,18 +16,29 @@ import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.vladstoick.gotocinema.R;
+import com.vladstoick.gotocinema.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.fragments.CalculateMainMenuFragment;
+import com.vladstoick.gotocinema.gotocinemaUtilityClasses.CinemaRestClient;
+import com.vladstoick.gotocinema.gotocinemaUtilityClasses.JSONParser;
+import com.vladstoick.gotocinema.objects.AparitiiCinema;
+import com.vladstoick.gotocinema.objects.Cinema;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
 
 
 class BaseActivity extends SherlockFragmentActivity implements LocationListener {
     protected static final String TAGCALCULATE ="CalculateMainMenuFragment";
     protected static final String TAGLOADING = "LoadingFragment";
+    protected static Hashtable<String, Cinema> cinemas = new Hashtable<String, Cinema>();
+    protected static ArrayList<AparitiiCinema> allMovies= new ArrayList<AparitiiCinema>();
     private DrawerLayout mDrawerLayout;
-    public Location currentLocation;
+    protected Location currentLocation;
     private Fragment mContent;
     private View mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -125,12 +136,6 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
         }
         return location;
     }
-
-    @Override
-    public void onLocationChanged(Location location) {
-        currentLocation=location;
-    }
-
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {
     }
@@ -142,5 +147,28 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
     @Override
     public void onProviderEnabled(String provider) {
     }
+    @Override
+    public void onLocationChanged(Location location) {
 
+        currentLocation=location;
+        final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
+        try {
+            String link="/distance/googleMaps?lat="+location.getLatitude()+"&lng="+location.getLongitude();
+            progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
+            CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
+                @Override
+                public void onSuccess(String resultString) {
+                    cinemas = JSONParser.parseMoviesAndDistances(resultString);
+                    if (allMovies.size() > 10) {
+                        allMovies = AparitiiCinema.merge(allMovies, cinemas);
+                    }
+
+                    progressDialog2.dismiss();
+
+                }
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
