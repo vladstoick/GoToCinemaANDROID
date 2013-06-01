@@ -5,6 +5,7 @@
       <profile>
         <option name="device" value="2.7in QVGA" />
         <option name="deviceConfiguration" value="Portrait" />
+        <option name="localeLanguage" value="en" />
         <option name="targetHashString" value="android-16" />
         <option name="theme" value="AppTheme" />
       </profile>
@@ -14,6 +15,9 @@
   <component name="AndroidExternalApklibDependenciesManager">
     <artifacts>
       <entry key="com.actionbarsherlock_actionbarsherlock_4.3.1" value="$MAVEN_REPOSITORY$/com/actionbarsherlock/actionbarsherlock/4.3.1/actionbarsherlock-4.3.1.apklib" />
+      <entry key="com.google.android.gms_google-play-services_5" value="$MAVEN_REPOSITORY$/com/google/android/gms/google-play-services/5/google-play-services-5.apklib" />
+      <entry key="com.google.android.gms_google-play-services_7" value="$MAVEN_REPOSITORY$/com/google/android/gms/google-play-services/7/google-play-services-7.apklib" />
+      <entry key="com.google.android.maps_maps_17_r1" value="$MAVEN_REPOSITORY$/com/google/android/maps/maps/17_r1/maps-17_r1.apklib" />
     </artifacts>
     <sdk-infos>
       <entry key="com.actionbarsherlock_actionbarsherlock_4.3.1">
@@ -439,6 +443,13 @@
           </resolved-info>
         </value>
       </entry>
+      <entry key="com.google.android.gms_google-play-services_7">
+        <value>
+          <resolved-info>
+            <option name="apiLevel" value="" />
+          </resolved-info>
+        </value>
+      </entry>
     </sdk-infos>
   </component>
   <component name="AndroidLayoutPreviewToolWindow">
@@ -457,18 +468,373 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" name="Default" comment="" />
+    <list default="true" id="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/objects/AparitiiCinema.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/CalculateMainMenuFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/objects/Cinema.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmDetailsFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmMasterFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/JSONParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__android_support_compatibility_v4_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_actionbarsherlock_actionbarsherlock_apklib_4_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_gms_google_play_services_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_gms_google_play_services_apklib_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/OnFragmentInteractionListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/objects/Post.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/PostsAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/ProgressDialogFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SearchFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/TimePickerFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/UserFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/Utils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen-external-apklibs/~apklib-com.google.android.gms_google-play-services_7.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gen-external-apklibs/~apklib-com.google.android.maps_maps_17_r1.iml" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\libs\android-support-v4.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\android\support\v4\app\Watson$OnCreateOptionsMenuListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\android\support\v4\app\Watson$OnOptionsItemSelectedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\android\support\v4\app\Watson$OnPrepareOptionsMenuListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\android\support\v4\app\Watson.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock$Implementation.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock$OnActionModeFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock$OnActionModeStartedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock$OnCreateOptionsMenuListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock$OnCreatePanelMenuListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock$OnMenuItemSelectedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock$OnOptionsItemSelectedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock$OnPrepareOptionsMenuListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock$OnPreparePanelListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\ActionBarSherlock.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\Manifest$permission.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\Manifest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\ActionBar$LayoutParams.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\ActionBar$OnMenuVisibilityListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\ActionBar$OnNavigationListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\ActionBar$Tab.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\ActionBar$TabListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\ActionBar.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\SherlockActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\SherlockDialogFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\SherlockExpandableListActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\SherlockFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\SherlockFragmentActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\SherlockListActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\SherlockListFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\app\SherlockPreferenceActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\ActionBarSherlockCompat$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\ActionBarSherlockCompat$ActionModeCallbackWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\ActionBarSherlockCompat.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\ActionBarSherlockNative$ActionModeCallbackWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\ActionBarSherlockNative$ActionModeWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\ActionBarSherlockNative.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\ResourcesCompat.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\app\ActionBarImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\app\ActionBarImpl$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\app\ActionBarImpl$ActionModeImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\app\ActionBarImpl$TabImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\app\ActionBarImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\app\ActionBarWrapper$TabWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\app\ActionBarWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\Animator$AnimatorListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\Animator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorListenerAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$AnimatorSetListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$Dependency.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$DependencyListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\FloatEvaluator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\FloatKeyframeSet.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\IntEvaluator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\IntKeyframeSet.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\Keyframe$FloatKeyframe.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\Keyframe$IntKeyframe.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\Keyframe$ObjectKeyframe.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\Keyframe.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\KeyframeSet.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\ObjectAnimator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\PropertyValuesHolder$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\PropertyValuesHolder$FloatPropertyValuesHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\PropertyValuesHolder$IntPropertyValuesHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\PropertyValuesHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\TypeEvaluator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator$AnimationHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator$AnimatorUpdateListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\view\NineViewGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\view\animation\AnimatorProxy.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\widget\NineFrameLayout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\widget\NineHorizontalScrollView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\nineoldandroids\widget\NineLinearLayout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\ActionProviderWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\StandaloneActionMode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\View_HasStateListenerSupport.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\View_OnAttachStateChangeListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuItem.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuItemView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$ActionButtonSubmenu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$HasPermanentMenuKey.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$OpenOverflowRunnable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$OverflowMenuButton.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$OverflowPopup.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$PopupPresenterCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$SavedState$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$SavedState.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuView$ActionMenuChildView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuView$LayoutParams.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ActionMenuView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\BaseMenuPresenter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\ListMenuItemView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuBuilder$Callback.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuBuilder$ItemInvoker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuItemImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuItemWrapper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuItemWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuPopupHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuPopupHelper$ExpandedIndexObserver.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuPopupHelper$MenuAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuPopupHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuPresenter$Callback.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuPresenter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuView$ItemView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\MenuWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\SubMenuBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\view\menu\SubMenuWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\AbsActionBarView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\AbsActionBarView$VisibilityAnimListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\AbsActionBarView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarContainer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarContextView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarContextView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarView$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarView$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarView$ExpandedActionViewMenuPresenter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarView$HomeView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarView$SavedState$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarView$SavedState.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ActionBarView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\CapitalizingButton.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\CapitalizingTextView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\CollapsibleActionViewWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAbsSpinner$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAbsSpinner$RecycleBin.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAbsSpinner$SavedState$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAbsSpinner$SavedState.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAbsSpinner.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAdapterView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAdapterView$AdapterContextMenuInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAdapterView$AdapterDataSetObserver.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAdapterView$OnItemLongClickListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAdapterView$OnItemSelectedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAdapterView$SelectionNotifier.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsAdapterView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsColorDrawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsLinearLayout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsListPopupWindow$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsListPopupWindow$DropDownListView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsListPopupWindow$ListSelectorHider.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsListPopupWindow$PopupDataSetObserver.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsListPopupWindow$PopupScrollListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsListPopupWindow$PopupTouchInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsListPopupWindow$ResizePopupRunnable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsListPopupWindow.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsProgressBar$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsProgressBar$AccessibilityEventSender.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsProgressBar$RefreshProgressRunnable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsProgressBar$SavedState$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsProgressBar$SavedState.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsProgressBar.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsSpinner$DropDownAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsSpinner$DropdownPopup$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsSpinner$DropdownPopup.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsSpinner$SpinnerPopup.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsSpinner.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsToast.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\IcsView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ScrollingTabContainerView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ScrollingTabContainerView$TabAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ScrollingTabContainerView$TabClickListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ScrollingTabContainerView$TabView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ScrollingTabContainerView$VisibilityAnimListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\ScrollingTabContainerView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\internal\widget\TabsLinearLayout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\ActionMode$Callback.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\ActionMode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\ActionProvider$SubUiVisibilityListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\ActionProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\CollapsibleActionView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\Menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\MenuInflater$InflatedOnMenuItemClickListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\MenuInflater$MenuState.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\MenuInflater.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\MenuItem$OnActionExpandListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\MenuItem$OnMenuItemClickListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\MenuItem.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\SubMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\Window$Callback.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\view\Window.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$ActivityChooserModelClient.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$ActivityResolveInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$ActivitySorter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$DefaultSorter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$HistoricalRecord.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$HistoryLoader$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$HistoryLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$HistoryPersister.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel$OnChooseActivityListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserModel.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserView$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserView$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserView$ActivityChooserViewAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserView$Callbacks.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserView$SetActivated.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ActivityChooserView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$10.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$11.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$12.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$OnCloseListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$OnQueryTextListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$OnSuggestionListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView$SearchAutoComplete.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SearchView.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ShareActionProvider$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ShareActionProvider$OnShareTargetSelectedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ShareActionProvider$ShareAcitivityChooserModelPolicy.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ShareActionProvider$ShareMenuItemOnMenuItemClickListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\ShareActionProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SuggestionsAdapter$ChildViewCache.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\actionbarsherlock\widget\SuggestionsAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\LoginActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\LoginActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\LoginActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\LoginActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\LoginActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\LoginActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\Manifest$permission.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\Manifest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\gotocinema\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\utility\CinemaRestClient.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\actionbarsherlock\Manifest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\actionbarsherlock\R.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes.dex" afterPath="$PROJECT_DIR$/target/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.ap_" afterPath="$PROJECT_DIR$/target/gotocinema.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.apk" afterPath="$PROJECT_DIR$/target/gotocinema.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.jar" afterPath="$PROJECT_DIR$/target/gotocinema.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/bin/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/gen/com/actionbarsherlock/BuildConfig.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/gen/com/actionbarsherlock/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/vladstoick/gotocinema/R.java" afterPath="$PROJECT_DIR$/gen/com/vladstoick/gotocinema/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/res/layout/activity_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gotocinema.iml" afterPath="$PROJECT_DIR$/gotocinema.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="gotocinema.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370054915688" ignored="false" />
-    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/SherlockActivity.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370055210662" ignored="false" />
+    <file path="/Dummy.txt" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370058469967" ignored="false" />
     <file path="/fragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370054847441" ignored="false" />
-    <file path="/pom.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370053857085" ignored="false" />
-    <file path="/LoginActivity.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370055707797" ignored="false" />
-    <file path="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370056065552" ignored="false" />
+    <file path="/pom.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370060604388" ignored="false" />
+    <file path="/LoginActivity.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370060701428" ignored="false" />
     <file path="/activity_login.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370054982128" ignored="false" />
     <file path="/strings.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370055800167" ignored="false" />
-    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/ActionBarSherlock.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370055210662" ignored="false" />
+    <file path="/a.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370058869645" ignored="false" />
+    <file path="/Utils.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370056916120" ignored="false" />
+    <file path="/AparitiiCinema.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370056951081" ignored="false" />
+    <file path="/BaseActivity.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370057846366" ignored="false" />
+    <file path="/MainActivity.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370058020683" ignored="false" />
+    <file path="/CalculateMainMenuFragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370058087924" ignored="false" />
+    <file path="/FilmDetailsFragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059071063" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__btn_cab_done_holo_dark.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126001" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_background_transition_holo_light.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126001" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__search_dropdown_light.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126001" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__textfield_searchview_holo_dark.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126002" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__item_background_holo_light.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126002" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__activated_background_holo_light.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126002" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__ic_menu_moreoverflow_holo_light.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126002" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-v11/abs__themes.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126002" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-v14/abs__themes.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126002" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-v14/abs__styles.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126002" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-land/abs__dimens.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126003" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_disable_only_holo_light.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126004" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__screen_simple_overlay_action_mode.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126004" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_holo_dark.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126005" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__attrs.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126005" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__config.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126005" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__styles.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126005" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__dimens.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126005" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__strings.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126005" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__activated_background_holo_dark.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126005" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_background_transition_holo_dark.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126005" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__popup_menu_item_layout.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059126006" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/Menu.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059582479" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/MenuInflater.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059582479" ignored="false" />
+    <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/ActionBar.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059582479" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -476,6 +842,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -483,6 +854,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -519,7 +891,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SearchFragment.java" line="2" class="SearchFragment.java" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -529,77 +917,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java">
+      <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="29" selection-start="4247" selection-end="4247" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2064#2547#0" expanded="true" />
-                <element signature="e#2528#2529#0" expanded="true" />
-                <element signature="e#2832#3023#0" expanded="true" />
-                <element signature="e#3004#3005#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnimatorListenerAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorListenerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="16" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
+            <state line="43" column="0" selection-start="1838" selection-end="1838" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CinemaRestClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/CinemaRestClient.java">
+      <file leaf-file-name="ProgressDialogFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/ProgressDialogFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="10" column="13" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="97" selection-start="2367" selection-end="2367" vertical-scroll-proportion="0.8526863">
+            <state line="50" column="84" selection-start="2745" selection-end="2745" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_login.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/activity_login.xml">
-          <provider editor-type-id="android-designer">
+      <file leaf-file-name="SlidingMenuFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_sliding_list.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/fragment_sliding_list.xml">
+          <provider editor-type-id="text-editor">
+            <state line="12" column="43" selection-start="625" selection-end="625" vertical-scroll-proportion="-8.16">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="48" selection-start="3217" selection-end="3223" vertical-scroll-proportion="-12.8">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="49" selection-start="468" selection-end="468" vertical-scroll-proportion="-6.8">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="48" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -610,14 +983,32 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/CalculateMainMenuFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/OnFragmentInteractionListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmDetailsFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmMasterFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SearchFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/UserFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/PostsAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/TimePickerFragment.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/CinemaRestClient.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
@@ -627,6 +1018,7 @@
       <MavenImportingSettings>
         <option name="downloadDocsAutomatically" value="true" />
         <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -649,6 +1041,13 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+  <component name="ProjectStructureProblems">
+    <ignored-problems>
+      <problem id="unused-library(library:project:google-play-services)" />
+      <problem id="unused-library(library:project:Maven: com.actionbarsherlock:actionbarsherlock:apklib:4.3.1)" />
+      <problem id="unused-library(library:project:Maven: com.google.android.gms:google-play-services:apklib:7)" />
+    </ignored-problems>
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -662,42 +1061,31 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -723,11 +1111,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -746,14 +1134,108 @@
               <option name="myItemId" value="vladstoick" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="objects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="GoToCinemaANDROID" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vladstoick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="gotocinema" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoToCinemaANDROID" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoToCinemaANDROID" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vladstoick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoToCinemaANDROID" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoToCinemaANDROID" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vladstoick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dialogfragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoToCinemaANDROID" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -763,47 +1245,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -817,32 +1263,31 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="GoToCinemaANDROID" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vladstoick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gotocinema" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -852,26 +1297,26 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
+    <property name="options.lastSelected" value="reference.settings.project.maven.repository.indices" />
+    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\gotocinema" />
+      <recent name="C:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\utility" />
+      <recent name="C:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\dialogfragments" />
+      <recent name="C:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\fragments" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -879,6 +1324,30 @@
       <setting name="params" value="" />
       <setting name="workDir" value="" />
       <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -911,30 +1380,25 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="install" />
       </method>
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -962,19 +1426,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1060,32 +1511,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67074525" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67074525" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67074525" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.67074525" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.67074525" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.67074525" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12903225" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.67074525" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18996799" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19017094" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1148,81 +1600,133 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gotocinema.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/CinemaRestClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="33" selection-start="1083" selection-end="1087" vertical-scroll-proportion="0.44160584">
+        <state line="5" column="13" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/TimePickerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="129" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="62" selection-start="852" selection-end="852" vertical-scroll-proportion="0.24444444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/PostsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="462" selection-end="462" vertical-scroll-proportion="0.5466667">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#735#741#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/JSONParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.15111111">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/objects/Cinema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.075555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/OnFragmentInteractionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="164" selection-end="164" vertical-scroll-proportion="0.30222222">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/ProgressDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="48" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/vladstoick/gotocinema/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="564" selection-end="564" vertical-scroll-proportion="0.4516129">
-          <folding>
-            <element signature="e#0#2482#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="48" selection-start="3217" selection-end="3223" vertical-scroll-proportion="-12.8">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="468" selection-end="468" vertical-scroll-proportion="-6.8">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorListenerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="16" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
+        <state line="50" column="95" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="29" selection-start="4247" selection-end="4247" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2064#2547#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2832#3023#0" expanded="true" />
-            <element signature="e#3004#3005#0" expanded="true" />
-          </folding>
+        <state line="124" column="88" selection-start="5040" selection-end="5040" vertical-scroll-proportion="0.58925474">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/CinemaRestClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="43" column="0" selection-start="1838" selection-end="1838" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/GoToCinemaANDROID-master/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="8" selection-start="3033" selection-end="3181" vertical-scroll-proportion="0.7071057">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="97" selection-start="2367" selection-end="2367" vertical-scroll-proportion="0.8526863">
+        <state line="50" column="84" selection-start="2745" selection-end="2745" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_sliding_list.xml">
+      <provider editor-type-id="text-editor">
+        <state line="12" column="43" selection-start="625" selection-end="625" vertical-scroll-proportion="-8.16">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
@@ -1290,7 +1794,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>Android 4.2.2 Platform (1)</last-edited>
+          <last-edited>Maven Android 4.1.2 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1302,7 +1806,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: backport-util-concurrent:backport-util-concurrent:3.1</last-edited>
+          <last-edited>google-play-services</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

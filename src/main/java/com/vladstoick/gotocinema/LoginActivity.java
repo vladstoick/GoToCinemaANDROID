@@ -39,7 +39,7 @@ public class LoginActivity extends SherlockActivity {
         String user_id = settings.getString("user_id","0");
         if(!apiKey.equals("0") && !user_id.equals("0"))
         {
-            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
             startActivity(intent);
         }
@@ -122,7 +122,7 @@ public class LoginActivity extends SherlockActivity {
                     }
 
                     if (loginStatus) {
-                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                         SharedPreferences sharedPref = getSharedPreferences("appPref", Context.MODE_PRIVATE);
 //			    		SharedPreferences sharedPref = (getApplicationContext()).getPreferences(Context.MODE_PRIVATE);

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="left"
+            
+              android:baselineAligned="true">
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="left"
+	    android:layout_weight="0.24"
+	    android:orientation="vertical" >
+
+            <ImageView
+                android:contentDescription="IMG"
+                android:id="@+id/cinemaPoster"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+    />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+          android:padding="10dp">
+
+        <TextView
+                android:id="@+id/rowEnTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eroareLoading"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+                android:id="@+id/rowRoTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eroareLoading"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView
+                android:id="@+id/rowCinema"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eroareLoading"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </LinearLayout>
+
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	      android:padding="10dp" >
+    <TextView
+            android:id="@+id/rowOra"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/oraDefault"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+     <TextView
+        android:id="@+id/rowKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@id/rowOra" />
+	</RelativeLayout>
+</LinearLayout>
