@@ -43,7 +43,7 @@ public class AparitiiCinemaAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
         View row = convertView;
         AparitiiCinemaRowHandler holder;
-        AparitiiCinema aparitie = data.get(position);
+        final AparitiiCinema aparitie = data.get(position);
         if (row == null) {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
             row = inflater.inflate(R.layout.list_row_view, parent, false);
@@ -55,10 +55,24 @@ public class AparitiiCinemaAdapter extends BaseAdapter {
             holder.distanta = (TextView) row.findViewById(R.id.rowKM);
             holder.imgView = (ImageView) row.findViewById(R.id.cinemaPoster);
             ImageButton favorite = (ImageButton) row.findViewById(R.id.favorite);
+            ImageButton like = (ImageButton) row.findViewById(R.id.like);
+            ImageButton disliek = (ImageButton) row.findViewById(R.id.dislike);
             favorite.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     FilmListFragment.clickedFavorite(position,aparitie);
+                }
+            });
+            like.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FilmListFragment.clickedLike(position, aparitie);
+                }
+            });
+            like.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FilmListFragment.clickedDislike(position,aparitie);
                 }
             });
             row.setTag(holder);

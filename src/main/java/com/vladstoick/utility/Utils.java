@@ -27,7 +27,7 @@ public class Utils {
         try {
             return formatter.parse(hour + ":" + minute);
         } catch (ParseException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
             return null;
         }
@@ -37,7 +37,7 @@ public class Utils {
         try {
             return formatter.parse(time);
         } catch (ParseException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
             return null;
         }

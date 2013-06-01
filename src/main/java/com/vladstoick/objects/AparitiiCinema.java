@@ -77,13 +77,13 @@ public class AparitiiCinema implements Parcelable {
 
     @Override
     public int describeContents() {
-        // TODO Auto-generated method stub
+
         return 0;
     }
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        // TODO Auto-generated method stub
+
         dest.writeString(roTitle);
         dest.writeString(enTitle);
         dest.writeString(cinemaName);

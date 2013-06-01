@@ -57,7 +57,7 @@ public class SearchFragment extends SherlockFragment {
                                 searchId.add(jResults.getJSONObject(i).getString("id"));
                             }
 						} catch (JSONException e) {
-							// TODO Auto-generated catch block
+
 							e.printStackTrace();
 						} 
 	                    updateSearchResults(results);

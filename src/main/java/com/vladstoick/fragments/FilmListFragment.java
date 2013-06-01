@@ -91,7 +91,15 @@ public class FilmListFragment extends SherlockFragment {
     }
     public final static void clickedFavorite(int position,AparitiiCinema data)
     {
-
+        //TODO implement function
+    }
+    public final static void clickedLike(int position,AparitiiCinema data)
+    {
+        //TODO implement function
+    }
+    public final static void clickedDislike(int position,AparitiiCinema data)
+    {
+        //TODO implement function
     }
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

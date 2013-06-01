@@ -5,8 +5,6 @@
     android:orientation="vertical"
     tools:context=".SearchFragment" >
 
-    <!-- TODO: Update blank fragment layout -->
-
     <EditText
         android:id="@+id/searchInput"
         android:inputType="text"

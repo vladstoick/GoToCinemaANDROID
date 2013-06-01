@@ -21,7 +21,6 @@ public class Post implements Parcelable {
     };
     @Override
     public int describeContents() {
-        // TODO Auto-generated method stub
         return 0;
     }
     private Post(Parcel in)
