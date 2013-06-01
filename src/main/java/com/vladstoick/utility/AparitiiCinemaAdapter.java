@@ -43,6 +43,7 @@ public class AparitiiCinemaAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
         View row = convertView;
         AparitiiCinemaRowHandler holder;
+        AparitiiCinema aparitie = data.get(position);
         if (row == null) {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
             row = inflater.inflate(R.layout.list_row_view, parent, false);
@@ -57,14 +58,14 @@ public class AparitiiCinemaAdapter extends BaseAdapter {
             favorite.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    FilmListFragment.clickedFavorite(position);
+                    FilmListFragment.clickedFavorite(position,aparitie);
                 }
             });
             row.setTag(holder);
         } else {
             holder = (AparitiiCinemaRowHandler) row.getTag();
         }
-        AparitiiCinema aparitie = data.get(position);
+
         holder.enTitle.setText(aparitie.enTitle);
         holder.roTitle.setText(aparitie.roTitle);
         holder.ora.setText(Utils.getStringFromDate(aparitie.ora));

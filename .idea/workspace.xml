@@ -579,14 +579,7 @@
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\3_rating_bad.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\3_rating_favorite.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\3_rating_good.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-mdpi\3_rating_bad.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-mdpi\3_rating_favorite.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-mdpi\3_rating_good.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-xhdpi\3_rating_bad.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-xhdpi\3_rating_favorite.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-xhdpi\3_rating_good.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes.dex" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\android\UnusedStub.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\android\support\v4\app\Watson$OnCreateOptionsMenuListener.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\android\support\v4\app\Watson$OnOptionsItemSelectedListener.class" afterPath="" />
@@ -952,24 +945,10 @@
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\utility\PostsAdapter$PostRowHandler.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\utility\PostsAdapter.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\classes\com\vladstoick\utility\Utils.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\actionbarsherlock\Manifest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\actionbarsherlock\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\fortysevendeg\android\swipelistview\Manifest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\fortysevendeg\android\swipelistview\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\google\android\gms\Manifest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\google\android\gms\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\gotocinema.ap_" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\gotocinema.apk" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\gotocinema.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\maven-archiver\pom.properties" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/list_row_view.xml" afterPath="$PROJECT_DIR$/res/layout/list_row_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gotocinema.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -990,9 +969,9 @@
     <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/ActionBar.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059582479" ignored="false" />
     <file path="/SlidingMenuFragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370088176080" ignored="false" />
     <file path="/menu_frame.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370088198649" ignored="false" />
-    <file path="/FilmListFragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370096586896" ignored="false" />
+    <file path="/FilmListFragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370096736329" ignored="false" />
     <file path="/fragment_film_list.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370089097703" ignored="false" />
-    <file path="/AparitiiCinemaAdapter.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370096643241" ignored="false" />
+    <file path="/AparitiiCinemaAdapter.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370096724336" ignored="false" />
     <file path="/list_row_view.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370096532191" ignored="false" />
     <file path="/styles.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370091364498" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1086,10 +1065,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilmListFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FilmListFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="44" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0">
+            <state line="93" column="8" selection-start="3570" selection-end="3570" vertical-scroll-proportion="0.58965516">
               <folding />
             </state>
           </provider>
@@ -1125,12 +1104,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AparitiiCinemaAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AparitiiCinemaAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="39" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.5017241">
+            <state line="45" column="53" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#2303#2304#0" expanded="true" />
+                <element signature="e#2176#2381#0" expanded="true" />
+                <element signature="e#2366#2367#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1168,8 +1148,8 @@
         <option value="$PROJECT_DIR$/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/res/layout/fragment_film_list.xml" />
         <option value="$PROJECT_DIR$/res/layout/list_row_view.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" />
       </list>
     </option>
   </component>
@@ -1721,7 +1701,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817504" sideWeight="0.672586" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817504" sideWeight="0.672586" order="2" side_tool="false" content_ui="tabs" />
@@ -1734,7 +1714,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32741398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32741398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946581" sideWeight="0.672586" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1918,19 +1898,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="44" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="45" column="53" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2176#2381#0" expanded="true" />
+            <element signature="e#2366#2367#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="39" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.5017241">
-          <folding>
-            <element signature="e#2303#2304#0" expanded="true" />
-          </folding>
+        <state line="93" column="8" selection-start="3570" selection-end="3570" vertical-scroll-proportion="0.58965516">
+          <folding />
         </state>
       </provider>
     </entry>

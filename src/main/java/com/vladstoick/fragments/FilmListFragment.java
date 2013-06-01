@@ -89,9 +89,9 @@ public class FilmListFragment extends SherlockFragment {
         }
         return view;
     }
-    public final static void clickedFavorite(int position)
+    public final static void clickedFavorite(int position,AparitiiCinema data)
     {
-        Log.e("clicked","Clicked"+position);
+
     }
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
