@@ -469,244 +469,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_actionbarsherlock_actionbarsherlock_apklib_4_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_gms_google_play_services_apklib_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes.dex" afterPath="$PROJECT_DIR$/target/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.ap_" afterPath="$PROJECT_DIR$/target/gotocinema.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.apk" afterPath="$PROJECT_DIR$/target/gotocinema.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.jar" afterPath="$PROJECT_DIR$/target/gotocinema.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/AbsActionBarView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/AbsActionBarView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/ActionBarContainer.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/ActionBarContainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/ActionBarContextView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/ActionBarContextView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/app/ActionBarImpl.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/app/ActionBarImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/ActionBarSherlockCompat.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/ActionBarSherlockCompat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/ActionBarSherlockNative.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/ActionBarSherlockNative.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/ActionBarView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/ActionBarView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/app/ActionBarWrapper.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/app/ActionBarWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenu.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenuItem.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenuItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenuItemView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenuItemView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenuView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ActionMenuView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/ActionProvider.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/ActionProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/ActionProviderWrapper.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/ActionProviderWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/ActivityChooserModel.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/ActivityChooserModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/ActivityChooserView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/ActivityChooserView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/AndroidManifest.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/Animator.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/Animator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorListenerAdapter.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorListenerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/BaseMenuPresenter.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/BaseMenuPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/gen/com/actionbarsherlock/BuildConfig.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/gen/com/actionbarsherlock/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/actionbarsherlock/BuildConfig.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/actionbarsherlock/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/google/android/gms/BuildConfig.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/google/android/gms/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/BuildConfig.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/CollapsibleActionView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/CollapsibleActionView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/FloatEvaluator.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/FloatEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsAbsSpinner.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsAbsSpinner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsAdapterView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsAdapterView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsColorDrawable.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsColorDrawable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsLinearLayout.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsLinearLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsProgressBar.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsProgressBar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsSpinner.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsSpinner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsToast.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsToast.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/IcsView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/IntEvaluator.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/IntEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/IntKeyframeSet.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/IntKeyframeSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ListMenuItemView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/ListMenuItemView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/gen/com/actionbarsherlock/Manifest.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/gen/com/actionbarsherlock/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/gen/com/google/android/gms/Manifest.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/gen/com/google/android/gms/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/Menu.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuBuilder.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/MenuItem.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/MenuItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuItemImpl.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuItemImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuItemWrapper.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuItemWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuPopupHelper.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuPopupHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuPresenter.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuWrapper.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/MenuWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/ObjectAnimator.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/ObjectAnimator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/gen/com/actionbarsherlock/R.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/gen/com/actionbarsherlock/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/gen/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/gen/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/ResourcesCompat.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/ResourcesCompat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/ScrollingTabContainerView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/ScrollingTabContainerView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/SearchView.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/SearchView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/ShareActionProvider.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/ShareActionProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/SherlockDialogFragment.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/SherlockDialogFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/SherlockFragment.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/SherlockFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/SherlockFragmentActivity.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/SherlockFragmentActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/SherlockListFragment.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/app/SherlockListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/StandaloneActionMode.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/StandaloneActionMode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/SubMenu.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/SubMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/SubMenuBuilder.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/SubMenuBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/SubMenuWrapper.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/menu/SubMenuWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/SuggestionsAdapter.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/widget/SuggestionsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/TabsLinearLayout.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/widget/TabsLinearLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/src/android/UnusedStub.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/src/android/UnusedStub.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/View_HasStateListenerSupport.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/View_HasStateListenerSupport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/View_OnAttachStateChangeListener.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/internal/view/View_OnAttachStateChangeListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/android/support/v4/app/Watson.java" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/android/support/v4/app/Watson.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_bar_home.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_bar_home.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_bar_tab.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_bar_tab.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_bar_tab_bar_view.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_bar_tab_bar_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_bar_title_item.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_bar_title_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_menu_item_layout.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_menu_layout.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_menu_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_mode_bar.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_mode_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_mode_close_item.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__action_mode_close_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-large/abs__action_mode_close_item.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-large/abs__action_mode_close_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__activated_background_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__activated_background_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__activated_background_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__activated_background_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__activity_chooser_view.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__activity_chooser_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__activity_chooser_view_list_item.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__activity_chooser_view_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__attrs.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__attrs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__bools.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__bools.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-sw600dp/abs__bools.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-sw600dp/abs__bools.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w480dp/abs__bools.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w480dp/abs__bools.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__btn_cab_done_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__btn_cab_done_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__btn_cab_done_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__btn_cab_done_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__colors.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__config.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w480dp/abs__config.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w480dp/abs__config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-land/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-land/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-large-hdpi-1024x600/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-large-hdpi-1024x600/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-large-land-hdpi-1024x600/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-large-land-hdpi-1024x600/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-large-land-mdpi-1024x600/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-large-land-mdpi-1024x600/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-large-mdpi-1024x600/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-large-mdpi-1024x600/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-sw600dp/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-sw600dp/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w360dp/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w360dp/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w500dp/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w500dp/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w600dp/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-w600dp/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-xlarge/abs__dimens.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-xlarge/abs__dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__ic_clear.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__ic_clear.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__ic_clear_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__ic_clear_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__ic_menu_moreoverflow_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__ic_menu_moreoverflow_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__ids.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__ids.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__item_background_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__item_background_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__item_background_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__item_background_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__list_menu_item_checkbox.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__list_menu_item_checkbox.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__list_menu_item_icon.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__list_menu_item_icon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__list_menu_item_radio.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__list_menu_item_radio.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_background_transition_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_background_transition_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_background_transition_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_background_transition_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__list_selector_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__popup_menu_item_layout.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__popup_menu_item_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_disable_only_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_disable_only_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_disable_only_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_disable_only_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/color/abs__primary_text_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__progress_horizontal_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__progress_horizontal_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__progress_horizontal_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__progress_horizontal_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__progress_medium_holo.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__progress_medium_holo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable-v11/abs__progress_medium_holo.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable-v11/abs__progress_medium_holo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__screen_action_bar.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__screen_action_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-xlarge/abs__screen_action_bar.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-xlarge/abs__screen_action_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__screen_action_bar_overlay.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__screen_action_bar_overlay.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-xlarge/abs__screen_action_bar_overlay.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-xlarge/abs__screen_action_bar_overlay.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__screen_simple.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__screen_simple.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__screen_simple_overlay_action_mode.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__screen_simple_overlay_action_mode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__search_dropdown_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__search_dropdown_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__search_dropdown_item_icons_2line.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__search_dropdown_item_icons_2line.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__search_dropdown_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__search_dropdown_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__search_view.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__search_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__simple_dropdown_hint.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/abs__simple_dropdown_hint.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__spinner_ab_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__spinner_ab_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__spinner_ab_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__spinner_ab_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__styles.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-v14/abs__styles.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-v14/abs__styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__tab_indicator_ab_holo.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__tab_indicator_ab_holo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__textfield_searchview_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__textfield_searchview_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__textfield_searchview_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__textfield_searchview_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__textfield_searchview_right_holo_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__textfield_searchview_right_holo_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__textfield_searchview_right_holo_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/drawable/abs__textfield_searchview_right_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__themes.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values/abs__themes.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-v11/abs__themes.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-v11/abs__themes.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-v14/abs__themes.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/values-v14/abs__themes.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values/colors.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/drawable/common_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/drawable/common_signin_btn_icon_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/drawable/common_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/drawable/common_signin_btn_icon_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/color/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/color/common_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/drawable/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/drawable/common_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/color/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/color/common_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/drawable/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/drawable/common_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gotocinema.iml" afterPath="$PROJECT_DIR$/gotocinema.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values/maps_attrs.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values/maps_attrs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/menu_frame.xml" afterPath="$PROJECT_DIR$/res/layout/menu_frame.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/sherlock_spinner_dropdown_item.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/sherlock_spinner_dropdown_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-v14/sherlock_spinner_dropdown_item.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-v14/sherlock_spinner_dropdown_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/sherlock_spinner_item.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout/sherlock_spinner_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-v14/sherlock_spinner_item.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/res/layout-v14/sherlock_spinner_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-af/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-af/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-am/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-am/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ar/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ar/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-be/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-be/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-bg/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-bg/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ca/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ca/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-cs/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-cs/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-da/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-da/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-de/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-de/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-el/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-el/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-en-rGB/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-en-rGB/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-es/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-es/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-es-rUS/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-es-rUS/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-et/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-et/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-fa/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-fa/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-fi/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-fi/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-fr/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-fr/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-hi/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-hi/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-hr/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-hr/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-hu/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-hu/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-in/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-in/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-it/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-it/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-iw/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-iw/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ja/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ja/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ko/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ko/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-lt/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-lt/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-lv/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-lv/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ms/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ms/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-nb/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-nb/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-nl/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-nl/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-pl/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-pl/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-pt/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-pt/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-pt-rBR/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-pt-rBR/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-pt-rPT/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-pt-rPT/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ro/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ro/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ru/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-ru/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sk/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sk/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sl/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sl/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sr/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sr/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sv/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sv/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sw/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-sw/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-th/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-th/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-tl/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-tl/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-tr/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-tr/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-uk/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-uk/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-vi/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-vi/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-zh-rCN/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-zh-rCN/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-zh-rTW/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-zh-rTW/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-zu/strings.xml" afterPath="$PROJECT_DIR$/gen-external-apklibs/com.google.android.gms_google-play-services_7/res/values-zu/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/actionbarsherlock/R.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/actionbarsherlock/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-sw600dp/dimens.xml" afterPath="$PROJECT_DIR$/res/values-sw600dp/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gotocinema.iws" />
@@ -828,61 +600,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="74" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0">
+            <state line="43" column="43" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.580/GoToCinemaANDROID-master/AndroidManifest.xml">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.051/GoToCinemaANDROID-master/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="7" selection-start="2880" selection-end="3024" vertical-scroll-proportion="0.0">
+            <state line="44" column="43" selection-start="2393" selection-end="2428" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu_frame.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/menu_frame.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.193/GoToCinemaANDROID-master/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="70" selection-start="773" selection-end="773" vertical-scroll-proportion="0.5473485">
+            <state line="0" column="0" selection-start="0" selection-end="1023" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SlidingMenuFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java">
+      <file leaf-file-name="styles.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="33" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_sliding_list.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_sliding_list.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="117" selection-start="160" selection-end="160" vertical-scroll-proportion="-0.68">
+            <state line="18" column="12" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.5533454">
               <folding />
             </state>
           </provider>
@@ -906,8 +654,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/CalculateMainMenuFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/OnFragmentInteractionListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmDetailsFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java" />
@@ -919,9 +665,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/TimePickerFragment.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/menu_frame.xml" />
+        <option value="$PROJECT_DIR$/res/values-sw600dp/dimens.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles.xml" />
       </list>
     </option>
   </component>
@@ -1012,156 +760,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vladstoick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utility" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vladstoick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="objects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vladstoick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotocinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vladstoick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vladstoick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialogfragments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1180,21 +778,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1442,7 +1026,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.67074525" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18963675" sideWeight="0.6718576" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18943436" sideWeight="0.6718576" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1517,67 +1101,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="62" selection-start="852" selection-end="852" vertical-scroll-proportion="0.24444444">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/PostsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="462" selection-end="462" vertical-scroll-proportion="0.5466667">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#735#741#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/JSONParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.15111111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/objects/Cinema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.075555556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/OnFragmentInteractionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="164" selection-end="164" vertical-scroll-proportion="0.30222222">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/ProgressDialogFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="95" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="88" selection-start="5040" selection-end="5040" vertical-scroll-proportion="0.58925474">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="0" selection-start="1838" selection-end="1838" vertical-scroll-proportion="0.0">
@@ -1585,30 +1108,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/GoToCinemaANDROID-master/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="8" selection-start="3033" selection-end="3181" vertical-scroll-proportion="0.7071057" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.580/GoToCinemaANDROID-master/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="7" selection-start="2880" selection-end="3024" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="74" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/fragment_sliding_list.xml">
@@ -1634,6 +1136,83 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="70" selection-start="773" selection-end="773" vertical-scroll-proportion="0.5473485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.580/GoToCinemaANDROID-master/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="93" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.029411765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.029411765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.407/GoToCinemaANDROID-master/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="79" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-sw600dp/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="56" selection-start="1066" selection-end="1066" vertical-scroll-proportion="-12.24">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.317/GoToCinemaANDROID-master/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1023" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/ProgressDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="43" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.051/GoToCinemaANDROID-master/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="43" selection-start="2393" selection-end="2428" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.193/GoToCinemaANDROID-master/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1023" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="12" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.5533454">
           <folding />
         </state>
       </provider>
