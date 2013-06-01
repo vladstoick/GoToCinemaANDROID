@@ -5,9 +5,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockFragment;
+
+import com.fortysevendeg.android.swipelistview.BaseSwipeListViewListener;
 import com.fortysevendeg.android.swipelistview.SwipeListView;
 import com.vladstoick.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.OnFragmentInteractionListener;
@@ -78,14 +79,18 @@ public class FilmListFragment extends SherlockFragment {
             AparitiiCinemaAdapter adapter = new AparitiiCinemaAdapter(getActivity(), moviesToBeShown);
             SwipeListView slv = (SwipeListView) view.findViewById(R.id.swipelistview);
             slv.setAdapter(adapter);
+            slv.setSwipeListViewListener(new BaseSwipeListViewListener() {
+                @Override
+                public void onClickFrontView(int position) {
+                    mListener.openFilmViewWithData(moviesToBeShown.get(position));
+                }
+            });
         }
         return view;
     }
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-
 		setHasOptionsMenu(true);
 	}
 

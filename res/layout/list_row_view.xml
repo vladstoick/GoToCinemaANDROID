@@ -36,21 +36,24 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/example_row_b_action_1"
                 style="@style/ListButtonAction"
-                android:text="HELLO"/>
+                android:src="@drawable/3_rating_bad"
+                />
 
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/example_row_b_action_2"
                 style="@style/ListButtonAction"
-                android:text="HELLO"/>
+                android:src="@drawable/3_rating_good"
+                />
 
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/example_row_b_action_3"
                 style="@style/ListButtonAction"
-                android:text="HELLO"/>
+                android:src="@drawable/3_rating_favorite"
+                />
 
     </LinearLayout>
     <LinearLayout  android:orientation="horizontal"
@@ -63,12 +66,15 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="left"
                         android:layout_weight="0.24"
-                        android:orientation="vertical" >
+                        android:orientation="vertical"
+
+                        >
                 <ImageView
                         android:contentDescription="IMG"
                         android:id="@+id/cinemaPoster"
                         android:layout_width="match_parent"
                         android:layout_height="fill_parent"
+
                 />
           </LinearLayout>
           <LinearLayout android:layout_width="0dip"
