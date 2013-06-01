@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Mergi la cinema</string>
-    <string name="calculateButtonTitle">Află la ce filme poţi merge!</string>
-    <string name="eroareLoading">error</string>
-    <string name="oraDefault">24:60</string>
-    <string name="changeHour">Schimbă ora</string>
-    <string name="changeLocation">Schimbă locaţia</string>
-    <string name="sortByTime">Sortează după oră</string>
-    <string name="sortByDistance">Sortează după distanţă</string>
-    <string name="sortByName">Sortează după numele fimului</string>
-    <string name="openInMaps">Deschide în Google Maps</string>
-    <string name="defaultHourUsed">Ora folosită : 20:24</string>
-    <string name="wrong_password">Parola este greșită</string>
-    <string name="parola">Parolă</string>
-    <string name="wrong_username">Userul este greșit</string>
-    <string name="username">Username</string>
-    <string name="signIn">Logheză-te</string>
-    <string name="post">Postează pe profilul acestui utilizator</string>
-    <string name="searchField">Introduceţi numele utilizatorului</string>
-    <string name="loading">Loading...</string>
-    <string name="drawer_open">Meniu deschis</string>
-    <string name="drawer_close">Meniu închis</string>
-    <string name="login_progress_signing_in">Te loghezi...</string>
+    <string name="app_name">Mergi la Cinema</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_progress_signing_in"></string>
+    <string name="username">Numele utilizatorului</string>
+    <string name="parola">Parola</string>
+    <string name="signIn">Logheaza-te</string>
+    <string name="wrong_password">Parola gresita</string>
+    <string name="wrong_username">Username gresit</string>
 </resources>
