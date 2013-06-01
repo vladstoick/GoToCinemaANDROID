@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -14,33 +15,40 @@ import com.vladstoick.objects.AparitiiCinema;
 
 import java.util.ArrayList;
 
-public class AparitiiCinemaAdapter extends ArrayAdapter<AparitiiCinema> {
+public class AparitiiCinemaAdapter extends BaseAdapter {
     static class AparitiiCinemaRowHandler {
         TextView roTitle, enTitle, ora, cinema,distanta;
         ImageView imgView;
     }
     private final Context context;
-    private final int layoutResourceId;
-
     private ArrayList<AparitiiCinema> data = new ArrayList<AparitiiCinema>();
 
-    public AparitiiCinemaAdapter(Context context, int textViewResourceId, ArrayList<AparitiiCinema> data) {
-        super(context, textViewResourceId, data);
-        this.layoutResourceId = textViewResourceId;
+    public AparitiiCinemaAdapter(Context context,  ArrayList<AparitiiCinema> data) {
         this.context = context;
         this.data = data;
     }
+    @Override
+    public int getCount() {
+        return data.size();
+    }
 
+    @Override
+    public AparitiiCinema getItem(int position) {
+        return data.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
         AparitiiCinemaRowHandler holder;
         if (row == null) {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
-            row = inflater.inflate(layoutResourceId, parent, false);
-
+            row = inflater.inflate(R.layout.list_row_view, parent, false);
             holder = new AparitiiCinemaRowHandler();
-
             holder.roTitle = (TextView) row.findViewById(R.id.rowRoTitle);
             holder.enTitle = (TextView) row.findViewById(R.id.rowEnTitle);
             holder.ora = (TextView) row.findViewById(R.id.rowOra);

@@ -557,6 +557,93 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int subtitleTextStyle=0x7f01000f;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>reveal</code></td><td>0</td><td></td></tr>
+<tr><td><code>dismiss</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int swipeActionLeft=0x7f010078;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>reveal</code></td><td>0</td><td></td></tr>
+<tr><td><code>dismiss</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int swipeActionRight=0x7f010079;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int swipeAnimationTime=0x7f010071;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int swipeBackView=0x7f010076;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int swipeCloseAllItemsWhenMoveList=0x7f010074;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int swipeFrontView=0x7f010075;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>both</code></td><td>1</td><td></td></tr>
+<tr><td><code>right</code></td><td>2</td><td></td></tr>
+<tr><td><code>left</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int swipeMode=0x7f010077;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int swipeOffsetLeft=0x7f010072;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int swipeOffsetRight=0x7f010073;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int swipeOpenOnLongPress=0x7f010070;
         /**  Text color, typeface, size, and style for the text inside of a popup menu. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -804,11 +891,16 @@ containing a value of this type.
         public static final int abs__bright_foreground_disabled_holo_light=0x7f04000f;
         public static final int abs__bright_foreground_holo_dark=0x7f04000c;
         public static final int abs__bright_foreground_holo_light=0x7f04000d;
-        public static final int abs__primary_text_disable_only_holo_dark=0x7f040012;
-        public static final int abs__primary_text_disable_only_holo_light=0x7f040013;
-        public static final int abs__primary_text_holo_dark=0x7f040014;
-        public static final int abs__primary_text_holo_light=0x7f040015;
+        public static final int abs__primary_text_disable_only_holo_dark=0x7f040018;
+        public static final int abs__primary_text_disable_only_holo_light=0x7f040019;
+        public static final int abs__primary_text_holo_dark=0x7f04001a;
+        public static final int abs__primary_text_holo_light=0x7f04001b;
         public static final int actionBarColor=0x7f040010;
+        /**  Commons 
+         */
+        public static final int background_app=0x7f040012;
+        public static final int background_list_back=0x7f040013;
+        public static final int background_list_front=0x7f040014;
         public static final int common_action_bar_splitter=0x7f040009;
         /**  Sign-in Button Colors 
          */
@@ -821,9 +913,12 @@ containing a value of this type.
         public static final int common_signin_btn_light_text_disabled=0x7f040006;
         public static final int common_signin_btn_light_text_focused=0x7f040007;
         public static final int common_signin_btn_light_text_pressed=0x7f040005;
-        public static final int common_signin_btn_text_dark=0x7f040016;
-        public static final int common_signin_btn_text_light=0x7f040017;
+        public static final int common_signin_btn_text_dark=0x7f04001c;
+        public static final int common_signin_btn_text_light=0x7f04001d;
+        public static final int line=0x7f040017;
         public static final int slidingMenuColor=0x7f040011;
+        public static final int text_description=0x7f040016;
+        public static final int text_title=0x7f040015;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -930,6 +1025,19 @@ containing a value of this type.
          */
         public static final int activity_horizontal_margin=0x7f08000f;
         public static final int activity_vertical_margin=0x7f080010;
+        public static final int font_size_description=0x7f080018;
+        public static final int font_size_title=0x7f080017;
+        /**  Products 
+         */
+        public static final int height_list=0x7f080015;
+        public static final int line_default=0x7f080014;
+        public static final int margin_default=0x7f080013;
+        public static final int margin_setting=0x7f080019;
+        public static final int padding_default=0x7f080012;
+        /**  Default 
+         */
+        public static final int radius_default=0x7f080011;
+        public static final int size_list_image=0x7f080016;
     }
     public static final class drawable {
         public static final int abs__ab_bottom_solid_dark_holo=0x7f020000;
@@ -1073,98 +1181,109 @@ containing a value of this type.
         public static final int ic_launcher=0x7f02008a;
     }
     public static final class id {
-        public static final int abs__action_bar=0x7f050024;
-        public static final int abs__action_bar_container=0x7f050023;
-        public static final int abs__action_bar_subtitle=0x7f050015;
-        public static final int abs__action_bar_title=0x7f050014;
-        public static final int abs__action_context_bar=0x7f050025;
+        public static final int abs__action_bar=0x7f050029;
+        public static final int abs__action_bar_container=0x7f050028;
+        public static final int abs__action_bar_subtitle=0x7f05001a;
+        public static final int abs__action_bar_title=0x7f050019;
+        public static final int abs__action_context_bar=0x7f05002a;
         public static final int abs__action_menu_divider=0x7f050010;
         public static final int abs__action_menu_presenter=0x7f050011;
-        public static final int abs__action_mode_bar=0x7f050029;
-        public static final int abs__action_mode_bar_stub=0x7f050028;
-        public static final int abs__action_mode_close_button=0x7f050018;
-        public static final int abs__activity_chooser_view_content=0x7f050019;
-        public static final int abs__checkbox=0x7f050020;
-        public static final int abs__content=0x7f050026;
-        public static final int abs__default_activity_button=0x7f05001c;
-        public static final int abs__expand_activities_button=0x7f05001a;
+        public static final int abs__action_mode_bar=0x7f05002e;
+        public static final int abs__action_mode_bar_stub=0x7f05002d;
+        public static final int abs__action_mode_close_button=0x7f05001d;
+        public static final int abs__activity_chooser_view_content=0x7f05001e;
+        public static final int abs__checkbox=0x7f050025;
+        public static final int abs__content=0x7f05002b;
+        public static final int abs__default_activity_button=0x7f050021;
+        public static final int abs__expand_activities_button=0x7f05001f;
         public static final int abs__home=0x7f05000e;
-        public static final int abs__icon=0x7f05001e;
-        public static final int abs__image=0x7f05001b;
-        public static final int abs__imageButton=0x7f050016;
-        public static final int abs__list_item=0x7f05001d;
+        public static final int abs__icon=0x7f050023;
+        public static final int abs__image=0x7f050020;
+        public static final int abs__imageButton=0x7f05001b;
+        public static final int abs__list_item=0x7f050022;
         public static final int abs__progress_circular=0x7f050012;
         public static final int abs__progress_horizontal=0x7f050013;
-        public static final int abs__radio=0x7f050021;
-        public static final int abs__search_badge=0x7f05002c;
-        public static final int abs__search_bar=0x7f05002b;
-        public static final int abs__search_button=0x7f05002d;
-        public static final int abs__search_close_btn=0x7f050032;
-        public static final int abs__search_edit_frame=0x7f05002e;
-        public static final int abs__search_go_btn=0x7f050034;
-        public static final int abs__search_mag_icon=0x7f05002f;
-        public static final int abs__search_plate=0x7f050030;
-        public static final int abs__search_src_text=0x7f050031;
-        public static final int abs__search_voice_btn=0x7f050035;
-        public static final int abs__shortcut=0x7f050022;
-        public static final int abs__split_action_bar=0x7f050027;
-        public static final int abs__submit_area=0x7f050033;
-        public static final int abs__textButton=0x7f050017;
-        public static final int abs__title=0x7f05001f;
+        public static final int abs__radio=0x7f050026;
+        public static final int abs__search_badge=0x7f050031;
+        public static final int abs__search_bar=0x7f050030;
+        public static final int abs__search_button=0x7f050032;
+        public static final int abs__search_close_btn=0x7f050037;
+        public static final int abs__search_edit_frame=0x7f050033;
+        public static final int abs__search_go_btn=0x7f050039;
+        public static final int abs__search_mag_icon=0x7f050034;
+        public static final int abs__search_plate=0x7f050035;
+        public static final int abs__search_src_text=0x7f050036;
+        public static final int abs__search_voice_btn=0x7f05003a;
+        public static final int abs__shortcut=0x7f050027;
+        public static final int abs__split_action_bar=0x7f05002c;
+        public static final int abs__submit_area=0x7f050038;
+        public static final int abs__textButton=0x7f05001c;
+        public static final int abs__title=0x7f050024;
         public static final int abs__up=0x7f05000f;
-        public static final int action_settings=0x7f05005c;
-        public static final int actori=0x7f050042;
-        public static final int btnCalculate=0x7f05003f;
-        public static final int btnChangeTime=0x7f05003e;
-        public static final int cinemaPoster=0x7f050052;
-        public static final int content_frame=0x7f050059;
+        public static final int action_settings=0x7f050067;
+        public static final int actori=0x7f050047;
+        public static final int back=0x7f05004e;
+        public static final int both=0x7f050014;
+        public static final int btnCalculate=0x7f050044;
+        public static final int btnChangeTime=0x7f050043;
+        public static final int cinemaPoster=0x7f05005d;
+        public static final int content_frame=0x7f050064;
         public static final int disableHome=0x7f05000d;
-        public static final int distance=0x7f050044;
-        public static final int dob=0x7f05004c;
-        public static final int drawer_layout=0x7f050058;
-        public static final int edit_query=0x7f05002a;
-        public static final int email=0x7f050039;
-        public static final int fullname=0x7f05004b;
-        public static final int gen=0x7f050041;
+        public static final int dismiss=0x7f050018;
+        public static final int distance=0x7f050049;
+        public static final int dob=0x7f050054;
+        public static final int drawer_layout=0x7f050063;
+        public static final int edit_query=0x7f05002f;
+        public static final int email=0x7f05003e;
+        public static final int example_row_b_action_1=0x7f05005a;
+        public static final int example_row_b_action_2=0x7f05005b;
+        public static final int example_row_b_action_3=0x7f05005c;
+        public static final int front=0x7f05004d;
+        public static final int fullname=0x7f050053;
+        public static final int gen=0x7f050046;
         public static final int homeAsUp=0x7f05000a;
-        public static final int hourUsed=0x7f05003d;
+        public static final int hourUsed=0x7f050042;
         public static final int hybrid=0x7f050004;
-        public static final int left_drawer=0x7f05005a;
+        public static final int left=0x7f050016;
+        public static final int left_drawer=0x7f050065;
         public static final int listMode=0x7f050006;
-        public static final int listview=0x7f050049;
-        public static final int login=0x7f05003b;
-        public static final int login_form=0x7f050038;
-        public static final int login_status=0x7f050036;
-        public static final int login_status_message=0x7f050037;
-        public static final int mapView=0x7f050046;
+        public static final int listview=0x7f050051;
+        public static final int login=0x7f050040;
+        public static final int login_form=0x7f05003d;
+        public static final int login_status=0x7f05003b;
+        public static final int login_status_message=0x7f05003c;
+        public static final int mapView=0x7f05004b;
         public static final int none=0x7f050000;
         public static final int normal=0x7f050001;
-        public static final int note=0x7f050040;
-        public static final int openMap=0x7f050045;
-        public static final int password=0x7f05003a;
-        public static final int posteaza=0x7f05004d;
-        public static final int poster=0x7f050050;
-        public static final int posterIMG=0x7f05004f;
-        public static final int regizor=0x7f050043;
-        public static final int rowCinema=0x7f050055;
-        public static final int rowEnTitle=0x7f050053;
-        public static final int rowKM=0x7f050057;
-        public static final int rowOra=0x7f050056;
-        public static final int rowRoTitle=0x7f050054;
+        public static final int note=0x7f050045;
+        public static final int openMap=0x7f05004a;
+        public static final int password=0x7f05003f;
+        public static final int posteaza=0x7f050055;
+        public static final int poster=0x7f050058;
+        public static final int posterIMG=0x7f050057;
+        public static final int regizor=0x7f050048;
+        public static final int reveal=0x7f050017;
+        public static final int right=0x7f050015;
+        public static final int rowCinema=0x7f050060;
+        public static final int rowEnTitle=0x7f05005e;
+        public static final int rowKM=0x7f050062;
+        public static final int rowOra=0x7f050061;
+        public static final int rowRoTitle=0x7f05005f;
         public static final int satellite=0x7f050002;
-        public static final int searchInput=0x7f050047;
-        public static final int searchResults=0x7f050048;
+        public static final int searchInput=0x7f05004f;
+        public static final int searchResults=0x7f050050;
         public static final int showCustom=0x7f05000c;
         public static final int showHome=0x7f050009;
         public static final int showTitle=0x7f05000b;
-        public static final int sign_in_button=0x7f05003c;
+        public static final int sign_in_button=0x7f050041;
+        public static final int swipelistview=0x7f05004c;
         public static final int tabMode=0x7f050007;
         public static final int terrain=0x7f050003;
-        public static final int textView1=0x7f05005b;
-        public static final int title=0x7f050051;
+        public static final int textView1=0x7f050066;
+        public static final int title=0x7f050059;
         public static final int useLogo=0x7f050008;
-        public static final int userProfileImg=0x7f05004a;
-        public static final int wallPostsListView=0x7f05004e;
+        public static final int userProfileImg=0x7f050052;
+        public static final int wallPostsListView=0x7f050056;
         public static final int wrap_content=0x7f050005;
     }
     public static final class integer {
@@ -1195,15 +1314,16 @@ containing a value of this type.
         public static final int activity_login=0x7f030015;
         public static final int fragment_calculate=0x7f030016;
         public static final int fragment_film_details=0x7f030017;
-        public static final int fragment_search=0x7f030018;
-        public static final int fragment_sliding_list=0x7f030019;
-        public static final int fragment_user=0x7f03001a;
-        public static final int list_row_profile=0x7f03001b;
-        public static final int list_row_view=0x7f03001c;
-        public static final int menu_frame=0x7f03001d;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001e;
-        public static final int sherlock_spinner_item=0x7f03001f;
-        public static final int sliding_row_view=0x7f030020;
+        public static final int fragment_film_list=0x7f030018;
+        public static final int fragment_search=0x7f030019;
+        public static final int fragment_sliding_list=0x7f03001a;
+        public static final int fragment_user=0x7f03001b;
+        public static final int list_row_profile=0x7f03001c;
+        public static final int list_row_view=0x7f03001d;
+        public static final int menu_frame=0x7f03001e;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001f;
+        public static final int sherlock_spinner_item=0x7f030020;
+        public static final int sliding_row_view=0x7f030021;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;
@@ -1360,9 +1480,19 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0a005c;
+        public static final int AppBaseTheme=0x7f0a0064;
         public static final int GoToCinemaTheme_ActionBarStyle=0x7f0a005a;
         public static final int GoToCinemaTheme_ActionBarTextStyle=0x7f0a005b;
+        public static final int Line=0x7f0a0063;
+        public static final int ListButtonAction=0x7f0a005f;
+        public static final int ListDescription=0x7f0a005e;
+        public static final int ListImage=0x7f0a005c;
+        public static final int ListTitle=0x7f0a005d;
+        public static final int SettingContent=0x7f0a0061;
+        public static final int SettingText=0x7f0a0062;
+        /**  Settings 
+         */
+        public static final int SettingTitle=0x7f0a0060;
         public static final int Sherlock___TextAppearance_Small=0x7f0a0046;
         public static final int Sherlock___Theme=0x7f0a0051;
         public static final int Sherlock___Theme_DarkActionBar=0x7f0a0053;
@@ -3834,5 +3964,185 @@ containing a value of this type.
           @attr name android:android_focusable
         */
         public static final int SherlockView_android_focusable = 0;
+        /** Attributes that can be used with a SwipeListView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SwipeListView_swipeActionLeft com.vladstoick.gotocinema:swipeActionLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwipeListView_swipeActionRight com.vladstoick.gotocinema:swipeActionRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwipeListView_swipeAnimationTime com.vladstoick.gotocinema:swipeAnimationTime}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwipeListView_swipeBackView com.vladstoick.gotocinema:swipeBackView}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwipeListView_swipeCloseAllItemsWhenMoveList com.vladstoick.gotocinema:swipeCloseAllItemsWhenMoveList}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwipeListView_swipeFrontView com.vladstoick.gotocinema:swipeFrontView}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwipeListView_swipeMode com.vladstoick.gotocinema:swipeMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwipeListView_swipeOffsetLeft com.vladstoick.gotocinema:swipeOffsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwipeListView_swipeOffsetRight com.vladstoick.gotocinema:swipeOffsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwipeListView_swipeOpenOnLongPress com.vladstoick.gotocinema:swipeOpenOnLongPress}</code></td><td></td></tr>
+           </table>
+           @see #SwipeListView_swipeActionLeft
+           @see #SwipeListView_swipeActionRight
+           @see #SwipeListView_swipeAnimationTime
+           @see #SwipeListView_swipeBackView
+           @see #SwipeListView_swipeCloseAllItemsWhenMoveList
+           @see #SwipeListView_swipeFrontView
+           @see #SwipeListView_swipeMode
+           @see #SwipeListView_swipeOffsetLeft
+           @see #SwipeListView_swipeOffsetRight
+           @see #SwipeListView_swipeOpenOnLongPress
+         */
+        public static final int[] SwipeListView = {
+            0x7f010070, 0x7f010071, 0x7f010072, 0x7f010073,
+            0x7f010074, 0x7f010075, 0x7f010076, 0x7f010077,
+            0x7f010078, 0x7f010079
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeActionLeft}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>reveal</code></td><td>0</td><td></td></tr>
+<tr><td><code>dismiss</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android:swipeActionLeft
+        */
+        public static final int SwipeListView_swipeActionLeft = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeActionRight}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>reveal</code></td><td>0</td><td></td></tr>
+<tr><td><code>dismiss</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name android:swipeActionRight
+        */
+        public static final int SwipeListView_swipeActionRight = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeAnimationTime}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:swipeAnimationTime
+        */
+        public static final int SwipeListView_swipeAnimationTime = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeBackView}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:swipeBackView
+        */
+        public static final int SwipeListView_swipeBackView = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeCloseAllItemsWhenMoveList}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:swipeCloseAllItemsWhenMoveList
+        */
+        public static final int SwipeListView_swipeCloseAllItemsWhenMoveList = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeFrontView}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:swipeFrontView
+        */
+        public static final int SwipeListView_swipeFrontView = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeMode}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>both</code></td><td>1</td><td></td></tr>
+<tr><td><code>right</code></td><td>2</td><td></td></tr>
+<tr><td><code>left</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name android:swipeMode
+        */
+        public static final int SwipeListView_swipeMode = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeOffsetLeft}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:swipeOffsetLeft
+        */
+        public static final int SwipeListView_swipeOffsetLeft = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeOffsetRight}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:swipeOffsetRight
+        */
+        public static final int SwipeListView_swipeOffsetRight = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.vladstoick.gotocinema.R.attr#swipeOpenOnLongPress}
+          attribute's value can be found in the {@link #SwipeListView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:swipeOpenOnLongPress
+        */
+        public static final int SwipeListView_swipeOpenOnLongPress = 0;
     };
 }

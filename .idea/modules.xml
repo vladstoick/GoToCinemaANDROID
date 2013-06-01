@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gotocinema.iml" filepath="$PROJECT_DIR$/gotocinema.iml" />
       <module fileurl="file://$PROJECT_DIR$/gen-external-apklibs/~apklib-com.actionbarsherlock_actionbarsherlock_4.3.1.iml" filepath="$PROJECT_DIR$/gen-external-apklibs/~apklib-com.actionbarsherlock_actionbarsherlock_4.3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gen-external-apklibs/~apklib-com.fortysevendeg.android_swipelistview_1.0-20130412.090702-9.iml" filepath="$PROJECT_DIR$/gen-external-apklibs/~apklib-com.fortysevendeg.android_swipelistview_1.0-20130412.090702-9.iml" />
       <module fileurl="file://$PROJECT_DIR$/gen-external-apklibs/~apklib-com.google.android.gms_google-play-services_7.iml" filepath="$PROJECT_DIR$/gen-external-apklibs/~apklib-com.google.android.gms_google-play-services_7.iml" />
     </modules>
   </component>
