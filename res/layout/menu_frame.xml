@@ -15,5 +15,5 @@
             android:layout_width="240dp"
             android:layout_gravity="start"
             android:choiceMode="singleChoice"
-            android:name="com.vladstoick.gotocinema.fragments.SlidingMenuFragment"/>
+            android:name="com.vladstoick.fragments.SlidingMenuFragment"/>
 </android.support.v4.widget.DrawerLayout>

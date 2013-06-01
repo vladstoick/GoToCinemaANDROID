@@ -20,6 +20,7 @@ public class SlidingMenuFragment extends SherlockFragment{
 			"Calculează",
 		};
 	private View view=null;
+    public SlidingMenuFragment(){}
 	private OnFragmentInteractionListener mListener;
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState){
