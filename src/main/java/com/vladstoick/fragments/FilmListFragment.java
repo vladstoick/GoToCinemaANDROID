@@ -2,6 +2,7 @@ package com.vladstoick.fragments;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -87,6 +88,10 @@ public class FilmListFragment extends SherlockFragment {
             });
         }
         return view;
+    }
+    public final static void clickedFavorite(int position)
+    {
+        Log.e("clicked","Clicked"+position);
     }
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

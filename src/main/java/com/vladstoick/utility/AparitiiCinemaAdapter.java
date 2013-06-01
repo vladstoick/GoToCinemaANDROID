@@ -5,11 +5,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.*;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.vladstoick.fragments.FilmListFragment;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.AparitiiCinema;
 
@@ -42,7 +40,7 @@ public class AparitiiCinemaAdapter extends BaseAdapter {
         return position;
     }
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         View row = convertView;
         AparitiiCinemaRowHandler holder;
         if (row == null) {
@@ -55,6 +53,13 @@ public class AparitiiCinemaAdapter extends BaseAdapter {
             holder.cinema = (TextView) row.findViewById(R.id.rowCinema);
             holder.distanta = (TextView) row.findViewById(R.id.rowKM);
             holder.imgView = (ImageView) row.findViewById(R.id.cinemaPoster);
+            ImageButton favorite = (ImageButton) row.findViewById(R.id.favorite);
+            favorite.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FilmListFragment.clickedFavorite(position);
+                }
+            });
             row.setTag(holder);
         } else {
             holder = (AparitiiCinemaRowHandler) row.getTag();
