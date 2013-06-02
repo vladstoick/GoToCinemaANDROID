@@ -9,14 +9,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import com.actionbarsherlock.app.SherlockFragment;
 import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.nostra13.universalimageloader.core.ImageLoader;
+import com.squareup.picasso.Picasso;
 import com.vladstoick.gotocinema.OnFragmentInteractionListener;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.Post;
 import com.vladstoick.utility.CinemaRestClient;
 import com.vladstoick.utility.PostsAdapter;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -58,7 +60,8 @@ public class UserFragment extends SherlockFragment {
                     TextView dobTV = (TextView) view.findViewById(R.id.dob);
                     TextView fullnameTV = ((TextView) view.findViewById(R.id.fullname));
                     ImageView userProfileImgIV = (ImageView) view.findViewById(R.id.userProfileImg);
-                    ImageLoader.getInstance().displayImage(userProfileImg, userProfileImgIV);
+                    Picasso.with(getSherlockActivity().getApplicationContext()).load(userProfileImg).into(userProfileImgIV);
+//                    ImageLoader.getInstance().displayImage(userProfileImg, userProfileImgIV);
                     fullnameTV.setText(fullname);
                     dobTV.setText("Data naşterii:" + dob);
                     JSONArray wallPosts = wall.getJSONArray("wall_posts");

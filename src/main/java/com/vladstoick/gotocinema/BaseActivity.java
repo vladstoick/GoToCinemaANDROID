@@ -13,16 +13,16 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
+
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.vladstoick.dialogfragments.ProgressDialogFragment;
-import com.vladstoick.fragments.*;
-import com.vladstoick.objects.*;
-import com.vladstoick.utility.*;
+import com.vladstoick.fragments.CalculateMainMenuFragment;
+import com.vladstoick.objects.AparitiiCinema;
+import com.vladstoick.objects.Cinema;
+import com.vladstoick.utility.CinemaRestClient;
+import com.vladstoick.utility.JSONParser;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -42,9 +42,6 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_frame);
-        DisplayImageOptions options = new DisplayImageOptions.Builder().cacheInMemory().cacheOnDisc().build();
-        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(getApplicationContext()).defaultDisplayImageOptions(options).build();
-        ImageLoader.getInstance().init(config);
         if (savedInstanceState != null)
             mContent = getSupportFragmentManager().getFragment(savedInstanceState, "content_frame");
         if (mContent == null)

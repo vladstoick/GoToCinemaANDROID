@@ -8,7 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.nostra13.universalimageloader.core.ImageLoader;
+
+import com.squareup.picasso.Picasso;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.Post;
 
@@ -51,7 +52,8 @@ public class PostsAdapter extends ArrayAdapter<Post> {
         Post post = data.get(position);
         holder.poster.setText(post.posterFullname);
         holder.title.setText(post.postTitle);
-        ImageLoader.getInstance().displayImage(post.posterImg, holder.profilePosterIV);
+        Picasso.with(context).load(post.posterImg).into(holder.profilePosterIV);
+//        ImageLoader.getInstance().displayImage(post.posterImg, holder.profilePosterIV);
         return row;
     }
 }

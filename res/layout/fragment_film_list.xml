@@ -4,7 +4,7 @@
               android:layout_height="fill_parent"
               android:orientation="horizontal"
               android:gravity="left"
-              android:background="@color/slidingMenuColor">
+             >
     <com.fortysevendeg.android.swipelistview.SwipeListView
             xmlns:swipe="http://schemas.android.com/apk/res-auto"
             android:id="@+id/swipelistview"
@@ -12,5 +12,7 @@
             android:layout_height="wrap_content"
             swipe:swipeFrontView="@+id/front"
             swipe:swipeBackView="@+id/back"
+            android:divider="#ff9a9a9a"
+            android:dividerHeight="1dp"
             />
 </LinearLayout>
