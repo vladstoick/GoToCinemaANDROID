@@ -5,8 +5,12 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.*;
-import com.nostra13.universalimageloader.core.ImageLoader;
+import android.widget.BaseAdapter;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 import com.vladstoick.fragments.FilmListFragment;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.AparitiiCinema;
@@ -56,7 +60,7 @@ public class AparitiiCinemaAdapter extends BaseAdapter {
             holder.imgView = (ImageView) row.findViewById(R.id.cinemaPoster);
             ImageButton favorite = (ImageButton) row.findViewById(R.id.favorite);
             ImageButton like = (ImageButton) row.findViewById(R.id.like);
-            ImageButton disliek = (ImageButton) row.findViewById(R.id.dislike);
+            ImageButton dislike = (ImageButton) row.findViewById(R.id.dislike);
             favorite.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -69,7 +73,7 @@ public class AparitiiCinemaAdapter extends BaseAdapter {
                     FilmListFragment.clickedLike(position, aparitie);
                 }
             });
-            like.setOnClickListener(new View.OnClickListener() {
+            dislike.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     FilmListFragment.clickedDislike(position,aparitie);
@@ -82,10 +86,14 @@ public class AparitiiCinemaAdapter extends BaseAdapter {
 
         holder.enTitle.setText(aparitie.enTitle);
         holder.roTitle.setText(aparitie.roTitle);
-        holder.ora.setText(Utils.getStringFromDate(aparitie.ora));
-        holder.cinema.setText(aparitie.cinemaName);
-        holder.distanta.setText(aparitie.distanta);
-        ImageLoader.getInstance().displayImage(aparitie.imgUrl, holder.imgView);
+        if(aparitie.ora!=null)
+        {
+            holder.ora.setText(Utils.getStringFromDate(aparitie.ora));
+            holder.cinema.setText(aparitie.cinemaName);
+            holder.distanta.setText(aparitie.distanta);
+        }
+//        ImageLoader.getInstance().displayImage(aparitie.imgUrl, holder.imgView);
+        Picasso.with(context).load(aparitie.imgUrl).into(holder.imgView);
         return row;
     }
 }

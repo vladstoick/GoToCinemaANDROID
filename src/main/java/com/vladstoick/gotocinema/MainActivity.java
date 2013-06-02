@@ -76,6 +76,11 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
     public void showSearchFragment(){
         switchContent( new SearchFragment(),false);
     }
+    @Override
+    public void showFavorites() {
+
+    }
+
     public void showTimePicker(View view){
         SherlockDialogFragment newFragment = new TimePickerFragment();
         newFragment.show(getSupportFragmentManager(), "timePicker");

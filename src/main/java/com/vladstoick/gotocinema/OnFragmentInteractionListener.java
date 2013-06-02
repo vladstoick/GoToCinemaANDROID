@@ -16,4 +16,5 @@ public interface OnFragmentInteractionListener {
 	public void showProfileWithId(String id);
     public void showOwnProfile();
 	public void showSearchFragment();
+    public void showFavorites();
 }

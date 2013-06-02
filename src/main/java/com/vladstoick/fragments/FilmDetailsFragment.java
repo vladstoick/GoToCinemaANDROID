@@ -22,7 +22,8 @@ import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.AparitiiCinema;
 public class FilmDetailsFragment extends SherlockFragment {
 	private static final String ARG_MOVIE = "movie";
-	private static String getStringForTime(int timp)
+    AparitiiCinema movie;
+    private static String getStringForTime(int timp)
 	  {
 		  int ora = timp/3600;
 		  int minute = (timp%3600)/60;
@@ -62,7 +63,18 @@ public class FilmDetailsFragment extends SherlockFragment {
     private FilmDetailsFragment() {
 		// Required empty public constructor
 	}
-	  @Override
+    @Override
+    public void onCreate(Bundle savedInstance)
+    {
+        super.onCreate(savedInstance);
+        movie = getArguments().getParcelable(ARG_MOVIE);
+    }
+    @Override
+    public void onPause()
+    {
+        super.onPause();
+    }
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
           View view = inflater.inflate(R.layout.fragment_film_details, container,
@@ -72,7 +84,7 @@ public class FilmDetailsFragment extends SherlockFragment {
           TextView actori = (TextView) view.findViewById(R.id.actori);
           TextView regizor = (TextView) view.findViewById(R.id.regizor);
           TextView distance = (TextView) view.findViewById(R.id.distance);
-          AparitiiCinema movie = getArguments().getParcelable(ARG_MOVIE);
+
 		System.out.println(movie.actori);
         note.setText(movie.nota);
         gen.setText(movie.gen);

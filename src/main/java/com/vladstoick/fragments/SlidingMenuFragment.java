@@ -18,6 +18,7 @@ public class SlidingMenuFragment extends SherlockFragment{
 			"Profilul tău",
 			"Cauta alt utilizator",
 			"Calculează",
+            "Favorite"
 		};
 	private View view=null;
     public SlidingMenuFragment(){}
@@ -42,10 +43,13 @@ public class SlidingMenuFragment extends SherlockFragment{
 			        		mListener.showSearchFragment();
 			        		break;
 			        	}
-			        	default:{
+			        	case 2:{
 			        		mListener.showCalculateFragment();
 			        		break;
 			        	}
+                        case 3:{
+                            mListener.showFavorites();
+                        }
 			        }
 		            	
 		        }

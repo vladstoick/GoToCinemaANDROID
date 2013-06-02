@@ -131,6 +131,7 @@ com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener$5.class
 com\vladstoick\objects\AparitiiCinema$1.class
 com\actionbarsherlock\internal\nineoldandroids\animation\PropertyValuesHolder.class
 com\actionbarsherlock\internal\view\menu\MenuWrapper.class
+com\vladstoick\utility\AparitiiCinemaAdapter$2.class
 com\actionbarsherlock\internal\view\menu\MenuBuilder$Callback.class
 com\actionbarsherlock\widget\ShareActionProvider$OnShareTargetSelectedListener.class
 com\actionbarsherlock\internal\widget\ActionBarView$2.class
@@ -207,6 +208,7 @@ com\vladstoick\utility\AparitiiCinemaAdapter$AparitiiCinemaRowHandler.class
 com\fortysevendeg\android\swipelistview\R$dimen.class
 com\actionbarsherlock\widget\SearchView$11.class
 com\actionbarsherlock\app\SherlockFragmentActivity.class
+com\vladstoick\utility\AparitiiCinemaAdapter$3.class
 com\actionbarsherlock\widget\SearchView$10.class
 com\actionbarsherlock\internal\nineoldandroids\animation\Animator$AnimatorListener.class
 com\actionbarsherlock\internal\nineoldandroids\animation\IntEvaluator.class
