@@ -40,7 +40,8 @@
                     android:text="@string/viewfavorite"
                     android:id="@+id/viewFavorites"
                     android:layout_weight="1"
-                    />
+                    ></Button>
+
     </LinearLayout>
     <ListView   android:id="@+id/wallPostsListView"
                 android:layout_width="match_parent"

@@ -8,9 +8,14 @@ import android.view.View;
 
 import com.actionbarsherlock.app.SherlockDialogFragment;
 import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.vladstoick.dialogfragments.TimePickerFragment;
-import com.vladstoick.fragments.*;
 import com.vladstoick.dialogfragments.ProgressDialogFragment;
+import com.vladstoick.dialogfragments.TimePickerFragment;
+import com.vladstoick.fragments.CalculateMainMenuFragment;
+import com.vladstoick.fragments.FavoriteFragment;
+import com.vladstoick.fragments.FilmDetailsFragment;
+import com.vladstoick.fragments.FilmListFragment;
+import com.vladstoick.fragments.SearchFragment;
+import com.vladstoick.fragments.UserFragment;
 import com.vladstoick.objects.AparitiiCinema;
 import com.vladstoick.utility.CinemaRestClient;
 import com.vladstoick.utility.JSONParser;
@@ -23,9 +28,13 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
     public static String userAPI;
     private final ProgressDialogFragment progressDialog= new ProgressDialogFragment();
     @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+    @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-//		File cacheDir = StorageUtils.getCacheDirectory(getApplicationContext());
+
         SharedPreferences settings =  this.getSharedPreferences("appPref",Context.MODE_PRIVATE);
         userAPI = settings.getString("api_acces", "0");
         userID = settings.getString("user_id","0");
@@ -79,6 +88,7 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
     }
     @Override
     public void showFavorites(String url,Boolean shouldReplace) {
+
         switchContent(FavoriteFragment.newInstance(url),shouldReplace);
     }
 

@@ -55,24 +55,11 @@ public class FavoriteAdapter extends BaseAdapter {
             view = convertView;
 
         ImageView imageView = (ImageView) view.findViewById(R.id.image);
-        Picasso.with(mContext).load(movie.imgUrl).into(imageView);
+        Picasso.with(mContext).load(movie.imgUrl).resize(505,715).into(imageView);
         TextView textView = (TextView) view.findViewById(R.id.title);
         textView.setText(movie.enTitle);
         return view;
     }
 
-    // references to our images
-    private Integer[] mThumbIds = {
-            R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5,
-            R.drawable.sample_6, R.drawable.sample_7,
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5,
-            R.drawable.sample_6, R.drawable.sample_7,
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5,
-            R.drawable.sample_6, R.drawable.sample_7
-    };
+
 }

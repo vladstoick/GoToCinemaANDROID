@@ -65,7 +65,6 @@ public class FavoriteFragment extends SherlockFragment {
 		// Inflate the layout for this fragment
 		view =  inflater.inflate(R.layout.fragment_favorite, container, false);
 		final GridView mGV = (GridView) view.findViewById(R.id.gridview);
-        System.out.println(url);
         CinemaRestClient.get("user/"+url,null,new AsyncHttpResponseHandler(){
             @Override
             public void onSuccess(String response)
@@ -79,7 +78,6 @@ public class FavoriteFragment extends SherlockFragment {
                     {
                         JSONObject object= jsonArray.getJSONObject(i);
                         data.add(i, new FavoriteMovie(object.getString("image"), object.getString("name")));
-                        System.out.println(data.size());
                     }
                 }
                 catch (Exception e) {

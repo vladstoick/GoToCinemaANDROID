@@ -263,6 +263,7 @@ com\actionbarsherlock\internal\widget\IcsView.class
 com\actionbarsherlock\internal\widget\IcsAdapterView$AdapterContextMenuInfo.class
 com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$AnimatorSetListener.class
 com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener.class
+com\vladstoick\fragments\UserFragment$3.class
 com\actionbarsherlock\internal\app\ActionBarImpl$2.class
 com\actionbarsherlock\internal\view\menu\MenuPresenter$Callback.class
 android\UnusedStub.class

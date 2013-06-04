@@ -32,9 +32,8 @@ public class LoginActivity extends SherlockActivity {
     private View mLoginStatusView;
     private TextView mLoginStatusMessageView;
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+    public void onResume()
+    {
         SharedPreferences settings = getSharedPreferences("appPref", Context.MODE_PRIVATE);
         String apiKey = settings.getString("api_acces","0");
         String user_id = settings.getString("user_id","0");
@@ -44,6 +43,12 @@ public class LoginActivity extends SherlockActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
             startActivity(intent);
         }
+    }
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
         // Set up the login form.
         mEmail = getIntent().getStringExtra(EXTRA_EMAIL);
         mEmailView = (EditText) findViewById(R.id.email);
