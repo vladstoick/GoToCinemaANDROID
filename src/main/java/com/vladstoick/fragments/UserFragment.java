@@ -1,6 +1,9 @@
 package com.vladstoick.fragments;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +15,11 @@ import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockFragment;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
 import com.squareup.picasso.Picasso;
 import com.vladstoick.arrayadapter.PostsAdapter;
+import com.vladstoick.dialogfragments.PostDialogFragment;
+import com.vladstoick.gotocinema.MainActivity;
 import com.vladstoick.gotocinema.OnFragmentInteractionListener;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.Post;
@@ -30,6 +36,7 @@ public class UserFragment extends SherlockFragment {
     private final static String ARG_USERIMGURL="userimgurl";
     private final static String ARG_USERNAME="username";
     private final static String ARG_USERDOB="userdob";
+    public static final int DIALOG_FRAGMENT = 1;
     private View view;
     private String userID = "",userImgUrl,userName,userDob;
     private ArrayList<Post> posts = new ArrayList<Post>();
@@ -42,21 +49,16 @@ public class UserFragment extends SherlockFragment {
 
 	}
     private OnFragmentInteractionListener mListener;
-	@SuppressWarnings("WeakerAccess")
     private UserFragment() {
 		// Required empty public constructor
 	}
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.println("CALLED");
-
-
     }
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        System.out.println("called");
         outState.putParcelableArrayList(ARG_WALLPOST, posts);
         outState.putString(ARG_USERIMGURL,userImgUrl);
         outState.putString(ARG_USERNAME,userName);
@@ -78,16 +80,69 @@ public class UserFragment extends SherlockFragment {
         wallPostsLV.setAdapter(new PostsAdapter(getActivity(), R.layout.list_row_profile, posts));
         dobTV.setText("Data naşterii:" + userDob);
     }
+    public void showDialog(int type) {
+        FragmentTransaction ft = getActivity().getFragmentManager().beginTransaction();
+        Fragment prev = getActivity().getFragmentManager().findFragmentByTag("dialog");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+
+        switch (type) {
+
+            case DIALOG_FRAGMENT:
+
+                PostDialogFragment dialogFrag = PostDialogFragment.newInstance(123);
+                dialogFrag.setTargetFragment(this, DIALOG_FRAGMENT);
+                dialogFrag.show(getFragmentManager().beginTransaction(), "dialog");
+
+                break;
+        }
+    }
+    private void updatePosts()
+    {
+
+        CinemaRestClient.get("user/" + userID + "/wall", null, new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(String response) {
+                JSONObject wall;
+                try {
+                    posts.clear();
+                    wall = new JSONObject(response);
+                    userName = wall.getString("fullname");
+                    userImgUrl = wall.getString("image");
+                    userDob = wall.getString("DOB");
+
+                    JSONArray wallPosts = wall.getJSONArray("wall_posts");
+                    for (int i = 0; i < wallPosts.length(); i++) {
+                        JSONObject wallPost = wallPosts.getJSONObject(i);
+                        String content = wallPost.getString("content");
+                        String title = wallPost.getString("title");
+                        JSONObject senderInfo = wallPost.getJSONObject("sender");
+                        String posterId = senderInfo.getString("id");
+                        String posterImage = senderInfo.getString("image");
+                        String posterFullname = senderInfo.getString("fullname") + ":";
+                        Post wallpost = new Post(posterId, posterImage, posterFullname, content, title);
+                        posts.add(i, wallpost);
+                    }
+                    setUpFragment();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_user, container, false);
         final Button calculateBtn = (Button) view.findViewById(R.id.posteaza);
         final Button viewFavorites = (Button) view.findViewById(R.id.viewFavorites);
+        userID = getArguments().getString(ARG_USERID);
         calculateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-//                mListener.showPostFragment(userID);
+               showDialog(DIALOG_FRAGMENT);
             }
         });
         viewFavorites.setOnClickListener(new View.OnClickListener() {
@@ -97,9 +152,7 @@ public class UserFragment extends SherlockFragment {
             }
         });
         if(posts.size()>0)
-        {
             setUpFragment();
-        }
         if(savedInstanceState!=null)
         {
             posts=savedInstanceState.getParcelableArrayList(ARG_WALLPOST);
@@ -110,41 +163,39 @@ public class UserFragment extends SherlockFragment {
         }
         else
         {
-            userID = getArguments().getString(ARG_USERID);
-            CinemaRestClient.get("user/" + userID + "/wall", null, new AsyncHttpResponseHandler() {
-                @Override
-                public void onSuccess(String response) {
-                    JSONObject wall;
-                    try {
-                        posts.clear();
-                        wall = new JSONObject(response);
-                        userName = wall.getString("fullname");
-                        userImgUrl = wall.getString("image");
-                        userDob = wall.getString("DOB");
-
-                        JSONArray wallPosts = wall.getJSONArray("wall_posts");
-                        for (int i = 0; i < wallPosts.length(); i++) {
-                            JSONObject wallPost = wallPosts.getJSONObject(i);
-                            String content = wallPost.getString("content");
-                            String title = wallPost.getString("title");
-                            JSONObject senderInfo = wallPost.getJSONObject("sender");
-                            String posterId = senderInfo.getString("id");
-                            String posterImage = senderInfo.getString("image");
-                            String posterFullname = senderInfo.getString("fullname") + ":";
-                            Post wallpost = new Post(posterId, posterImage, posterFullname, content, title);
-                            posts.add(i, wallpost);
-                        }
-                        setUpFragment();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
+            updatePosts();
         }
         return view;
 	}
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch(requestCode) {
+            case DIALOG_FRAGMENT:
 
+                if (resultCode == Activity.RESULT_OK) {
+                    System.out.println(MainActivity.userAPI);
+                    String text = data.getStringExtra("TEXT");
+                    RequestParams params = new RequestParams();
+                    params.put("token", MainActivity.userAPI);
+                    params.put("title",text);
+                    params.put("content","");
+                    params.put("receiver_id",userID);
+                    CinemaRestClient.post("/user/post",params,new AsyncHttpResponseHandler(){
+                        @Override
+                        public void onSuccess(String response)
+                        {
+                            System.out.println(response);
+                            updatePosts();
+                        }
+                    });
+                } else if (resultCode == Activity.RESULT_CANCELED){
+                    // After Cancel code.
+                }
+
+                break;
+        }
+    }
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
