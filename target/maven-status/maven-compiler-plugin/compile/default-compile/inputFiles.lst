@@ -7,8 +7,8 @@ c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\fragments
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\widget\IcsProgressBar.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\view\CollapsibleActionView.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\view\menu\SubMenuBuilder.java
-c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\app\SherlockListActivity.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\view\View_HasStateListenerSupport.java
+c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\app\SherlockListActivity.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\app\SherlockFragment.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorListenerAdapter.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\nineoldandroids\animation\Animator.java
@@ -42,6 +42,7 @@ c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarshe
 c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\utility\CinemaRestClient.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\objects\Cinema.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\nineoldandroids\animation\Keyframe.java
+c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\dialogfragments\PostDialogFragment.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\gotocinema\OnFragmentInteractionListener.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\nineoldandroids\animation\PropertyValuesHolder.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\widget\SearchView.java

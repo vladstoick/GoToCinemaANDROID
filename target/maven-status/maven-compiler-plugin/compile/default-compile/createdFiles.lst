@@ -46,6 +46,7 @@ com\vladstoick\gotocinema\LoginActivity$5.class
 com\vladstoick\fragments\CalculateMainMenuFragment.class
 com\google\android\gms\R$attr.class
 com\actionbarsherlock\internal\view\menu\MenuBuilder.class
+com\vladstoick\fragments\UserFragment$4.class
 com\actionbarsherlock\view\MenuInflater$InflatedOnMenuItemClickListener.class
 com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener$7.class
 com\vladstoick\fragments\FilmListFragment$2.class
@@ -88,6 +89,7 @@ com\actionbarsherlock\ActionBarSherlock$Implementation.class
 com\vladstoick\fragments\UserFragment$1.class
 com\actionbarsherlock\internal\widget\IcsListPopupWindow$PopupDataSetObserver.class
 com\actionbarsherlock\app\SherlockPreferenceActivity.class
+com\vladstoick\dialogfragments\PostDialogFragment$2.class
 com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener$1.class
 com\actionbarsherlock\widget\ActivityChooserModel$ActivityChooserModelClient.class
 com\vladstoick\fragments\FilmListFragment$ArrayComparatorByDistance.class
@@ -162,6 +164,7 @@ com\actionbarsherlock\view\MenuItem$OnActionExpandListener.class
 com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet.class
 com\actionbarsherlock\internal\widget\ScrollingTabContainerView$VisibilityAnimListener.class
 com\vladstoick\fragments\FilmDetailsFragment$1.class
+com\vladstoick\dialogfragments\PostDialogFragment$1.class
 com\actionbarsherlock\widget\ShareActionProvider$1.class
 com\vladstoick\arrayadapter\AparitiiCinemaAdapter$3.class
 com\actionbarsherlock\R$drawable.class
@@ -303,6 +306,7 @@ com\vladstoick\utility\Utils.class
 com\actionbarsherlock\internal\widget\IcsAbsSpinner.class
 com\actionbarsherlock\internal\widget\IcsAdapterView$1.class
 com\actionbarsherlock\widget\ActivityChooserView$3.class
+com\vladstoick\dialogfragments\PostDialogFragment.class
 com\actionbarsherlock\internal\view\menu\MenuItemImpl.class
 com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$Dependency.class
 com\vladstoick\fragments\SearchFragment$1$1.class

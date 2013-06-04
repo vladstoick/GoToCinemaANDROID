@@ -31,6 +31,8 @@ import java.util.Hashtable;
 class BaseActivity extends SherlockFragmentActivity implements LocationListener {
     protected static final String TAGCALCULATE ="CalculateMainMenuFragment";
     protected static final String TAGLOADING = "LoadingFragment";
+    private static final String ARGMOVIES="movies";
+    private static final String ARGCINEMAS="cinemas";
     protected static Hashtable<String, Cinema> cinemas = new Hashtable<String, Cinema>();
     protected static ArrayList<AparitiiCinema> allMovies= new ArrayList<AparitiiCinema>();
     private DrawerLayout mDrawerLayout;
@@ -39,8 +41,19 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
     private View mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
     @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+//        outState.putSerializable(ARGCINEMAS, cinemas);
+        outState.putParcelableArrayList(ARGMOVIES,allMovies);
+    }
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(savedInstanceState!=null)
+        {
+//            cinemas = (Hashtable<String, Cinema>) savedInstanceState.getSerializable(ARGCINEMAS);
+            allMovies = savedInstanceState.getParcelableArrayList(ARGMOVIES);
+        }
         setContentView(R.layout.menu_frame);
         if (savedInstanceState != null)
             mContent = getSupportFragmentManager().getFragment(savedInstanceState, "content_frame");
@@ -142,26 +155,28 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
     }
     @Override
     public void onLocationChanged(Location location) {
+        if(cinemas.size()==0)
+        {
+            currentLocation=location;
+            final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
+            try {
+                String link="/distance?lat="+location.getLatitude()+"&lng="+location.getLongitude();
+                progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
+                CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
+                    @Override
+                    public void onSuccess(String resultString) {
+                        cinemas = JSONParser.parseMoviesAndDistances(resultString);
+                        if (allMovies.size() > 10) {
+                            allMovies = AparitiiCinema.merge(allMovies, cinemas);
+                        }
 
-        currentLocation=location;
-        final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
-        try {
-            String link="/distance?lat="+location.getLatitude()+"&lng="+location.getLongitude();
-            progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
-            CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
-                @Override
-                public void onSuccess(String resultString) {
-                    cinemas = JSONParser.parseMoviesAndDistances(resultString);
-                    if (allMovies.size() > 10) {
-                        allMovies = AparitiiCinema.merge(allMovies, cinemas);
+                        progressDialog2.dismiss();
+
                     }
-
-                    progressDialog2.dismiss();
-
-                }
-            });
-        } catch (Exception e) {
-            e.printStackTrace();
+                });
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 }

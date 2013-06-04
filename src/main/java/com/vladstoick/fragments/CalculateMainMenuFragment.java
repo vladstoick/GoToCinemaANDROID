@@ -75,6 +75,7 @@ public class CalculateMainMenuFragment extends SherlockFragment {
 		hourUsed=hour;
 		minuteUsed=minute;
 		updateHour();
+        System.out.println("HELLO WORLD");
 	}
 
 }
