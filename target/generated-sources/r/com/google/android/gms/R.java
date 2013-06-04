@@ -1231,23 +1231,23 @@ containing a value of this type.
         public static int abs__textButton=0x7f05001c;
         public static int abs__title=0x7f050024;
         public static int abs__up=0x7f05000f;
-        public static int action_settings=0x7f050069;
+        public static int action_settings=0x7f05006b;
         public static int actori=0x7f050048;
         public static int back=0x7f05004f;
         public static int both=0x7f050014;
         public static int btnCalculate=0x7f050044;
         public static int btnChangeTime=0x7f050043;
-        public static int cinemaPoster=0x7f05005f;
-        public static int content_frame=0x7f050066;
+        public static int cinemaPoster=0x7f050061;
+        public static int content_frame=0x7f050068;
         public static int disableHome=0x7f05000d;
-        public static int dislike=0x7f05005d;
+        public static int dislike=0x7f05005f;
         public static int dismiss=0x7f050018;
         public static int distance=0x7f05004a;
         public static int dob=0x7f050055;
-        public static int drawer_layout=0x7f050065;
+        public static int drawer_layout=0x7f050067;
         public static int edit_query=0x7f05002f;
         public static int email=0x7f05003e;
-        public static int favorite=0x7f05005e;
+        public static int favorite=0x7f050060;
         public static int front=0x7f05004e;
         public static int fullname=0x7f050054;
         public static int gen=0x7f050047;
@@ -1255,10 +1255,10 @@ containing a value of this type.
         public static int homeAsUp=0x7f05000a;
         public static int hourUsed=0x7f050042;
         public static int hybrid=0x7f050004;
-        public static int image=0x7f050058;
+        public static int image=0x7f05005a;
         public static int left=0x7f050016;
-        public static int left_drawer=0x7f050067;
-        public static int like=0x7f05005c;
+        public static int left_drawer=0x7f050069;
+        public static int like=0x7f05005e;
         public static int listMode=0x7f050006;
         public static int listview=0x7f050052;
         public static int login=0x7f050040;
@@ -1271,17 +1271,17 @@ containing a value of this type.
         public static int note=0x7f050046;
         public static int openMap=0x7f05004b;
         public static int password=0x7f05003f;
-        public static int posteaza=0x7f050056;
-        public static int poster=0x7f05005b;
-        public static int posterIMG=0x7f05005a;
+        public static int posteaza=0x7f050057;
+        public static int poster=0x7f05005d;
+        public static int posterIMG=0x7f05005c;
         public static int regizor=0x7f050049;
         public static int reveal=0x7f050017;
         public static int right=0x7f050015;
-        public static int rowCinema=0x7f050062;
-        public static int rowEnTitle=0x7f050060;
-        public static int rowKM=0x7f050064;
-        public static int rowOra=0x7f050063;
-        public static int rowRoTitle=0x7f050061;
+        public static int rowCinema=0x7f050064;
+        public static int rowEnTitle=0x7f050062;
+        public static int rowKM=0x7f050066;
+        public static int rowOra=0x7f050065;
+        public static int rowRoTitle=0x7f050063;
         public static int satellite=0x7f050002;
         public static int searchInput=0x7f050050;
         public static int searchResults=0x7f050051;
@@ -1292,11 +1292,13 @@ containing a value of this type.
         public static int swipelistview=0x7f05004d;
         public static int tabMode=0x7f050007;
         public static int terrain=0x7f050003;
-        public static int textView1=0x7f050068;
-        public static int title=0x7f050059;
+        public static int textView1=0x7f05006a;
+        public static int title=0x7f05005b;
         public static int useLogo=0x7f050008;
         public static int userProfileImg=0x7f050053;
-        public static int wallPostsListView=0x7f050057;
+        public static int viewFavorites=0x7f050058;
+        public static int wallButtons=0x7f050056;
+        public static int wallPostsListView=0x7f050059;
         public static int wrap_content=0x7f050005;
     }
     public static final class integer {
@@ -1383,6 +1385,8 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static int abs__shareactionprovider_share_with_application=0x7f06001c;
+        /** GENERAL STRINGS
+         */
         public static int action_settings=0x7f060022;
         public static int app_name=0x7f060023;
         /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=70] 
@@ -1394,9 +1398,10 @@ containing a value of this type.
         /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
          */
         public static int auth_client_requested_by_msg=0x7f060011;
-        public static int calculateButtonTitle=0x7f060024;
-        public static int changeHour=0x7f060027;
-        public static int changeLocation=0x7f060028;
+        /** CALCULATE FRAGMENT
+         */
+        public static int calculateButtonTitle=0x7f06002d;
+        public static int changeHour=0x7f06002e;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -1452,12 +1457,13 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static int common_signin_button_text_long=0x7f06000e;
-        public static int defaultHourUsed=0x7f06002d;
-        public static int drawer_close=0x7f060037;
-        public static int drawer_open=0x7f060036;
-        public static int eroareLoading=0x7f060025;
-        public static int hello_blank_fragment=0x7f060039;
-        public static int loading=0x7f060035;
+        public static int defaultHourUsed=0x7f06002c;
+        public static int drawer_close=0x7f060038;
+        /** ACCESIBILITY
+         */
+        public static int drawer_open=0x7f060037;
+        public static int eroareLoading=0x7f060024;
+        public static int loading=0x7f060025;
         /**  Location client code resources (prefix with location_client) 
 
         Begin strings for location.reporting
@@ -1469,19 +1475,30 @@ containing a value of this type.
         public static int location_client_ulr_inactive_age_under_13=0x7f060012;
         public static int location_client_ulr_inactive_age_unknown=0x7f060013;
         public static int location_client_ulr_inactive_unknown_restriction=0x7f060014;
-        public static int login_progress_signing_in=0x7f060038;
-        public static int openInMaps=0x7f06002c;
-        public static int oraDefault=0x7f060026;
-        public static int parola=0x7f06002f;
-        public static int post=0x7f060033;
-        public static int searchField=0x7f060034;
-        public static int signIn=0x7f060032;
-        public static int sortByDistance=0x7f06002a;
-        public static int sortByName=0x7f06002b;
-        public static int sortByTime=0x7f060029;
-        public static int username=0x7f060031;
-        public static int wrong_password=0x7f06002e;
-        public static int wrong_username=0x7f060030;
+        /** LOGIN SCREEN
+         */
+        public static int login_progress_signing_in=0x7f060026;
+        /** FILM DETAILS FRAGMENT
+         */
+        public static int openInMaps=0x7f060034;
+        /** CINEMALISTFRAGMENT
+         */
+        public static int oraDefault=0x7f060030;
+        public static int parola=0x7f060028;
+        /** USER FRAGMENT
+         */
+        public static int post=0x7f060035;
+        /** SEARCH FRAGMENT
+         */
+        public static int searchField=0x7f06002f;
+        public static int signIn=0x7f06002b;
+        public static int sortByDistance=0x7f060032;
+        public static int sortByName=0x7f060033;
+        public static int sortByTime=0x7f060031;
+        public static int username=0x7f06002a;
+        public static int viewfavorite=0x7f060036;
+        public static int wrong_password=0x7f060027;
+        public static int wrong_username=0x7f060029;
     }
     public static final class style {
         /** 

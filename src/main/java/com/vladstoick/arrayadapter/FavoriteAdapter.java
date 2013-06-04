@@ -37,18 +37,20 @@ public class FavoriteAdapter extends BaseAdapter {
 
     // create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
+        DisplayMetrics metrics = mContext.getResources().getDisplayMetrics();
+        int width= metrics.widthPixels;
         View view;
         if(convertView == null) {
             LayoutInflater inflater = ((Activity) mContext).getLayoutInflater();
             view = inflater.inflate(R.layout.grid_item_favorite, parent,false);
-            DisplayMetrics metrics = mContext.getResources().getDisplayMetrics();
-            int width= metrics.widthPixels;
+
             view.setLayoutParams(new GridView.LayoutParams(width/2, width/2));
 //            view.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
         }
         else
             view = convertView;
+
         ImageView imageView = (ImageView) view.findViewById(R.id.image);
         imageView.setImageResource(mThumbIds[position]);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);

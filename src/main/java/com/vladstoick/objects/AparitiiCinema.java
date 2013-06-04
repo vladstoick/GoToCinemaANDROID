@@ -2,7 +2,7 @@ package com.vladstoick.objects;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.vladstoick.objects.Cinema;
+
 import com.vladstoick.utility.Utils;
 
 import java.util.ArrayList;
@@ -20,6 +20,7 @@ public class AparitiiCinema implements Parcelable {
     public final String regizor;
     public final String actori;
     public final String gen;
+    public final String id;
     public String distanta="-", durataDrum="-";
     public String latCinema="-" , lonCinema="-";
     public static final Parcelable.Creator<AparitiiCinema> CREATOR = new Parcelable.Creator<AparitiiCinema>() {
@@ -61,9 +62,10 @@ public class AparitiiCinema implements Parcelable {
         latCinema = in.readString();
         lonCinema = in.readString();
         imgUrl=in.readString();
+        id=in.readString();
     }
 
-    public AparitiiCinema(String roTitle, String enTitle, String cinemaName, String oraString, String nota, String regizor, String actori,String gen,String imgUrl) {
+    public AparitiiCinema(String roTitle, String enTitle, String cinemaName, String oraString, String nota, String regizor, String actori,String gen,String imgUrl,String id) {
         this.roTitle = roTitle;
         this.enTitle = enTitle;
         this.cinemaName = cinemaName;
@@ -73,6 +75,7 @@ public class AparitiiCinema implements Parcelable {
         this.actori=actori;
         this.gen=gen;
         this.imgUrl=imgUrl;
+        this.id=id;
     }
 
     @Override
@@ -97,5 +100,6 @@ public class AparitiiCinema implements Parcelable {
         dest.writeString(latCinema);
         dest.writeString(lonCinema);
         dest.writeString(imgUrl);
+        dest.writeString(id);
     }
 }

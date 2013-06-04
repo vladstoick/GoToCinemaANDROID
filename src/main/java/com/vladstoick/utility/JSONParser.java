@@ -47,13 +47,14 @@ public class JSONParser {
                 String titluEn = movie.getString("titluEn");
                 String titluRo = movie.getString("titluRo");
                 String gen = movie.getString("gen");
+                String id = movie.getString("id");
                 JSONArray showtimesArray = movie.getJSONArray("showtimes");
                 for(int showtimeI = 0; showtimeI < showtimesArray.length(); showtimeI++ )
                 {
                     JSONObject showTime = showtimesArray.getJSONObject(showtimeI);
                     String cinema = showTime.getString("place");
                     String oraString = showTime.getString("hour");
-                    AparitiiCinema aparitie = new AparitiiCinema(titluRo, titluEn, cinema, oraString, nota, regizor, actori, gen,imgUrl);
+                    AparitiiCinema aparitie = new AparitiiCinema(titluRo, titluEn, cinema, oraString, nota, regizor, actori, gen,imgUrl,id);
                     list.add(aparitie);
                 }
 

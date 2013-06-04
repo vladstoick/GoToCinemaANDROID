@@ -10,7 +10,7 @@ import android.widget.GridView;
 
 import com.actionbarsherlock.app.SherlockFragment;
 import com.vladstoick.gotocinema.R;
-import com.vladstoick.utility.FavoriteAdapter;
+import com.vladstoick.arrayadapter.FavoriteAdapter;
 
 /**
  * A simple {@link android.support.v4.app.Fragment} subclass. Activities that

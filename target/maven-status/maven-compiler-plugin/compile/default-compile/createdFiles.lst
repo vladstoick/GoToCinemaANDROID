@@ -7,6 +7,7 @@ com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$SavedState$1.class
 com\vladstoick\gotocinema\R$dimen.class
 com\vladstoick\gotocinema\LoginActivity$4.class
 com\actionbarsherlock\internal\app\ActionBarImpl$ActionModeImpl.class
+com\vladstoick\arrayadapter\AparitiiCinemaAdapter$AparitiiCinemaRowHandler.class
 com\actionbarsherlock\widget\ActivityChooserModel$ActivityResolveInfo.class
 com\actionbarsherlock\internal\nineoldandroids\widget\NineHorizontalScrollView.class
 com\actionbarsherlock\widget\SearchView$8.class
@@ -22,7 +23,6 @@ com\actionbarsherlock\internal\app\ActionBarImpl.class
 com\actionbarsherlock\internal\ActionBarSherlockCompat$ActionModeCallbackWrapper.class
 com\google\android\gms\R$id.class
 com\fortysevendeg\android\swipelistview\R$integer.class
-com\vladstoick\utility\FavoriteAdapter.class
 com\vladstoick\utility\CinemaRestClient.class
 com\actionbarsherlock\internal\view\menu\MenuPopupHelper$1.class
 com\actionbarsherlock\view\ActionProvider$SubUiVisibilityListener.class
@@ -48,13 +48,13 @@ com\google\android\gms\R$attr.class
 com\actionbarsherlock\internal\view\menu\MenuBuilder.class
 com\actionbarsherlock\view\MenuInflater$InflatedOnMenuItemClickListener.class
 com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener$7.class
+com\vladstoick\fragments\FilmListFragment$2.class
 com\actionbarsherlock\widget\ActivityChooserModel$HistoricalRecord.class
 com\actionbarsherlock\internal\nineoldandroids\animation\KeyframeSet.class
 com\actionbarsherlock\internal\ActionBarSherlockCompat$1.class
 com\actionbarsherlock\widget\SuggestionsAdapter.class
 com\actionbarsherlock\internal\view\menu\MenuPresenter.class
 com\vladstoick\fragments\FilmDetailsFragment.class
-com\vladstoick\utility\PostsAdapter.class
 com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$PopupPresenterCallback.class
 com\vladstoick\fragments\UserFragment.class
 com\actionbarsherlock\R$integer.class
@@ -124,6 +124,8 @@ android\support\v4\app\Watson$OnOptionsItemSelectedListener.class
 com\actionbarsherlock\R$dimen.class
 com\google\android\gms\R$color.class
 com\actionbarsherlock\app\SherlockListActivity.class
+com\vladstoick\arrayadapter\PostsAdapter$PostRowHandler.class
+com\vladstoick\arrayadapter\FavoriteAdapter.class
 com\actionbarsherlock\internal\view\menu\ActionMenu.class
 com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator$AnimatorUpdateListener.class
 com\actionbarsherlock\ActionBarSherlock$OnPreparePanelListener.class
@@ -134,18 +136,17 @@ com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener$5.class
 com\vladstoick\objects\AparitiiCinema$1.class
 com\actionbarsherlock\internal\nineoldandroids\animation\PropertyValuesHolder.class
 com\actionbarsherlock\internal\view\menu\MenuWrapper.class
-com\vladstoick\utility\AparitiiCinemaAdapter$2.class
 com\actionbarsherlock\internal\view\menu\MenuBuilder$Callback.class
 com\actionbarsherlock\widget\ShareActionProvider$OnShareTargetSelectedListener.class
 com\actionbarsherlock\internal\widget\ActionBarView$2.class
 com\actionbarsherlock\internal\nineoldandroids\widget\NineLinearLayout.class
-com\vladstoick\utility\AparitiiCinemaAdapter$1.class
 com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener$4.class
 com\actionbarsherlock\view\MenuInflater$MenuState.class
 com\actionbarsherlock\internal\nineoldandroids\animation\Animator.class
 com\actionbarsherlock\internal\widget\IcsProgressBar$SavedState$1.class
 com\actionbarsherlock\app\SherlockActivity.class
 com\actionbarsherlock\app\ActionBar$LayoutParams.class
+com\vladstoick\utility\SquareImageView.class
 com\actionbarsherlock\widget\ActivityChooserView$2.class
 com\actionbarsherlock\internal\view\menu\ActionMenuPresenter.class
 com\fortysevendeg\android\swipelistview\Manifest$permission.class
@@ -161,6 +162,7 @@ com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet.class
 com\actionbarsherlock\internal\widget\ScrollingTabContainerView$VisibilityAnimListener.class
 com\vladstoick\fragments\FilmDetailsFragment$1.class
 com\actionbarsherlock\widget\ShareActionProvider$1.class
+com\vladstoick\arrayadapter\AparitiiCinemaAdapter$3.class
 com\actionbarsherlock\R$drawable.class
 com\fortysevendeg\android\swipelistview\R.class
 com\actionbarsherlock\R$color.class
@@ -186,6 +188,7 @@ com\actionbarsherlock\widget\SearchView$OnQueryTextListener.class
 com\actionbarsherlock\internal\widget\IcsProgressBar.class
 com\google\android\gms\R$style.class
 com\google\android\gms\BuildConfig.class
+com\vladstoick\arrayadapter\PostsAdapter.class
 com\vladstoick\dialogfragments\TimePickerFragment.class
 com\actionbarsherlock\widget\SearchView$4.class
 com\vladstoick\objects\AparitiiCinema.class
@@ -207,11 +210,9 @@ com\actionbarsherlock\internal\nineoldandroids\animation\TypeEvaluator.class
 com\actionbarsherlock\internal\widget\CollapsibleActionViewWrapper.class
 com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$Node.class
 com\actionbarsherlock\internal\app\ActionBarWrapper$TabWrapper.class
-com\vladstoick\utility\AparitiiCinemaAdapter$AparitiiCinemaRowHandler.class
 com\fortysevendeg\android\swipelistview\R$dimen.class
 com\actionbarsherlock\widget\SearchView$11.class
 com\actionbarsherlock\app\SherlockFragmentActivity.class
-com\vladstoick\utility\AparitiiCinemaAdapter$3.class
 com\actionbarsherlock\widget\SearchView$10.class
 com\actionbarsherlock\internal\nineoldandroids\animation\Animator$AnimatorListener.class
 com\actionbarsherlock\internal\nineoldandroids\animation\IntEvaluator.class
@@ -226,6 +227,7 @@ com\actionbarsherlock\ActionBarSherlock$OnPrepareOptionsMenuListener.class
 com\actionbarsherlock\internal\view\menu\MenuView$ItemView.class
 com\actionbarsherlock\ActionBarSherlock.class
 com\actionbarsherlock\internal\view\menu\ActionMenuView.class
+com\vladstoick\arrayadapter\AparitiiCinemaAdapter$2.class
 com\actionbarsherlock\internal\widget\AbsActionBarView.class
 com\actionbarsherlock\internal\app\ActionBarImpl$TabImpl.class
 com\actionbarsherlock\app\SherlockExpandableListActivity.class
@@ -266,6 +268,7 @@ com\actionbarsherlock\view\ActionMode.class
 com\fortysevendeg\android\swipelistview\R$layout.class
 com\actionbarsherlock\widget\SearchView$5.class
 com\actionbarsherlock\internal\widget\IcsListPopupWindow$DropDownListView.class
+com\vladstoick\arrayadapter\AparitiiCinemaAdapter$1.class
 com\google\android\gms\R$dimen.class
 com\actionbarsherlock\internal\widget\IcsSpinner.class
 com\actionbarsherlock\ActionBarSherlock$OnMenuItemSelectedListener.class
@@ -273,6 +276,7 @@ com\vladstoick\fragments\FilmListFragment.class
 com\actionbarsherlock\internal\view\menu\ActionMenuItemView.class
 com\actionbarsherlock\internal\nineoldandroids\animation\Keyframe.class
 com\actionbarsherlock\internal\widget\AbsActionBarView$VisibilityAnimListener.class
+com\vladstoick\arrayadapter\AparitiiCinemaAdapter.class
 com\actionbarsherlock\internal\nineoldandroids\widget\NineFrameLayout.class
 com\fortysevendeg\android\swipelistview\R$color.class
 com\actionbarsherlock\internal\view\menu\BaseMenuPresenter.class
@@ -341,7 +345,6 @@ com\actionbarsherlock\app\SherlockListFragment.class
 com\vladstoick\dialogfragments\ProgressDialogFragment$1.class
 com\google\android\gms\R$layout.class
 com\actionbarsherlock\view\CollapsibleActionView.class
-com\vladstoick\utility\PostsAdapter$PostRowHandler.class
 com\actionbarsherlock\view\ActionMode$Callback.class
 com\vladstoick\utility\JSONParser.class
 com\vladstoick\fragments\SearchFragment$1.class
@@ -351,7 +354,6 @@ com\actionbarsherlock\internal\widget\ActionBarView.class
 com\actionbarsherlock\widget\SearchView$6.class
 com\actionbarsherlock\internal\widget\TabsLinearLayout.class
 com\actionbarsherlock\internal\view\View_HasStateListenerSupport.class
-com\vladstoick\utility\AparitiiCinemaAdapter.class
 com\actionbarsherlock\internal\nineoldandroids\view\animation\AnimatorProxy.class
 android\support\v4\app\Watson$OnCreateOptionsMenuListener.class
 com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener$6$1.class

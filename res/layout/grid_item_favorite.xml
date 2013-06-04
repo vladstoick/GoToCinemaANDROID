@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<LinearLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -8,14 +8,23 @@
         >
     <ImageView
             android:id="@+id/image"
-            android:layout_marginBottom = "10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent">
     </ImageView>
 
     <TextView
+            android:text="HELLO WORLD"
             android:id="@+id/title"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"/>
-</LinearLayout>
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="#C09a9a9a"
+            android:padding="10dp"
+            android:textColor="@color/android:white"
+            />
+
+
+</RelativeLayout>

@@ -17,7 +17,7 @@ import com.vladstoick.gotocinema.OnFragmentInteractionListener;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.Post;
 import com.vladstoick.utility.CinemaRestClient;
-import com.vladstoick.utility.PostsAdapter;
+import com.vladstoick.arrayadapter.PostsAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

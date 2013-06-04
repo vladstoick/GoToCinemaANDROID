@@ -11,11 +11,14 @@ import com.actionbarsherlock.app.SherlockFragment;
 
 import com.fortysevendeg.android.swipelistview.BaseSwipeListViewListener;
 import com.fortysevendeg.android.swipelistview.SwipeListView;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.vladstoick.dialogfragments.ProgressDialogFragment;
+import com.vladstoick.gotocinema.MainActivity;
 import com.vladstoick.gotocinema.OnFragmentInteractionListener;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.AparitiiCinema;
-import com.vladstoick.utility.AparitiiCinemaAdapter;
+import com.vladstoick.arrayadapter.AparitiiCinemaAdapter;
+import com.vladstoick.utility.CinemaRestClient;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -91,7 +94,14 @@ public class FilmListFragment extends SherlockFragment {
     }
     public final static void clickedFavorite(int position,AparitiiCinema data)
     {
-        //TODO implement function
+        System.out.println("user/"+ MainActivity.userID +"/favorites?movie_id=" + data.id);
+        CinemaRestClient.post("user/"+ MainActivity.userID +"/favorites/" + data.id , null , new AsyncHttpResponseHandler(){
+            @Override
+            public void onSuccess(String result)
+            {
+                Log.d("APP","SUCCES");
+            }
+        });
     }
     public final static void clickedLike(int position,AparitiiCinema data)
     {

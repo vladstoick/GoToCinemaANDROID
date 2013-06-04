@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends BaseActivity implements OnFragmentInteractionListener {
 
-    private String userID;
+    public static String userID;
     private final ProgressDialogFragment progressDialog= new ProgressDialogFragment();
     @Override
     public void onCreate(Bundle savedInstanceState){
