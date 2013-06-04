@@ -107,6 +107,11 @@
             <artifactId>picasso</artifactId>
             <version>1.0.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.squareup.picasso</groupId>
+            <artifactId>picasso</artifactId>
+            <version>1.0.2</version>
+        </dependency>
     </dependencies>
 	<build>
 		<finalName>${project.artifactId}</finalName>

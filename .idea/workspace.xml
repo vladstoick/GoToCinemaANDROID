@@ -6,10 +6,8 @@
   <component name="AndroidDesignerProfile">
     <option name="fullProfile">
       <profile>
-        <option name="device" value="2.7in QVGA" />
-        <option name="deviceConfiguration" value="Portrait" />
+        <option name="device" value="[None]" />
         <option name="localeLanguage" value="en" />
-        <option name="targetHashString" value="android-16" />
         <option name="theme" value="Theme.Styled" />
       </profile>
     </option>
@@ -572,10 +570,16 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <target>android-10</target>
+        <target>android-17</target>
       </config>
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/res/layout/fragment_favorite.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/Theme.Styled</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/res/layout/list_row_view.xml">
         <config>
           <device>2.3.3</device>
@@ -585,14 +589,14 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="29319" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fortysevendeg_android_swipelistview_apklib_1_0_SNAPSHOT.xml" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\.idea\libraries\Maven__com_actionbarsherlock_actionbarsherlock_apklib_4_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\.idea\libraries\Maven__com_google_android_gms_google_play_services_apklib_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\.idea\libraries\Maven__com_nostra13_universalimageloader_universal_image_loader_1_8_4.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/FavoriteAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_actionbarsherlock_actionbarsherlock_apklib_4_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_gms_google_play_services_apklib_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/grid_item_favorite.xml" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\gen\com\vladstoick\gotocinema\Manifest.java" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\3_rating_bad.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\3_rating_favorite.png" afterPath="" />
@@ -604,45 +608,149 @@
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\fortysevendeg\android\swipelistview\R.java" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\google\android\gms\Manifest.java" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\google\android\gms\R.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\gotocinema.unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\Manifest$permission.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\Manifest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\actionbarsherlock\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\Manifest$permission.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\Manifest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\fortysevendeg\android\swipelistview\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\Manifest$permission.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\Manifest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\google\android\gms\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\dialogfragments\ProgressDialogFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\dialogfragments\ProgressDialogFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\dialogfragments\TimePickerFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\CalculateMainMenuFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\CalculateMainMenuFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\FilmDetailsFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\FilmDetailsFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\FilmListFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\FilmListFragment$ArrayComparatorByDistance.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\FilmListFragment$ArrayComparatorByName.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\FilmListFragment$ArrayComparatorByTime.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\FilmListFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\SearchFragment$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\SearchFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\SearchFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\SearchFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\SlidingMenuFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\SlidingMenuFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\UserFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\UserFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\fragments\UserFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\BaseActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\BaseActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\BaseActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\LoginActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\LoginActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\LoginActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\LoginActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\LoginActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\LoginActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\MainActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\Manifest$permission.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\Manifest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\OnFragmentInteractionListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\gotocinema\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\objects\AparitiiCinema$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\objects\AparitiiCinema.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\objects\Cinema.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\objects\Post$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\objects\Post.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\AparitiiCinemaAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\AparitiiCinemaAdapter$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\AparitiiCinemaAdapter$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\AparitiiCinemaAdapter$AparitiiCinemaRowHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\AparitiiCinemaAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\CinemaRestClient.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\JSONParser.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\PostsAdapter$PostRowHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\PostsAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\idea-classes\com\vladstoick\utility\Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\maven-archiver\pom.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes.dex" afterPath="$PROJECT_DIR$/target/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.ap_" afterPath="$PROJECT_DIR$/target/gotocinema.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.apk" afterPath="$PROJECT_DIR$/target/gotocinema.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.jar" afterPath="$PROJECT_DIR$/target/gotocinema.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/rating_bad.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/rating_bad.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/rating_bad.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/rating_bad.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/rating_bad.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/rating_bad.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/rating_favorite.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/rating_favorite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/rating_favorite.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/rating_favorite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/rating_favorite.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/rating_favorite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/rating_good.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/rating_good.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/rating_good.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/rating_good.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/rating_good.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/rating_good.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/BuildConfig.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/Manifest.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/PostsAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/PostsAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/UserFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/UserFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_film_list.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_film_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_user.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_user.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gotocinema.iml" afterPath="$PROJECT_DIR$/gotocinema.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/list_row_view.xml" afterPath="$PROJECT_DIR$/res/layout/list_row_view.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gotocinema.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370183418270" ignored="false" />
-    <file path="/fragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370182980947" ignored="false" />
+    <file path="/Dummy.txt" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370346003982" ignored="false" />
+    <file path="/fragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370288368888" ignored="false" />
     <file path="/pom.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370088781485" ignored="false" />
     <file path="/LoginActivity.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370108686365" ignored="false" />
     <file path="/activity_login.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370054982128" ignored="false" />
-    <file path="/strings.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370055800167" ignored="false" />
+    <file path="/strings.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370348079451" ignored="false" />
     <file path="/a.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370058869645" ignored="false" />
     <file path="/Utils.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370056916120" ignored="false" />
     <file path="/AparitiiCinema.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370056951081" ignored="false" />
     <file path="/BaseActivity.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370057846366" ignored="false" />
-    <file path="/MainActivity.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370058020683" ignored="false" />
+    <file path="/MainActivity.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370288509323" ignored="false" />
     <file path="/CalculateMainMenuFragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370058087924" ignored="false" />
     <file path="/FilmDetailsFragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370181374095" ignored="false" />
     <file path="$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.3.1/src/com/actionbarsherlock/view/MenuInflater.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370059582479" ignored="false" />
@@ -666,6 +774,10 @@
     <file path="/UserFragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370181751067" ignored="false" />
     <file path="/PostsAdapter.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370181799871" ignored="false" />
     <file path="/fragment_sliding_list.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370181904409" ignored="false" />
+    <file path="/FavoriteFragment.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370288406110" ignored="false" />
+    <file path="/FavoriteAdapter.java" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370345796277" ignored="false" />
+    <file path="/fragment_favorite.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370289530132" ignored="false" />
+    <file path="/fragment_user.xml" changelist="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" time="1370348063705" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -751,31 +863,94 @@
       <file leaf-file-name="AparitiiCinemaAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="28" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+            <state line="24" column="34" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilmListFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="29" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_film_list.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_film_list.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="FavoriteFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FavoriteFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="37" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0">
+            <state line="61" column="58" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_row_view.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/list_row_view.xml">
+      <file leaf-file-name="fragment_film_details.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/fragment_film_details.xml">
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_user.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/fragment_user.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="4" selection-start="850" selection-end="850" vertical-scroll-proportion="0.41456953">
+              <folding>
+                <element signature="e#809#826#0" expanded="true" />
+                <element signature="e#1209#1226#0" expanded="true" />
+                <element signature="e#1611#1625#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
           <provider editor-type-id="android-designer">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="25" selection-start="1648" selection-end="2629" vertical-scroll-proportion="1.42">
+            <state line="30" column="40" selection-start="1425" selection-end="1425" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="114" column="19" selection-start="4069" selection-end="4069" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grid_item_favorite.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/grid_item_favorite.xml">
+          <provider editor-type-id="text-editor">
+            <state line="9" column="25" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FavoriteAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/FavoriteAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -799,15 +974,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/OnFragmentInteractionListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/objects/AparitiiCinema.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmDetailsFragment.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/UserFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/PostsAdapter.java" />
@@ -815,6 +981,15 @@
         <option value="$PROJECT_DIR$/res/layout/fragment_sliding_list.xml" />
         <option value="$PROJECT_DIR$/res/layout/fragment_film_list.xml" />
         <option value="$PROJECT_DIR$/res/layout/list_row_view.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_favorite.xml" />
+        <option value="$PROJECT_DIR$/res/layout/grid_item_favorite.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/FavoriteAdapter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FavoriteFragment.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_user.xml" />
       </list>
     </option>
   </component>
@@ -886,6 +1061,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1060,6 +1236,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoToCinemaANDROID" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoToCinemaANDROID" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1100,81 +1290,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xxhdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xhdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-mdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoToCinemaANDROID" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -1427,11 +1544,17 @@
       <workItem from="1370108309819" duration="976000" />
       <workItem from="1370180987473" duration="2361000" />
       <workItem from="1370183414092" duration="628000" />
+      <workItem from="1370200529418" duration="81000" />
+      <workItem from="1370201459445" duration="118000" />
+      <workItem from="1370288151819" duration="2782000" />
+      <workItem from="1370290948331" duration="128000" />
+      <workItem from="1370345716438" duration="196000" />
+      <workItem from="1370346003151" duration="2108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5035000" />
+    <option name="totallyTimeSpent" value="10448000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1455,26 +1578,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.8945616" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32745728" sideWeight="0.8945616" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32959402" sideWeight="0.8809789" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32959402" sideWeight="0.8945616" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32703003" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.105438404" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.672586" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.6974416" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18963675" sideWeight="0.8809789" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18910256" sideWeight="0.8945616" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11902113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817504" sideWeight="0.8809789" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276414" sideWeight="0.8809789" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1549,129 +1672,127 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/OnFragmentInteractionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="1" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="5" selection-start="3066" selection-end="3066" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="17" selection-start="1780" selection-end="1780" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/objects/AparitiiCinema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="330" selection-end="330" vertical-scroll-proportion="0.11657143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="32" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="21" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmDetailsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="36" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="457" selection-end="525" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_sliding_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="541" selection-end="541" vertical-scroll-proportion="0.28428093">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/PostsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="80" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.6998395">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="54" column="80" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.6998395" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/UserFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="62" selection-start="2620" selection-end="2620" vertical-scroll-proportion="1.0642054">
-          <folding />
-        </state>
+        <state line="63" column="62" selection-start="2620" selection-end="2620" vertical-scroll-proportion="1.0642054" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="31" selection-start="6210" selection-end="6210" vertical-scroll-proportion="0.8860353">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="150" column="31" selection-start="6210" selection-end="6210" vertical-scroll-proportion="0.8860353" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_row_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="25" selection-start="1648" selection-end="2629" vertical-scroll-proportion="-0.68">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="13" selection-start="2666" selection-end="2666" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_film_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="37" selection-start="612" selection-end="612" vertical-scroll-proportion="-8.16">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/android/support/compatibility-v4/13/compatibility-v4-13-sources.jar!/android/support/v4/app/FragmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="428" column="0" selection-start="16794" selection-end="16794" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/grid_item_favorite.xml">
+      <provider editor-type-id="text-editor">
+        <state line="9" column="25" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="19" selection-start="4069" selection-end="4069" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/FavoriteAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/utility/AparitiiCinemaAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+        <state line="24" column="34" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="29" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_film_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FavoriteFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0">
+        <state line="61" column="58" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/list_row_view.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="25" selection-start="1648" selection-end="2629" vertical-scroll-proportion="1.42">
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_film_details.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="40" selection-start="1425" selection-end="1425" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="4" selection-start="850" selection-end="850" vertical-scroll-proportion="0.41456953">
+          <folding>
+            <element signature="e#809#826#0" expanded="true" />
+            <element signature="e#1209#1226#0" expanded="true" />
+            <element signature="e#1611#1625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

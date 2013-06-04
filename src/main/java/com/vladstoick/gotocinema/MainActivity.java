@@ -78,7 +78,7 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
     }
     @Override
     public void showFavorites() {
-
+        switchContent(new FavoriteFragment(),false);
     }
 
     public void showTimePicker(View view){

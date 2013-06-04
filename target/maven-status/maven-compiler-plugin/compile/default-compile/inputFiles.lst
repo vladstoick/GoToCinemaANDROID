@@ -4,6 +4,7 @@ c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarshe
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\widget\IcsToast.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\widget\CollapsibleActionViewWrapper.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\view\menu\MenuItemWrapper.java
+c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\fragments\FavoriteFragment.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\widget\IcsProgressBar.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\view\CollapsibleActionView.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\view\menu\SubMenuBuilder.java
@@ -24,8 +25,8 @@ c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarshe
 c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\gotocinema\BaseActivity.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\widget\CapitalizingButton.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\nineoldandroids\animation\IntEvaluator.java
-c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\gotocinema\LoginActivity.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.fortysevendeg.android_swipelistview_apklib_1.0-SNAPSHOT\src\com\fortysevendeg\android\swipelistview\SwipeListViewListener.java
+c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\gotocinema\LoginActivity.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\fortysevendeg\android\swipelistview\R.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\widget\ActionBarView.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.google.android.gms_google-play-services_apklib_7\src\android\UnusedStub.java
@@ -86,6 +87,7 @@ c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarshe
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\actionbarsherlock\BuildConfig.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\view\MenuItem.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\app\SherlockDialogFragment.java
+c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\utility\FavoriteAdapter.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\app\SherlockExpandableListActivity.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.fortysevendeg.android_swipelistview_apklib_1.0-SNAPSHOT\src\com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\ActionBarSherlock.java

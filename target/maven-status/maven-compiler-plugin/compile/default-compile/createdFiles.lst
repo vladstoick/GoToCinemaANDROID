@@ -1,4 +1,5 @@
 com\actionbarsherlock\internal\widget\IcsSpinner$SpinnerPopup.class
+com\vladstoick\fragments\FavoriteFragment$OnFragmentInteractionListener.class
 com\actionbarsherlock\internal\view\menu\ActionMenuPresenter$HasPermanentMenuKey.class
 com\actionbarsherlock\internal\nineoldandroids\view\NineViewGroup.class
 com\vladstoick\gotocinema\LoginActivity$3.class
@@ -21,6 +22,7 @@ com\actionbarsherlock\internal\app\ActionBarImpl.class
 com\actionbarsherlock\internal\ActionBarSherlockCompat$ActionModeCallbackWrapper.class
 com\google\android\gms\R$id.class
 com\fortysevendeg\android\swipelistview\R$integer.class
+com\vladstoick\utility\FavoriteAdapter.class
 com\vladstoick\utility\CinemaRestClient.class
 com\actionbarsherlock\internal\view\menu\MenuPopupHelper$1.class
 com\actionbarsherlock\view\ActionProvider$SubUiVisibilityListener.class
@@ -105,6 +107,7 @@ com\actionbarsherlock\internal\nineoldandroids\animation\Keyframe$FloatKeyframe.
 com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener$8.class
 com\actionbarsherlock\internal\nineoldandroids\animation\IntKeyframeSet.class
 com\actionbarsherlock\ActionBarSherlock$OnActionModeFinishedListener.class
+com\vladstoick\fragments\FavoriteFragment.class
 com\vladstoick\gotocinema\Manifest.class
 com\actionbarsherlock\widget\SearchView$OnSuggestionListener.class
 com\actionbarsherlock\internal\view\StandaloneActionMode.class

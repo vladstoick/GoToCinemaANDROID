@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,42 +6,47 @@
     android:padding="10dp"
     android:paddingBottom="0dp"
     android:orientation="vertical">
-
-
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
-        <ImageView android:layout_width="105dp"
-                   android:layout_height="75dp"
-                   android:id="@+id/userProfileImg"
-                   />
-        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="10dp"
-                android:gravity="center_vertical">
-        <TextView
-            android:id="@+id/fullname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-
-
-            android:text="@string/loading" />
-        <TextView
-            android:id="@+id/dob"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="@string/loading"
-            android:textAppearance="?android:attr/textAppearanceSmall"/>
-        </LinearLayout>
-
+    <ImageView  android:layout_width="105dp"
+                android:layout_height="75dp"
+                android:id="@+id/userProfileImg"
+                />
+    <TextView   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toRightOf="@+id/userProfileImg"
+                android:id="@+id/fullname"
+                android:text="@string/loading"
+                />
+    <TextView   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_toRightOf="@+id/userProfileImg"
+                android:layout_below="@+id/fullname"
+                android:id="@+id/dob"
+                android:text="@string/loading"
+                />
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/userProfileImg"
+                  android:id="@+id/wallButtons">
+        <Button     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post"
+                    android:id="@+id/posteaza"
+                    android:layout_weight="1"
+                    />
+        <Button     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viewfavorite"
+                    android:id="@+id/viewFavorites"
+                    android:layout_weight="1"
+                    />
     </LinearLayout>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="@string/post"
-            android:id="@+id/posteaza"
-           />
-    <ListView
-            android:id="@+id/wallPostsListView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:divider="@android:color/transparent"
-            android:dividerHeight="10dp"/>
+    <ListView   android:id="@+id/wallPostsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wallButtons"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                />
 </LinearLayout>

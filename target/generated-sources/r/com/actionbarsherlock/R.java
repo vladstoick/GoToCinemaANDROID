@@ -1182,6 +1182,14 @@ containing a value of this type.
         public static int rating_bad=0x7f02008b;
         public static int rating_favorite=0x7f02008c;
         public static int rating_good=0x7f02008d;
+        public static int sample_0=0x7f02008e;
+        public static int sample_1=0x7f02008f;
+        public static int sample_2=0x7f020090;
+        public static int sample_3=0x7f020091;
+        public static int sample_4=0x7f020092;
+        public static int sample_5=0x7f020093;
+        public static int sample_6=0x7f020094;
+        public static int sample_7=0x7f020095;
     }
     public static final class id {
         public static int abs__action_bar=0x7f050029;
@@ -1223,70 +1231,72 @@ containing a value of this type.
         public static int abs__textButton=0x7f05001c;
         public static int abs__title=0x7f050024;
         public static int abs__up=0x7f05000f;
-        public static int action_settings=0x7f050067;
-        public static int actori=0x7f050047;
-        public static int back=0x7f05004e;
+        public static int action_settings=0x7f050069;
+        public static int actori=0x7f050048;
+        public static int back=0x7f05004f;
         public static int both=0x7f050014;
         public static int btnCalculate=0x7f050044;
         public static int btnChangeTime=0x7f050043;
-        public static int cinemaPoster=0x7f05005d;
-        public static int content_frame=0x7f050064;
+        public static int cinemaPoster=0x7f05005f;
+        public static int content_frame=0x7f050066;
         public static int disableHome=0x7f05000d;
-        public static int dislike=0x7f05005b;
+        public static int dislike=0x7f05005d;
         public static int dismiss=0x7f050018;
-        public static int distance=0x7f050049;
-        public static int dob=0x7f050054;
-        public static int drawer_layout=0x7f050063;
+        public static int distance=0x7f05004a;
+        public static int dob=0x7f050055;
+        public static int drawer_layout=0x7f050065;
         public static int edit_query=0x7f05002f;
         public static int email=0x7f05003e;
-        public static int favorite=0x7f05005c;
-        public static int front=0x7f05004d;
-        public static int fullname=0x7f050053;
-        public static int gen=0x7f050046;
+        public static int favorite=0x7f05005e;
+        public static int front=0x7f05004e;
+        public static int fullname=0x7f050054;
+        public static int gen=0x7f050047;
+        public static int gridview=0x7f050045;
         public static int homeAsUp=0x7f05000a;
         public static int hourUsed=0x7f050042;
         public static int hybrid=0x7f050004;
+        public static int image=0x7f050058;
         public static int left=0x7f050016;
-        public static int left_drawer=0x7f050065;
-        public static int like=0x7f05005a;
+        public static int left_drawer=0x7f050067;
+        public static int like=0x7f05005c;
         public static int listMode=0x7f050006;
-        public static int listview=0x7f050051;
+        public static int listview=0x7f050052;
         public static int login=0x7f050040;
         public static int login_form=0x7f05003d;
         public static int login_status=0x7f05003b;
         public static int login_status_message=0x7f05003c;
-        public static int mapView=0x7f05004b;
+        public static int mapView=0x7f05004c;
         public static int none=0x7f050000;
         public static int normal=0x7f050001;
-        public static int note=0x7f050045;
-        public static int openMap=0x7f05004a;
+        public static int note=0x7f050046;
+        public static int openMap=0x7f05004b;
         public static int password=0x7f05003f;
-        public static int posteaza=0x7f050055;
-        public static int poster=0x7f050058;
-        public static int posterIMG=0x7f050057;
-        public static int regizor=0x7f050048;
+        public static int posteaza=0x7f050056;
+        public static int poster=0x7f05005b;
+        public static int posterIMG=0x7f05005a;
+        public static int regizor=0x7f050049;
         public static int reveal=0x7f050017;
         public static int right=0x7f050015;
-        public static int rowCinema=0x7f050060;
-        public static int rowEnTitle=0x7f05005e;
-        public static int rowKM=0x7f050062;
-        public static int rowOra=0x7f050061;
-        public static int rowRoTitle=0x7f05005f;
+        public static int rowCinema=0x7f050062;
+        public static int rowEnTitle=0x7f050060;
+        public static int rowKM=0x7f050064;
+        public static int rowOra=0x7f050063;
+        public static int rowRoTitle=0x7f050061;
         public static int satellite=0x7f050002;
-        public static int searchInput=0x7f05004f;
-        public static int searchResults=0x7f050050;
+        public static int searchInput=0x7f050050;
+        public static int searchResults=0x7f050051;
         public static int showCustom=0x7f05000c;
         public static int showHome=0x7f050009;
         public static int showTitle=0x7f05000b;
         public static int sign_in_button=0x7f050041;
-        public static int swipelistview=0x7f05004c;
+        public static int swipelistview=0x7f05004d;
         public static int tabMode=0x7f050007;
         public static int terrain=0x7f050003;
-        public static int textView1=0x7f050066;
+        public static int textView1=0x7f050068;
         public static int title=0x7f050059;
         public static int useLogo=0x7f050008;
-        public static int userProfileImg=0x7f050052;
-        public static int wallPostsListView=0x7f050056;
+        public static int userProfileImg=0x7f050053;
+        public static int wallPostsListView=0x7f050057;
         public static int wrap_content=0x7f050005;
     }
     public static final class integer {
@@ -1316,17 +1326,19 @@ containing a value of this type.
         public static int abs__simple_dropdown_hint=0x7f030014;
         public static int activity_login=0x7f030015;
         public static int fragment_calculate=0x7f030016;
-        public static int fragment_film_details=0x7f030017;
-        public static int fragment_film_list=0x7f030018;
-        public static int fragment_search=0x7f030019;
-        public static int fragment_sliding_list=0x7f03001a;
-        public static int fragment_user=0x7f03001b;
-        public static int list_row_profile=0x7f03001c;
-        public static int list_row_view=0x7f03001d;
-        public static int menu_frame=0x7f03001e;
-        public static int sherlock_spinner_dropdown_item=0x7f03001f;
-        public static int sherlock_spinner_item=0x7f030020;
-        public static int sliding_row_view=0x7f030021;
+        public static int fragment_favorite=0x7f030017;
+        public static int fragment_film_details=0x7f030018;
+        public static int fragment_film_list=0x7f030019;
+        public static int fragment_search=0x7f03001a;
+        public static int fragment_sliding_list=0x7f03001b;
+        public static int fragment_user=0x7f03001c;
+        public static int grid_item_favorite=0x7f03001d;
+        public static int list_row_profile=0x7f03001e;
+        public static int list_row_view=0x7f03001f;
+        public static int menu_frame=0x7f030020;
+        public static int sherlock_spinner_dropdown_item=0x7f030021;
+        public static int sherlock_spinner_item=0x7f030022;
+        public static int sliding_row_view=0x7f030023;
     }
     public static final class menu {
         public static int main=0x7f0b0000;
@@ -1444,6 +1456,7 @@ containing a value of this type.
         public static int drawer_close=0x7f060037;
         public static int drawer_open=0x7f060036;
         public static int eroareLoading=0x7f060025;
+        public static int hello_blank_fragment=0x7f060039;
         public static int loading=0x7f060035;
         /**  Location client code resources (prefix with location_client) 
 
@@ -1483,19 +1496,13 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static int AppBaseTheme=0x7f0a0064;
+        public static int AppBaseTheme=0x7f0a0060;
         public static int GoToCinemaTheme_ActionBarStyle=0x7f0a005a;
         public static int GoToCinemaTheme_ActionBarTextStyle=0x7f0a005b;
-        public static int Line=0x7f0a0063;
         public static int ListButtonAction=0x7f0a005f;
         public static int ListDescription=0x7f0a005e;
         public static int ListImage=0x7f0a005c;
         public static int ListTitle=0x7f0a005d;
-        public static int SettingContent=0x7f0a0061;
-        public static int SettingText=0x7f0a0062;
-        /**  Settings 
-         */
-        public static int SettingTitle=0x7f0a0060;
         public static int Sherlock___TextAppearance_Small=0x7f0a0046;
         public static int Sherlock___Theme=0x7f0a0051;
         public static int Sherlock___Theme_DarkActionBar=0x7f0a0053;
