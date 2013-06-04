@@ -11,65 +11,53 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.vladstoick.gotocinema.R;
+import com.vladstoick.objects.FavoriteMovie;
+
+import java.util.ArrayList;
 
 /**
  * Created by vlad on 6/3/13.
  */
 public class FavoriteAdapter extends BaseAdapter {
     private Context mContext;
-
-    public FavoriteAdapter(Context c) {
+    ArrayList<FavoriteMovie> mArrayList = new ArrayList<FavoriteMovie>();
+    public FavoriteAdapter(Context c,ArrayList<FavoriteMovie> data) {
         mContext = c;
+        mArrayList = data;
     }
 
     public int getCount() {
-        return mThumbIds.length;
+        return mArrayList.size();
     }
 
     public Object getItem(int position) {
-        return null;
+        return mArrayList.get(position);
     }
 
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
-    // create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
         DisplayMetrics metrics = mContext.getResources().getDisplayMetrics();
         int width= metrics.widthPixels;
         View view;
+        FavoriteMovie movie = mArrayList.get(position);
         if(convertView == null) {
             LayoutInflater inflater = ((Activity) mContext).getLayoutInflater();
             view = inflater.inflate(R.layout.grid_item_favorite, parent,false);
-
-            view.setLayoutParams(new GridView.LayoutParams(width/2, width/2));
-//            view.setScaleType(ImageView.ScaleType.CENTER_CROP);
-
+            int height = (int) ((width/2)*1.4);
+            view.setLayoutParams(new GridView.LayoutParams( width / 2, height));
         }
         else
             view = convertView;
 
         ImageView imageView = (ImageView) view.findViewById(R.id.image);
-        imageView.setImageResource(mThumbIds[position]);
-        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        Picasso.with(mContext).load(movie.imgUrl).into(imageView);
         TextView textView = (TextView) view.findViewById(R.id.title);
-        textView.setText("HELLO WORLD");
-//        ImageView imageView;
-//        if (convertView == null) {  // if it's not recycled, initialize some attributes
-//            imageView = new ImageView(mContext);
-//
-//            DisplayMetrics metrics = mContext.getResources().getDisplayMetrics();
-//            int width= metrics.widthPixels;
-//            imageView.setLayoutParams(new GridView.LayoutParams(width/2, width/2));
-//            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-////            imageView.setPadding(8, 8, 8, 8);
-//        } else {
-//            imageView = (ImageView) convertView;
-//        }
-//
-//        imageView.setImageResource(mThumbIds[position]);
+        textView.setText(movie.enTitle);
         return view;
     }
 

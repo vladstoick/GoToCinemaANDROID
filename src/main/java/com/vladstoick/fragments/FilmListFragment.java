@@ -1,23 +1,23 @@
 package com.vladstoick.fragments;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragment;
-
 import com.fortysevendeg.android.swipelistview.BaseSwipeListViewListener;
 import com.fortysevendeg.android.swipelistview.SwipeListView;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.vladstoick.arrayadapter.AparitiiCinemaAdapter;
 import com.vladstoick.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.MainActivity;
 import com.vladstoick.gotocinema.OnFragmentInteractionListener;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.AparitiiCinema;
-import com.vladstoick.arrayadapter.AparitiiCinemaAdapter;
 import com.vladstoick.utility.CinemaRestClient;
 
 import java.util.ArrayList;
@@ -90,16 +90,24 @@ public class FilmListFragment extends SherlockFragment {
                 }
             });
         }
+        mContext=getSherlockActivity();
         return view;
     }
+    public static Context mContext;
     public final static void clickedFavorite(int position,AparitiiCinema data)
     {
-        System.out.println("user/"+ MainActivity.userID +"/favorites?movie_id=" + data.id);
-        CinemaRestClient.post("user/"+ MainActivity.userID +"/favorites/" + data.id , null , new AsyncHttpResponseHandler(){
+        String url = "user/" + MainActivity.userID + "/favorites/?movie_id=" + data.id + "&token=" + MainActivity.userAPI;
+        System.out.println(url);
+        CinemaRestClient.post(url, null , new AsyncHttpResponseHandler(){
             @Override
             public void onSuccess(String result)
             {
-                Log.d("APP","SUCCES");
+                Toast.makeText(mContext, "Adăugat cu succes", Toast.LENGTH_LONG);
+                System.out.println(result);
+            }
+            @Override
+            public void onFailure(Throwable e, String response) {
+                e.printStackTrace();
             }
         });
     }

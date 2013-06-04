@@ -75,8 +75,8 @@ c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarshe
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\nineoldandroids\view\animation\AnimatorProxy.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\utility\JSONParser.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\ActionBarSherlockNative.java
-c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\nineoldandroids\widget\NineLinearLayout.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\fragments\UserFragment.java
+c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\nineoldandroids\widget\NineLinearLayout.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\fragments\SlidingMenuFragment.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\internal\view\menu\MenuWrapper.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\vladstoick\gotocinema\R.java
@@ -89,6 +89,7 @@ c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarshe
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\app\SherlockDialogFragment.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\app\SherlockExpandableListActivity.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.fortysevendeg.android_swipelistview_apklib_1.0-SNAPSHOT\src\com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener.java
+c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\objects\FavoriteMovie.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\target\unpack\apklibs\com.actionbarsherlock_actionbarsherlock_apklib_4.3.1\src\com\actionbarsherlock\ActionBarSherlock.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\arrayadapter\FavoriteAdapter.java
 c:\Users\vlad\workspace\GoToCinemaANDROID\src\main\java\com\vladstoick\objects\AparitiiCinema.java

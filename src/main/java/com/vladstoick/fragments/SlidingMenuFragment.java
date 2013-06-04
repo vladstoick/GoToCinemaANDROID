@@ -10,6 +10,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import com.actionbarsherlock.app.SherlockFragment;
+import com.vladstoick.gotocinema.MainActivity;
 import com.vladstoick.gotocinema.OnFragmentInteractionListener;
 import com.vladstoick.gotocinema.R;
 
@@ -48,7 +49,7 @@ public class SlidingMenuFragment extends SherlockFragment{
 			        		break;
 			        	}
                         case 3:{
-                            mListener.showFavorites();
+                            mListener.showFavorites(MainActivity.userID+"/favorites",false);
                         }
 			        }
 		            	

@@ -9,8 +9,16 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 
 import com.actionbarsherlock.app.SherlockFragment;
-import com.vladstoick.gotocinema.R;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.vladstoick.arrayadapter.FavoriteAdapter;
+import com.vladstoick.gotocinema.R;
+import com.vladstoick.objects.FavoriteMovie;
+import com.vladstoick.utility.CinemaRestClient;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link android.support.v4.app.Fragment} subclass. Activities that
@@ -22,21 +30,19 @@ import com.vladstoick.arrayadapter.FavoriteAdapter;
  */
 public class FavoriteFragment extends SherlockFragment {
 	View view;
-	private static final String ARG_PARAM1 = "param1";
-	private static final String ARG_PARAM2 = "param2";
-	private String mParam1;
-	private String mParam2;
+	private static final String ARG_URL = "urlparam";
+	private String url;
 
 	private OnFragmentInteractionListener mListener;
 
 	// TODO: Rename and change types and number of parameters
 //	public static FavoriteFragment newInstance(String param1, String param2) {
-	public static FavoriteFragment newInstance(){
+	public static FavoriteFragment newInstance(String url){
 		FavoriteFragment fragment = new FavoriteFragment();
-//		Bundle args = new Bundle();
-//		args.putString(ARG_PARAM1, param1);
+		Bundle arg = new Bundle();
+		arg.putString(ARG_URL, url);
 //		args.putString(ARG_PARAM2, param2);
-//		fragment.setArguments(args);
+		fragment.setArguments(arg);
 		return fragment;
 	}
 
@@ -47,10 +53,10 @@ public class FavoriteFragment extends SherlockFragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//		if (getArguments() != null) {
-//			mParam1 = getArguments().getString(ARG_PARAM1);
+		if (getArguments() != null) {
+			url = getArguments().getString(ARG_URL);
 //			mParam2 = getArguments().getString(ARG_PARAM2);
-//		}
+		}
 	}
 
 	@Override
@@ -58,8 +64,32 @@ public class FavoriteFragment extends SherlockFragment {
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
 		view =  inflater.inflate(R.layout.fragment_favorite, container, false);
-		GridView mGV = (GridView) view.findViewById(R.id.gridview);
-        mGV.setAdapter(new FavoriteAdapter(getActivity()));
+		final GridView mGV = (GridView) view.findViewById(R.id.gridview);
+        System.out.println(url);
+        CinemaRestClient.get("user/"+url,null,new AsyncHttpResponseHandler(){
+            @Override
+            public void onSuccess(String response)
+            {
+                ArrayList<FavoriteMovie> data = new ArrayList<FavoriteMovie>();
+                try{
+                    JSONArray jsonArray = new JSONArray(response);
+                    System.out.println(response);
+                    System.out.println(jsonArray.length());
+                    for(int i=0;i<jsonArray.length();i++)
+                    {
+                        JSONObject object= jsonArray.getJSONObject(i);
+                        data.add(i, new FavoriteMovie(object.getString("image"), object.getString("name")));
+                        System.out.println(data.size());
+                    }
+                }
+                catch (Exception e) {
+                        e.printStackTrace();
+                }
+                mGV.setAdapter(new FavoriteAdapter(getActivity(),data));
+            }
+
+        });
+
 		return view;
 	}
 

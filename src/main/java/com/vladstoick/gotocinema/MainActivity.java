@@ -20,13 +20,14 @@ import java.util.ArrayList;
 public class MainActivity extends BaseActivity implements OnFragmentInteractionListener {
 
     public static String userID;
+    public static String userAPI;
     private final ProgressDialogFragment progressDialog= new ProgressDialogFragment();
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 //		File cacheDir = StorageUtils.getCacheDirectory(getApplicationContext());
         SharedPreferences settings =  this.getSharedPreferences("appPref",Context.MODE_PRIVATE);
-        String userAPI = settings.getString("api_acces", "0");
+        userAPI = settings.getString("api_acces", "0");
         userID = settings.getString("user_id","0");
         currentLocation = findLocation();
         progressDialog.show(getSupportFragmentManager(),TAGLOADING);
@@ -77,8 +78,8 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
         switchContent( new SearchFragment(),false);
     }
     @Override
-    public void showFavorites() {
-        switchContent(new FavoriteFragment(),false);
+    public void showFavorites(String url,Boolean shouldReplace) {
+        switchContent(FavoriteFragment.newInstance(url),shouldReplace);
     }
 
     public void showTimePicker(View view){

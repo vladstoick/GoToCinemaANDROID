@@ -15,10 +15,11 @@
     </ImageView>
 
     <TextView
-            android:text="HELLO WORLD"
+            android:text="HELLO WORLD
+            SSS"
             android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:gravity="center"
             android:layout_alignParentBottom="true"
             android:background="#C09a9a9a"

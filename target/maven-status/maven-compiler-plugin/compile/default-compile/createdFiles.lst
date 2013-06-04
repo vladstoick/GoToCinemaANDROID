@@ -70,6 +70,7 @@ com\actionbarsherlock\ActionBarSherlock$OnCreateOptionsMenuListener.class
 com\actionbarsherlock\R$menu.class
 com\vladstoick\gotocinema\OnFragmentInteractionListener.class
 com\actionbarsherlock\internal\widget\IcsAbsSpinner$SavedState$1.class
+com\vladstoick\objects\FavoriteMovie.class
 com\actionbarsherlock\internal\widget\IcsProgressBar$RefreshProgressRunnable.class
 com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorListenerAdapter.class
 com\fortysevendeg\android\swipelistview\SwipeListView$1.class
@@ -183,6 +184,7 @@ com\vladstoick\gotocinema\LoginActivity.class
 com\fortysevendeg\android\swipelistview\R$attr.class
 com\actionbarsherlock\internal\widget\ScrollingTabContainerView$TabClickListener.class
 com\actionbarsherlock\internal\ActionBarSherlockNative$ActionModeWrapper.class
+com\vladstoick\fragments\FavoriteFragment$1.class
 com\actionbarsherlock\widget\ActivityChooserView$1.class
 com\actionbarsherlock\widget\SearchView$OnQueryTextListener.class
 com\actionbarsherlock\internal\widget\IcsProgressBar.class
@@ -321,6 +323,7 @@ com\actionbarsherlock\internal\view\menu\MenuPopupHelper.class
 com\actionbarsherlock\R$attr.class
 com\actionbarsherlock\Manifest.class
 com\actionbarsherlock\internal\widget\ScrollingTabContainerView$TabAdapter.class
+com\vladstoick\objects\FavoriteMovie$1.class
 com\vladstoick\gotocinema\R$bool.class
 com\fortysevendeg\android\swipelistview\R$string.class
 com\fortysevendeg\android\swipelistview\Manifest.class

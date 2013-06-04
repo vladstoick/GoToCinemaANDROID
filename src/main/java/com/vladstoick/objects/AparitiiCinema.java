@@ -77,7 +77,6 @@ public class AparitiiCinema implements Parcelable {
         this.imgUrl=imgUrl;
         this.id=id;
     }
-
     @Override
     public int describeContents() {
 

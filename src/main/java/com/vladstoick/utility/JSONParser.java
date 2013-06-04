@@ -48,6 +48,7 @@ public class JSONParser {
                 String titluRo = movie.getString("titluRo");
                 String gen = movie.getString("gen");
                 String id = movie.getString("id");
+                System.out.println(id);
                 JSONArray showtimesArray = movie.getJSONArray("showtimes");
                 for(int showtimeI = 0; showtimeI < showtimesArray.length(); showtimeI++ )
                 {
