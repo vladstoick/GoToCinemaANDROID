@@ -1,4 +1,4 @@
-package com.vladstoick.utility;
+package com.vladstoick.arrayadapter;
 
 import android.app.Activity;
 import android.content.Context;

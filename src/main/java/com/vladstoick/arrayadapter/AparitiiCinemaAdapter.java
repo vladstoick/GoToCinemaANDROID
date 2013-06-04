@@ -1,4 +1,4 @@
-package com.vladstoick.utility;
+package com.vladstoick.arrayadapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,6 +14,7 @@ import com.squareup.picasso.Picasso;
 import com.vladstoick.fragments.FilmListFragment;
 import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.AparitiiCinema;
+import com.vladstoick.utility.Utils;
 
 import java.util.ArrayList;
 
