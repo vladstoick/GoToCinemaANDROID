@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/textView1"
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slidingImg"/>
+    <TextView
+        android:id="@+id/slidingTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:layout_toRightOf="@+id/slidingImg"
         android:textColor="@color/android:white"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>

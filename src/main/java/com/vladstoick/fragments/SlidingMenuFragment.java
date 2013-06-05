@@ -7,9 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 import com.actionbarsherlock.app.SherlockFragment;
+import com.vladstoick.arrayadapter.SlidingMenuAdapter;
 import com.vladstoick.gotocinema.MainActivity;
 import com.vladstoick.gotocinema.OnFragmentInteractionListener;
 import com.vladstoick.gotocinema.R;
@@ -21,6 +22,12 @@ public class SlidingMenuFragment extends SherlockFragment{
 			"Calculează",
             "Favorite"
 		};
+    private final Integer[] mThumbIds={
+        R.drawable.social_person,
+        R.drawable.action_search,
+        R.drawable.location_map,
+        R.drawable.rating_favorite
+    };
 	private View view=null;
     public SlidingMenuFragment(){}
 	private OnFragmentInteractionListener mListener;
@@ -28,7 +35,7 @@ public class SlidingMenuFragment extends SherlockFragment{
 	public void onActivityCreated(Bundle savedInstanceState){
 		super.onActivityCreated(savedInstanceState);
 		ListView listView= (ListView) view.findViewById(R.id.listview);
-		listView.setAdapter(new ArrayAdapter<String>(getActivity(), R.layout.sliding_row_view, list_contents));
+		listView.setAdapter(new SlidingMenuAdapter(getSherlockActivity(),mThumbIds,list_contents));
 		listView.setOnItemClickListener(new OnItemClickListener() {
 			        @Override
 					public void onItemClick(AdapterView<?> arg0, View arg1, int position,
