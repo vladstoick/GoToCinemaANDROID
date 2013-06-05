@@ -116,7 +116,8 @@ public class UserFragment extends SherlockFragment {
                     JSONArray wallPosts = wall.getJSONArray("wall_posts");
                     for (int i = 0; i < wallPosts.length(); i++) {
                         JSONObject wallPost = wallPosts.getJSONObject(i);
-                        String content = wallPost.getString("content");
+//                        String content = wallPost.getString("content");
+                        String content = "";
                         String title = wallPost.getString("title");
                         JSONObject senderInfo = wallPost.getJSONObject("sender");
                         String posterId = senderInfo.getString("id");
