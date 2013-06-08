@@ -1,6 +1,8 @@
 package com.vladstoick.gotocinema;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.location.Location;
 import android.location.LocationListener;
@@ -32,7 +34,8 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
     protected static final String TAGCALCULATE ="CalculateMainMenuFragment";
     protected static final String TAGLOADING = "LoadingFragment";
     private static final String ARGMOVIES="movies";
-    private static final String ARGCINEMAS="cinemas";
+    public static String userID;
+    public static String userAPI;
     protected static Hashtable<String, Cinema> cinemas = new Hashtable<String, Cinema>();
     protected static ArrayList<AparitiiCinema> allMovies= new ArrayList<AparitiiCinema>();
     private DrawerLayout mDrawerLayout;
@@ -52,8 +55,17 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
         super.onCreate(savedInstanceState);
         if(savedInstanceState!=null)
         {
-//            cinemas = (Hashtable<String, Cinema>) savedInstanceState.getSerializable(ARGCINEMAS);
             allMovies = savedInstanceState.getParcelableArrayList(ARGMOVIES);
+        }
+        SharedPreferences settings =  this.getSharedPreferences("appPref",Context.MODE_PRIVATE);
+        userAPI = settings.getString("api_acces", "0");
+        userID = settings.getString("user_id","0");
+        if(userAPI=="0" || userID=="0")
+        {
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            startActivity(intent);
+            finish();
         }
         setContentView(R.layout.menu_frame);
         if (savedInstanceState != null)
@@ -171,6 +183,7 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
             final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
             try {
                 String link="/distance?lat="+location.getLatitude()+"&lng="+location.getLongitude();
+
                 progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
                 CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {
                     @Override
@@ -179,9 +192,8 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
                         if (allMovies.size() > 10) {
                             allMovies = AparitiiCinema.merge(allMovies, cinemas);
                         }
-
-                        progressDialog2.dismiss();
-
+                        if(progressDialog2==null)
+                            progressDialog2.dismiss();
                     }
                 });
             } catch (Exception e) {
