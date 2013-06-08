@@ -96,7 +96,7 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
         catch(NullPointerException e)
         {
             e.printStackTrace();
-        };
+        }
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.content_frame, fragment);
         if(addToBack)

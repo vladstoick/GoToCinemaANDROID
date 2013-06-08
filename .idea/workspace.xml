@@ -600,15 +600,18 @@
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\sample_7.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-mdpi\action_search.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-xhdpi\social_person.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity$1.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity$2.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/dialogfragments/PostDialogFragment$1.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/dialogfragments/PostDialogFragment$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/dialogfragments/PostDialogFragment$2.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/dialogfragments/PostDialogFragment$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/dialogfragments/PostDialogFragment.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/dialogfragments/PostDialogFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes.dex" afterPath="$PROJECT_DIR$/target/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.ap_" afterPath="$PROJECT_DIR$/target/gotocinema.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.apk" afterPath="$PROJECT_DIR$/target/gotocinema.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.jar" afterPath="$PROJECT_DIR$/target/gotocinema.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/PostDialogFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/PostDialogFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gotocinema.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -724,14 +727,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="9" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.76" vertical-offset="576" max-vertical-offset="2907">
+            <state line="98" column="9" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="2907">
               <folding>
-                <element signature="e#7317#7782#0" expanded="true" />
-                <element signature="e#7763#7764#0" expanded="true" />
+                <element signature="e#7316#7781#0" expanded="true" />
+                <element signature="e#7762#7763#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostsAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/arrayadapter/PostsAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostDialogFragment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/PostDialogFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="68" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.71885717" vertical-offset="0" max-vertical-offset="875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilmDetailsFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmDetailsFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="13" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="1012" max-vertical-offset="1887">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -758,7 +788,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/LoginActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/JSONParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FavoriteFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/PostDialogFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/CalculateMainMenuFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/UserFragment.java" />
@@ -770,6 +799,7 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/PostDialogFragment.java" />
       </list>
     </option>
   </component>
@@ -1552,27 +1582,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/TimePickerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="396" selection-end="396" vertical-scroll-proportion="0.07771429" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/ProgressDialogFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="40" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1581">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/arrayadapter/AparitiiCinemaAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="12" selection-start="1556" selection-end="1698" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1802">
@@ -1668,11 +1677,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="9" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.76" vertical-offset="576" max-vertical-offset="2907">
+        <state line="98" column="9" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="2907">
           <folding>
-            <element signature="e#7317#7782#0" expanded="true" />
-            <element signature="e#7763#7764#0" expanded="true" />
+            <element signature="e#7316#7781#0" expanded="true" />
+            <element signature="e#7762#7763#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/arrayadapter/PostsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="1012" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/PostDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="68" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.71885717" vertical-offset="0" max-vertical-offset="875">
+          <folding />
         </state>
       </provider>
     </entry>

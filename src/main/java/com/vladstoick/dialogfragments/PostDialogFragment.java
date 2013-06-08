@@ -3,10 +3,12 @@ package com.vladstoick.dialogfragments;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 public class PostDialogFragment extends DialogFragment {
@@ -26,7 +28,8 @@ public class PostDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
         final EditText input = new EditText(getActivity());
-        return new AlertDialog.Builder(getActivity())
+
+        final AlertDialog dialog = new AlertDialog.Builder(getActivity())
                 .setTitle("Scrie mesajul dorit")
                 .setView(input)
                 .setPositiveButton("Postează",
@@ -44,5 +47,9 @@ public class PostDialogFragment extends DialogFragment {
                     }
                 })
                 .create();
+        input.requestFocus();
+        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+        return dialog;
     }
 }
