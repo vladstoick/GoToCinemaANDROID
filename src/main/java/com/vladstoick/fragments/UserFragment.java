@@ -1,10 +1,10 @@
 package com.vladstoick.fragments;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,7 +37,7 @@ public class UserFragment extends SherlockFragment {
     private final static String ARG_USERNAME="username";
     private final static String ARG_USERDOB="userdob";
     public static final int DIALOG_FRAGMENT = 1;
-    private View view;
+    private View view,viewAbove;
     private String userID = "",userImgUrl,userName,userDob;
     private ArrayList<Post> posts = new ArrayList<Post>();
 	public static UserFragment newInstance(String userID) {
@@ -71,18 +71,19 @@ public class UserFragment extends SherlockFragment {
     }
     private final void setUpFragment()
     {
-        TextView dobTV = (TextView) view.findViewById(R.id.dob);
-        TextView fullnameTV = ((TextView) view.findViewById(R.id.fullname));
-        ImageView userProfileImgIV = (ImageView) view.findViewById(R.id.userProfileImg);
+        TextView dobTV = (TextView) viewAbove.findViewById(R.id.dob);
+        TextView fullnameTV = ((TextView) viewAbove.findViewById(R.id.fullname));
+        ImageView userProfileImgIV = (ImageView) viewAbove.findViewById(R.id.userProfileImg);
         ListView wallPostsLV = (ListView) view.findViewById(R.id.wallPostsListView);
+
         Picasso.with(getSherlockActivity().getApplicationContext()).load(userImgUrl).into(userProfileImgIV);
         fullnameTV.setText(userName);
         wallPostsLV.setAdapter(new PostsAdapter(getActivity(), R.layout.list_row_profile, posts));
         dobTV.setText("Data naşterii:" + userDob);
     }
     public void showDialog(int type) {
-        FragmentTransaction ft = getActivity().getFragmentManager().beginTransaction();
-        Fragment prev = getActivity().getFragmentManager().findFragmentByTag("dialog");
+        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+        Fragment prev = getActivity().getSupportFragmentManager().findFragmentByTag("dialog");
         if (prev != null) {
             ft.remove(prev);
         }
@@ -116,7 +117,6 @@ public class UserFragment extends SherlockFragment {
                     JSONArray wallPosts = wall.getJSONArray("wall_posts");
                     for (int i = 0; i < wallPosts.length(); i++) {
                         JSONObject wallPost = wallPosts.getJSONObject(i);
-//                        String content = wallPost.getString("content");
                         String content = "";
                         String title = wallPost.getString("title");
                         JSONObject senderInfo = wallPost.getJSONObject("sender");
@@ -137,8 +137,11 @@ public class UserFragment extends SherlockFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_user, container, false);
-        final Button calculateBtn = (Button) view.findViewById(R.id.posteaza);
-        final Button viewFavorites = (Button) view.findViewById(R.id.viewFavorites);
+        viewAbove = View.inflate(getActivity(), R.layout.fragment_user_above, null);
+        ListView wallPostsLV = (ListView) view.findViewById(R.id.wallPostsListView);
+        wallPostsLV.addHeaderView(viewAbove);
+        final Button calculateBtn = (Button) viewAbove.findViewById(R.id.posteaza);
+        final Button viewFavorites = (Button) viewAbove.findViewById(R.id.viewFavorites);
         userID = getArguments().getString(ARG_USERID);
         calculateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,9 +166,7 @@ public class UserFragment extends SherlockFragment {
             setUpFragment();
         }
         else
-        {
             updatePosts();
-        }
         return view;
 	}
 
@@ -175,13 +176,11 @@ public class UserFragment extends SherlockFragment {
             case DIALOG_FRAGMENT:
 
                 if (resultCode == Activity.RESULT_OK) {
+
                     System.out.println(MainActivity.userAPI);
                     String text = data.getStringExtra("TEXT");
                     RequestParams params = new RequestParams();
-                    params.put("token", MainActivity.userAPI);
-                    params.put("title",text);
-                    params.put("content","");
-                    params.put("receiver_id",userID);
+                    params.put("token", MainActivity.userAPI); params.put("title",text); params.put("content","");params.put("receiver_id",userID);
                     CinemaRestClient.post("/user/post",params,new AsyncHttpResponseHandler(){
                         @Override
                         public void onSuccess(String response)

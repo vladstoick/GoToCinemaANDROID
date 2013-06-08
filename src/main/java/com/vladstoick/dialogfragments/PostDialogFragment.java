@@ -37,6 +37,7 @@ public class PostDialogFragment extends DialogFragment {
                             public void onClick(DialogInterface dialog, int whichButton) {
 //                                System.out.println(input.getText());
                                 Intent data = getActivity().getIntent().putExtra("TEXT", input.getText().toString());
+
                                 getTargetFragment().onActivityResult(getTargetRequestCode(), Activity.RESULT_OK, data);
                             }
                         }

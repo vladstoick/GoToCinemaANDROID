@@ -1240,13 +1240,13 @@ containing a value of this type.
         public static final int dislike=0x7f05005f;
         public static final int dismiss=0x7f050018;
         public static final int distance=0x7f05004a;
-        public static final int dob=0x7f050055;
+        public static final int dob=0x7f050057;
         public static final int drawer_layout=0x7f050067;
         public static final int edit_query=0x7f05002f;
         public static final int email=0x7f05003e;
         public static final int favorite=0x7f050060;
         public static final int front=0x7f05004e;
-        public static final int fullname=0x7f050054;
+        public static final int fullname=0x7f050056;
         public static final int gen=0x7f050047;
         public static final int gridview=0x7f050045;
         public static final int homeAsUp=0x7f05000a;
@@ -1268,7 +1268,7 @@ containing a value of this type.
         public static final int note=0x7f050046;
         public static final int openMap=0x7f05004b;
         public static final int password=0x7f05003f;
-        public static final int posteaza=0x7f050057;
+        public static final int posteaza=0x7f050058;
         public static final int poster=0x7f05005d;
         public static final int posterIMG=0x7f05005c;
         public static final int regizor=0x7f050049;
@@ -1293,10 +1293,10 @@ containing a value of this type.
         public static final int terrain=0x7f050003;
         public static final int title=0x7f05005b;
         public static final int useLogo=0x7f050008;
-        public static final int userProfileImg=0x7f050053;
-        public static final int viewFavorites=0x7f050058;
-        public static final int wallButtons=0x7f050056;
-        public static final int wallPostsListView=0x7f050059;
+        public static final int userProfileImg=0x7f050055;
+        public static final int viewFavorites=0x7f050059;
+        public static final int wallButtons=0x7f050054;
+        public static final int wallPostsListView=0x7f050053;
         public static final int wrap_content=0x7f050005;
     }
     public static final class integer {
@@ -1332,13 +1332,14 @@ containing a value of this type.
         public static final int fragment_search=0x7f03001a;
         public static final int fragment_sliding_list=0x7f03001b;
         public static final int fragment_user=0x7f03001c;
-        public static final int grid_item_favorite=0x7f03001d;
-        public static final int list_row_profile=0x7f03001e;
-        public static final int list_row_view=0x7f03001f;
-        public static final int menu_frame=0x7f030020;
-        public static final int sherlock_spinner_dropdown_item=0x7f030021;
-        public static final int sherlock_spinner_item=0x7f030022;
-        public static final int sliding_row_view=0x7f030023;
+        public static final int fragment_user_above=0x7f03001d;
+        public static final int grid_item_favorite=0x7f03001e;
+        public static final int list_row_profile=0x7f03001f;
+        public static final int list_row_view=0x7f030020;
+        public static final int menu_frame=0x7f030021;
+        public static final int sherlock_spinner_dropdown_item=0x7f030022;
+        public static final int sherlock_spinner_item=0x7f030023;
+        public static final int sliding_row_view=0x7f030024;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;

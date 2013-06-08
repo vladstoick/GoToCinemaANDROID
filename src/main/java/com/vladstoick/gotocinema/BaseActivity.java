@@ -87,6 +87,7 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
     }
+
     protected void switchContent(Fragment fragment, boolean addToBack){
         mContent = fragment;
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
