@@ -89,6 +89,14 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
     }
     protected void switchContent(Fragment fragment, boolean addToBack){
         mContent = fragment;
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        try{
+            imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        }
+        catch(NullPointerException e)
+        {
+            e.printStackTrace();
+        };
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.content_frame, fragment);
         if(addToBack)

@@ -600,81 +600,15 @@
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\sample_7.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-mdpi\action_search.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-xhdpi\social_person.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\actionbarsherlock\Manifest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\actionbarsherlock\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\fortysevendeg\android\swipelistview\Manifest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\fortysevendeg\android\swipelistview\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\google\android\gms\Manifest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\target\generated-sources\r\com\google\android\gms\R.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity$1.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity$2.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/BaseActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/MainActivity$1.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/MainActivity.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$drawable.class" afterPath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$drawable.class" afterPath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$drawable.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$id.class" afterPath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$id.class" afterPath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$id.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$integer.class" afterPath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$integer.class" afterPath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$integer.class" afterPath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$integer.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$layout.class" afterPath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$layout.class" afterPath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$layout.class" afterPath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$layout.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$menu.class" afterPath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$menu.class" afterPath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$menu.class" afterPath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$menu.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$string.class" afterPath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$string.class" afterPath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$string.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$style.class" afterPath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$style.class" afterPath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$style.class" afterPath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$style.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$styleable.class" afterPath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$styleable.class" afterPath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$styleable.class" afterPath="$PROJECT_DIR$/target/classes/com/google/android/gms/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$styleable.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R.class" afterPath="$PROJECT_DIR$/target/classes/com/actionbarsherlock/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R.class" afterPath="$PROJECT_DIR$/target/classes/com/fortysevendeg/android/swipelistview/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/google/android/gms/R.class" afterPath="$PROJECT_DIR$/target/classes/com/google/android/gms/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/gotocinema/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/fragments/SlidingMenuFragment$1.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/fragments/SlidingMenuFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/vladstoick/fragments/SlidingMenuFragment.class" afterPath="$PROJECT_DIR$/target/classes/com/vladstoick/fragments/SlidingMenuFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/action_search.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/action_search.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/action_search.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/action_search.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes.dex" afterPath="$PROJECT_DIR$/target/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/content_edit.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/content_edit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.ap_" afterPath="$PROJECT_DIR$/target/gotocinema.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.apk" afterPath="$PROJECT_DIR$/target/gotocinema.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.jar" afterPath="$PROJECT_DIR$/target/gotocinema.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/location_map.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/location_map.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/location_map.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/location_map.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/location_map.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/location_map.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/social_person.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/social_person.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/social_person.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/social_person.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/BuildConfig.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/Manifest.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/menu_frame.xml" afterPath="$PROJECT_DIR$/res/layout/menu_frame.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/sliding_row_view.xml" afterPath="$PROJECT_DIR$/res/layout/sliding_row_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gotocinema.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -760,10 +694,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="82" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.60228574" vertical-offset="0" max-vertical-offset="1751">
+            <state line="77" column="12" selection-start="3078" selection-end="3082" vertical-scroll-proportion="-2.04" vertical-offset="901" max-vertical-offset="1751">
               <folding />
             </state>
           </provider>
@@ -790,13 +724,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BaseActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="13" selection-start="2183" selection-end="2183" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2771">
+            <state line="98" column="9" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.76" vertical-offset="576" max-vertical-offset="2907">
               <folding>
-                <element signature="e#7020#7485#0" expanded="true" />
-                <element signature="e#7466#7467#0" expanded="true" />
+                <element signature="e#7317#7782#0" expanded="true" />
+                <element signature="e#7763#7764#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -833,9 +767,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/SlidingMenuFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/sliding_row_view.xml" />
         <option value="$PROJECT_DIR$/res/layout/menu_frame.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
       </list>
     </option>
   </component>
@@ -1618,13 +1552,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/UserFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="35" selection-start="6820" selection-end="6820" vertical-scroll-proportion="0.8834286" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/TimePickerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="396" selection-end="396" vertical-scroll-proportion="0.07771429" vertical-offset="0" max-vertical-offset="0">
@@ -1701,16 +1628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="2183" selection-end="2183" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2771">
-          <folding>
-            <element signature="e#7020#7485#0" expanded="true" />
-            <element signature="e#7466#7467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="49" selection-start="3030" selection-end="3030" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1122">
@@ -1737,8 +1654,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="82" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.60228574" vertical-offset="0" max-vertical-offset="1751">
+        <state line="77" column="12" selection-start="3078" selection-end="3082" vertical-scroll-proportion="-2.04" vertical-offset="901" max-vertical-offset="1751">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/android/android/4.0.1.2/android-4.0.1.2.jar!/android/app/Activity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="31" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.33294663" vertical-offset="223" max-vertical-offset="5865">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="9" selection-start="4351" selection-end="4351" vertical-scroll-proportion="0.76" vertical-offset="576" max-vertical-offset="2907">
+          <folding>
+            <element signature="e#7317#7782#0" expanded="true" />
+            <element signature="e#7763#7764#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
