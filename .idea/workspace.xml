@@ -590,12 +590,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e7e8c1c-d8ee-4142-8634-1a81fe8f3bca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/utility/APIRestClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/menu_list.xml" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\.idea\libraries\Maven__com_actionbarsherlock_actionbarsherlock_apklib_4_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\.idea\libraries\Maven__com_fortysevendeg_android_swipelistview_apklib_1_0_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\.idea\libraries\Maven__com_google_android_gms_google_play_services_apklib_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\.idea\libraries\Maven__com_nostra13_universalimageloader_universal_image_loader_1_8_4.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\sample_0.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\sample_1.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\sample_2.jpg" afterPath="" />
@@ -606,17 +600,7 @@
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-hdpi\sample_7.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-mdpi\action_search.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\vlad\workspace\GoToCinemaANDROID\res\drawable-xhdpi\social_person.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes.dex" afterPath="$PROJECT_DIR$/target/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.ap_" afterPath="$PROJECT_DIR$/target/gotocinema.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.apk" afterPath="$PROJECT_DIR$/target/gotocinema.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gotocinema.jar" afterPath="$PROJECT_DIR$/target/gotocinema.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" afterPath="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" afterPath="$PROJECT_DIR$/target/generated-sources/r/com/vladstoick/gotocinema/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gotocinema.iml" afterPath="$PROJECT_DIR$/gotocinema.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_user.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_user.xml" />
     </list>
     <ignored path="gotocinema.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -711,10 +695,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="49" selection-start="7594" selection-end="7594" vertical-scroll-proportion="0.592" vertical-offset="2151" max-vertical-offset="3026">
+            <state line="184" column="49" selection-start="7594" selection-end="7594" vertical-scroll-proportion="0.0" vertical-offset="2151" max-vertical-offset="3026">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_user.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/fragment_user.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.1" vertical-offset="0" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -755,7 +751,6 @@
         <option value="$PROJECT_DIR$/res/layout/sliding_row_view.xml" />
         <option value="$PROJECT_DIR$/res/layout/menu_frame.xml" />
         <option value="$PROJECT_DIR$/res/layout/fragment_user_above.xml" />
-        <option value="$PROJECT_DIR$/res/layout/fragment_user.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/UserFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/dialogfragments/PostDialogFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/list_row_view.xml" />
@@ -766,6 +761,7 @@
         <option value="$PROJECT_DIR$/res/menu/menu_list.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/fragments/FilmListFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_user.xml" />
       </list>
     </option>
   </component>
@@ -1441,6 +1437,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32657418" sideWeight="0.89432704" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32604057" sideWeight="0.89432704" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32959402" sideWeight="0.5482797" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45828697" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1452,11 +1449,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.6974416" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18783352" sideWeight="0.17092119" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18803419" sideWeight="0.17092119" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11902113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.5482797" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1549,16 +1545,6 @@
             <element signature="e#1812#1826#0" expanded="true" />
             <element signature="e#2151#2173#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_user.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="401" selection-end="401" vertical-scroll-proportion="0.18" vertical-offset="0" max-vertical-offset="850">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1661,7 +1647,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vladstoick/gotocinema/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="49" selection-start="7594" selection-end="7594" vertical-scroll-proportion="0.592" vertical-offset="2151" max-vertical-offset="3026">
+        <state line="184" column="49" selection-start="7594" selection-end="7594" vertical-scroll-proportion="0.0" vertical-offset="2151" max-vertical-offset="3026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_user.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.1" vertical-offset="0" max-vertical-offset="850">
           <folding />
         </state>
       </provider>

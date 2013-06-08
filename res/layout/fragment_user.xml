@@ -3,10 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserFragment"
-    android:paddingTop="10dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingBottom="0dp"
+
     android:orientation="vertical">
     <ListView   android:id="@+id/wallPostsListView"
                 android:layout_width="match_parent"
