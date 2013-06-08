@@ -182,7 +182,7 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
             currentLocation=location;
             final ProgressDialogFragment progressDialog2 = new ProgressDialogFragment();
             try {
-                String link="/distance?lat="+location.getLatitude()+"&lng="+location.getLongitude();
+                String link="/distance/googleMaps?lat="+location.getLatitude()+"&lng="+location.getLongitude();
 
                 progressDialog2.show(getSupportFragmentManager(),TAGLOADING);
                 CinemaRestClient.get(link, null, new AsyncHttpResponseHandler() {

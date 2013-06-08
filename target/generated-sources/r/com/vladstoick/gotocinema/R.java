@@ -1288,6 +1288,9 @@ containing a value of this type.
         public static final int sign_in_button=0x7f050041;
         public static final int slidingImg=0x7f05006a;
         public static final int slidingTitle=0x7f05006b;
+        public static final int sort_by_distance=0x7f05006e;
+        public static final int sort_by_name=0x7f05006f;
+        public static final int sort_by_time=0x7f05006d;
         public static final int swipelistview=0x7f05004d;
         public static final int tabMode=0x7f050007;
         public static final int terrain=0x7f050003;
@@ -1343,6 +1346,7 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int main=0x7f0b0000;
+        public static final int menu_list=0x7f0b0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

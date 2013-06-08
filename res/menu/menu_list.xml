@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/sort_by_time"
+            android:orderInCategory="100"
+            android:showAsAction="never"
+            android:title="@string/sortByTime"/>
+    <item
+            android:id="@+id/sort_by_distance"
+            android:orderInCategory="100"
+            android:showAsAction="never"
+            android:title="@string/sortByDistance"/>
+    <item
+            android:id="@+id/sort_by_name"
+            android:orderInCategory="100"
+            android:showAsAction="never"
+            android:title="@string/sortByName"/>
+
+</menu>

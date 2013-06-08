@@ -9,11 +9,13 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 import com.fortysevendeg.android.swipelistview.BaseSwipeListViewListener;
 import com.fortysevendeg.android.swipelistview.SwipeListView;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.vladstoick.arrayadapter.AparitiiCinemaAdapter;
-import com.vladstoick.dialogfragments.ProgressDialogFragment;
 import com.vladstoick.gotocinema.MainActivity;
 import com.vladstoick.gotocinema.OnFragmentInteractionListener;
 import com.vladstoick.gotocinema.R;
@@ -25,6 +27,13 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class FilmListFragment extends SherlockFragment {
+    private View view;
+    private static final String ARG_MOVIES = "movies";
+    private OnFragmentInteractionListener mListener;
+    private ArrayList <AparitiiCinema> moviesToBeShown;
+    SwipeListView slv;
+    AparitiiCinemaAdapter adapter;
+    public static Context mContext;
 	private class ArrayComparatorByDistance implements Comparator<AparitiiCinema> {
         @Override
         public int compare(AparitiiCinema o1, AparitiiCinema o2) {
@@ -53,11 +62,7 @@ public class FilmListFragment extends SherlockFragment {
 		fragment.setArguments(args);
 		return fragment;
 	}
-    private View view;
-    private static final String ARG_MOVIES = "movies";
-    private OnFragmentInteractionListener mListener;
-    ProgressDialogFragment progressDialog= new ProgressDialogFragment();
-	private ArrayList <AparitiiCinema> moviesToBeShown;
+
 	private FilmListFragment() {
 	}
 
@@ -71,17 +76,17 @@ public class FilmListFragment extends SherlockFragment {
 					+ " must implement OnFragmentInteractionListener");
 		}
 	}
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+        setHasOptionsMenu(true);
         view = inflater.inflate(R.layout.fragment_film_list, container,false);
-
         if (getArguments() != null) {
             moviesToBeShown=getArguments().getParcelableArrayList(ARG_MOVIES);
             Collections.sort(moviesToBeShown, new ArrayComparatorByTime());
-            AparitiiCinemaAdapter adapter = new AparitiiCinemaAdapter(getActivity(), moviesToBeShown);
-            SwipeListView slv = (SwipeListView) view.findViewById(R.id.swipelistview);
+            adapter = new AparitiiCinemaAdapter(getActivity(), moviesToBeShown);
+            slv = (SwipeListView) view.findViewById(R.id.swipelistview);
             slv.setAdapter(adapter);
             slv.setSwipeListViewListener(new BaseSwipeListViewListener() {
                 @Override
@@ -90,11 +95,11 @@ public class FilmListFragment extends SherlockFragment {
                 }
             });
         }
-        mContext=getSherlockActivity();
+        mContext=getActivity();
         return view;
     }
-    public static Context mContext;
-    public final static void clickedFavorite(int position,AparitiiCinema data)
+
+    public static void clickedFavorite(int position,AparitiiCinema data)
     {
         String url = "user/" + MainActivity.userID + "/favorites/?movie_id=" + data.id + "&token=" + MainActivity.userAPI;
         System.out.println(url);
@@ -102,7 +107,7 @@ public class FilmListFragment extends SherlockFragment {
             @Override
             public void onSuccess(String result)
             {
-                Toast.makeText(mContext, "Adăugat cu succes", Toast.LENGTH_LONG);
+                Toast.makeText(mContext, "Adăugat cu succes", Toast.LENGTH_LONG).show();
                 System.out.println(result);
             }
             @Override
@@ -111,11 +116,11 @@ public class FilmListFragment extends SherlockFragment {
             }
         });
     }
-    public final static void clickedLike(int position,AparitiiCinema data)
+    public static void clickedLike(int position,AparitiiCinema data)
     {
         //TODO implement function
     }
-    public final static void clickedDislike(int position,AparitiiCinema data)
+    public static void clickedDislike(int position,AparitiiCinema data)
     {
         //TODO implement function
     }
@@ -124,8 +129,38 @@ public class FilmListFragment extends SherlockFragment {
 		super.onCreate(savedInstanceState);
 		setHasOptionsMenu(true);
 	}
-
-	@Override
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        getSherlockActivity().getSupportMenuInflater().inflate(R.menu.menu_list, menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.sort_by_time:
+            {
+                Collections.sort(moviesToBeShown,new ArrayComparatorByTime());
+                slv.setSelectionAfterHeaderView();
+                adapter.notifyDataSetChanged();
+                return true;
+            }
+            case R.id.sort_by_distance:{
+                Collections.sort(moviesToBeShown,new ArrayComparatorByDistance());
+                adapter.notifyDataSetChanged();
+                slv.setSelectionAfterHeaderView();
+                return true;
+            }
+            case R.id.sort_by_name:{
+                Collections.sort(moviesToBeShown,new ArrayComparatorByName());
+                adapter.notifyDataSetChanged();
+                slv.setSelectionAfterHeaderView();
+                return true;
+            }
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+    @Override
 	public void onDetach() {
 		super.onDetach();
 		mListener = null;

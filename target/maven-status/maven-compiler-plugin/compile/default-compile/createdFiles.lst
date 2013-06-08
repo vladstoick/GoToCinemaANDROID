@@ -48,6 +48,7 @@ com\google\android\gms\R$attr.class
 com\actionbarsherlock\internal\view\menu\MenuBuilder.class
 com\vladstoick\fragments\UserFragment$4.class
 com\actionbarsherlock\view\MenuInflater$InflatedOnMenuItemClickListener.class
+com\vladstoick\utility\APIRestClient.class
 com\fortysevendeg\android\swipelistview\SwipeListViewTouchListener$7.class
 com\vladstoick\fragments\FilmListFragment$2.class
 com\actionbarsherlock\widget\ActivityChooserModel$HistoricalRecord.class
