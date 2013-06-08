@@ -41,10 +41,11 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
     private View mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
     @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-//        outState.putSerializable(ARGCINEMAS, cinemas);
-        outState.putParcelableArrayList(ARGMOVIES,allMovies);
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putParcelableArrayList("ALLMOVIES", allMovies);
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.content_frame);
+        getSupportFragmentManager().putFragment(savedInstanceState,"content_frame",fragment);
     }
     @Override
     public void onCreate(Bundle savedInstanceState) {

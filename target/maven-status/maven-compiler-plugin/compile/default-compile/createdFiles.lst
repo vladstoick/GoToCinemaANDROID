@@ -307,6 +307,7 @@ com\actionbarsherlock\internal\widget\IcsAbsSpinner.class
 com\actionbarsherlock\internal\widget\IcsAdapterView$1.class
 com\actionbarsherlock\widget\ActivityChooserView$3.class
 com\vladstoick\dialogfragments\PostDialogFragment.class
+com\vladstoick\arrayadapter\SlidingMenuAdapter.class
 com\actionbarsherlock\internal\view\menu\MenuItemImpl.class
 com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet$Dependency.class
 com\vladstoick\fragments\SearchFragment$1$1.class

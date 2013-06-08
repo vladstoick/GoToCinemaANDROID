@@ -26,7 +26,7 @@ public class SlidingMenuFragment extends SherlockFragment{
         R.drawable.social_person,
         R.drawable.action_search,
         R.drawable.location_map,
-        R.drawable.rating_favorite
+        R.drawable.rating_favorite_white
     };
 	private View view=null;
     public SlidingMenuFragment(){}

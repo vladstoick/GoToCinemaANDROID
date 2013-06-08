@@ -1,6 +1,7 @@
 package com.vladstoick.gotocinema;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.location.Location;
 import android.os.Bundle;
@@ -35,8 +36,17 @@ public class MainActivity extends BaseActivity implements OnFragmentInteractionL
         SharedPreferences settings =  this.getSharedPreferences("appPref",Context.MODE_PRIVATE);
         userAPI = settings.getString("api_acces", "0");
         userID = settings.getString("user_id","0");
+        if(userAPI=="0" || userID=="0")
+        {
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            startActivity(intent);
+        }
         currentLocation = findLocation();
-
+        if(savedInstanceState!=null)
+        {
+            allMovies=savedInstanceState.getParcelableArrayList("ALLMOVIES");
+        }
         if(allMovies.size()==0)
         {
             progressDialog.show(getSupportFragmentManager(),TAGLOADING);
