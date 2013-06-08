@@ -192,8 +192,7 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
                         if (allMovies.size() > 10) {
                             allMovies = AparitiiCinema.merge(allMovies, cinemas);
                         }
-                        if(progressDialog2==null)
-                            progressDialog2.dismiss();
+                        progressDialog2.dismiss();
                     }
                 });
             } catch (Exception e) {
