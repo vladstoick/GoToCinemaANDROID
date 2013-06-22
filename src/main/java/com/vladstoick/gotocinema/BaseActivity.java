@@ -111,9 +111,13 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
             e.printStackTrace();
         }
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.content_frame, fragment);
         if(addToBack)
+        {
             ft.addToBackStack(null);
+            ft.setTransition(0);
+            ft.setCustomAnimations(android.R.anim.slide_in_left , android.R.anim.slide_out_right );
+        }
+        ft.replace(R.id.content_frame, fragment);
         ft.commit();
         mDrawerLayout.closeDrawer(mDrawerList);
     }

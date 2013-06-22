@@ -34,6 +34,7 @@ public class LoginActivity extends SherlockActivity {
     @Override
     public void onResume()
     {
+        super.onResume();
         SharedPreferences settings = getSharedPreferences("appPref", Context.MODE_PRIVATE);
         String apiKey = settings.getString("api_acces","0");
         String user_id = settings.getString("user_id","0");
@@ -131,7 +132,6 @@ public class LoginActivity extends SherlockActivity {
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                         SharedPreferences sharedPref = getSharedPreferences("appPref", Context.MODE_PRIVATE);
-//			    		SharedPreferences sharedPref = (getApplicationContext()).getPreferences(Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPref.edit();
                         String key = null;
                         String userid = null;
@@ -153,7 +153,6 @@ public class LoginActivity extends SherlockActivity {
                         try {
                             error = jObject.getString("error");
                         } catch (JSONException e) {
-
                             e.printStackTrace();
                         }
                         if (error.equals("email"))
