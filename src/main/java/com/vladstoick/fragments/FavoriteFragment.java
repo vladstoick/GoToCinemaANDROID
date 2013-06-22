@@ -29,7 +29,7 @@ import java.util.ArrayList;
  * 
  */
 public class FavoriteFragment extends SherlockFragment {
-	View view;
+	private View view;
 	private static final String ARG_URL = "urlparam";
 	private String url;
 
@@ -46,7 +46,7 @@ public class FavoriteFragment extends SherlockFragment {
 		return fragment;
 	}
 
-	public FavoriteFragment() {
+	private FavoriteFragment() {
 		// Required empty public constructor
 	}
 

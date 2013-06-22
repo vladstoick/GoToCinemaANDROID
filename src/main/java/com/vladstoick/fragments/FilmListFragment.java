@@ -27,13 +27,12 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class FilmListFragment extends SherlockFragment {
-    private View view;
     private static final String ARG_MOVIES = "movies";
     private OnFragmentInteractionListener mListener;
     private ArrayList <AparitiiCinema> moviesToBeShown;
-    SwipeListView slv;
-    AparitiiCinemaAdapter adapter;
-    public static Context mContext;
+    private SwipeListView slv;
+    private AparitiiCinemaAdapter adapter;
+    private static Context mContext;
 	private class ArrayComparatorByDistance implements Comparator<AparitiiCinema> {
         @Override
         public int compare(AparitiiCinema o1, AparitiiCinema o2) {
@@ -81,7 +80,7 @@ public class FilmListFragment extends SherlockFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         setHasOptionsMenu(true);
-        view = inflater.inflate(R.layout.fragment_film_list, container,false);
+        View view = inflater.inflate(R.layout.fragment_film_list, container, false);
         if (getArguments() != null) {
             moviesToBeShown=getArguments().getParcelableArrayList(ARG_MOVIES);
             Collections.sort(moviesToBeShown, new ArrayComparatorByTime());

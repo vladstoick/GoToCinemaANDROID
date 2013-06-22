@@ -22,7 +22,7 @@ import com.vladstoick.gotocinema.R;
 import com.vladstoick.objects.AparitiiCinema;
 public class FilmDetailsFragment extends SherlockFragment {
 	private static final String ARG_MOVIE = "movie";
-    AparitiiCinema movie;
+    private AparitiiCinema movie;
     private static String getStringForTime(int timp)
 	  {
 		  int ora = timp/3600;

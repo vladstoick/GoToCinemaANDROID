@@ -8,7 +8,7 @@
     <ListView   android:id="@+id/wallPostsListView"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:layout_below="@+id/wallButtons"
+
                 android:divider="@android:color/transparent"
                 android:dividerHeight="10dp"
 

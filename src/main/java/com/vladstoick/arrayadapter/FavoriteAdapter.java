@@ -22,7 +22,7 @@ import java.util.ArrayList;
  */
 public class FavoriteAdapter extends BaseAdapter {
     private Context mContext;
-    ArrayList<FavoriteMovie> mArrayList = new ArrayList<FavoriteMovie>();
+    private ArrayList<FavoriteMovie> mArrayList = new ArrayList<FavoriteMovie>();
     public FavoriteAdapter(Context c,ArrayList<FavoriteMovie> data) {
         mContext = c;
         mArrayList = data;

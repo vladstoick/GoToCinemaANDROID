@@ -31,15 +31,15 @@ import java.util.Hashtable;
 
 
 class BaseActivity extends SherlockFragmentActivity implements LocationListener {
-    protected static final String TAGCALCULATE ="CalculateMainMenuFragment";
-    protected static final String TAGLOADING = "LoadingFragment";
+    static final String TAGCALCULATE ="CalculateMainMenuFragment";
+    static final String TAGLOADING = "LoadingFragment";
     private static final String ARGMOVIES="movies";
     public static String userID;
     public static String userAPI;
-    protected static Hashtable<String, Cinema> cinemas = new Hashtable<String, Cinema>();
-    protected static ArrayList<AparitiiCinema> allMovies= new ArrayList<AparitiiCinema>();
+    static Hashtable<String, Cinema> cinemas = new Hashtable<String, Cinema>();
+    static ArrayList<AparitiiCinema> allMovies= new ArrayList<AparitiiCinema>();
     private DrawerLayout mDrawerLayout;
-    protected Location currentLocation;
+    Location currentLocation;
     private Fragment mContent;
     private View mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -60,7 +60,7 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
         SharedPreferences settings =  this.getSharedPreferences("appPref",Context.MODE_PRIVATE);
         userAPI = settings.getString("api_acces", "0");
         userID = settings.getString("user_id","0");
-        if(userAPI=="0" || userID=="0")
+        if(userAPI.equals("0") || userID.equals("0"))
         {
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
@@ -100,7 +100,7 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
         getSupportActionBar().setHomeButtonEnabled(true);
     }
 
-    protected void switchContent(Fragment fragment, boolean addToBack){
+    void switchContent(Fragment fragment, boolean addToBack){
         mContent = fragment;
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         try{

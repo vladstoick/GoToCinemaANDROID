@@ -36,7 +36,7 @@ public class UserFragment extends SherlockFragment {
     private final static String ARG_USERIMGURL="userimgurl";
     private final static String ARG_USERNAME="username";
     private final static String ARG_USERDOB="userdob";
-    public static final int DIALOG_FRAGMENT = 1;
+    private static final int DIALOG_FRAGMENT = 1;
     private View view,viewAbove;
     private String userID = "",userImgUrl,userName,userDob;
     private ArrayList<Post> posts = new ArrayList<Post>();
@@ -69,7 +69,7 @@ public class UserFragment extends SherlockFragment {
         super.onActivityCreated(savedInstanceState);
 
     }
-    private final void setUpFragment()
+    private void setUpFragment()
     {
         TextView dobTV = (TextView) viewAbove.findViewById(R.id.dob);
         TextView fullnameTV = ((TextView) viewAbove.findViewById(R.id.fullname));
@@ -81,7 +81,7 @@ public class UserFragment extends SherlockFragment {
         wallPostsLV.setAdapter(new PostsAdapter(getActivity(), R.layout.list_row_profile, posts));
         dobTV.setText("Data naşterii:" + userDob);
     }
-    public void showDialog(int type) {
+    void showDialog(int type) {
         FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
         Fragment prev = getActivity().getSupportFragmentManager().findFragmentByTag("dialog");
         if (prev != null) {
