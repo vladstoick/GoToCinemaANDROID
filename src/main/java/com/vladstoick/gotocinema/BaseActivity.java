@@ -114,8 +114,9 @@ class BaseActivity extends SherlockFragmentActivity implements LocationListener 
         if(addToBack)
         {
             ft.addToBackStack(null);
-            ft.setTransition(0);
-            ft.setCustomAnimations(android.R.anim.slide_in_left , android.R.anim.slide_out_right );
+
+//            ft.setTransition(0);
+//            ft.setCustomAnimations(android.R.anim.fade_in , android.R.anim.fade_out );
         }
         ft.replace(R.id.content_frame, fragment);
         ft.commit();
