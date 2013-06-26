@@ -17,8 +17,10 @@
     <!--CALCULATE FRAGMENT-->
     <string name="calculateButtonTitle">Află la ce filme poţi merge!</string>
     <string name="changeHour">Schimbă ora</string>
+    <!--FILM LIST FRAGMENT-->
+    <string name="searchFieldList">Introduceţi numele utilizatorului</string>
     <!--SEARCH FRAGMENT-->
-    <string name="searchField">Introduceţi numele utilizatorului</string>
+    <string name="searchField">Introduceţi numele filmului</string>
     <!--CINEMALISTFRAGMENT-->
     <string name="oraDefault">24:60</string>
     <string name="sortByTime">Sortează după oră</string>

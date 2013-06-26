@@ -1,16 +1,21 @@
 package com.vladstoick.fragments;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
+
 import com.actionbarsherlock.app.SherlockFragment;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -39,6 +44,14 @@ public class SearchFragment extends SherlockFragment {
         View view = inflater.inflate(R.layout.fragment_search, container, false);
 		searchInput = (EditText) view.findViewById(R.id.searchInput);
 		searchResults = (ListView) view.findViewById(R.id.searchResults);
+        searchInput.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                InputMethodManager inputManager = (InputMethodManager)getSherlockActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputManager.toggleSoftInput(0, 0);
+                return false;
+            }
+        });
 		searchInput.addTextChangedListener(new TextWatcher(){
 	        public void afterTextChanged(Editable s) {
 	        	String text = searchInput.getText().toString();

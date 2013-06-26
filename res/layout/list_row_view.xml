@@ -25,7 +25,7 @@
         >
 
     <LinearLayout
-            android:id="@+id/back"
+            android:id="@+id/swipelist_backview"
             android:tag="back"
             android:layout_height="fill_parent"
             android:layout_width="fill_parent"
@@ -57,68 +57,81 @@
                 />
 
     </LinearLayout>
-    <LinearLayout  android:orientation="horizontal"
-                   android:id="@+id/front"
-                   android:tag="front"
-                   android:layout_width="fill_parent"
-                   android:layout_height="100dp"
-                   android:background="@color/android:white"
-                   android:baselineAligned="false">
-          <LinearLayout android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
-                        android:layout_gravity="left"
-                        android:layout_weight="0.24"
-                        android:orientation="vertical"
 
-                        >
-                <ImageView
-                        android:contentDescription="IMG"
-                        android:id="@+id/cinemaPoster"
-                        android:layout_width="match_parent"
-                        android:layout_height="fill_parent"
+    <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/swipelist_frontview"
+            android:tag="front"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@color/android:white"
+            android:baselineAligned="false">
 
-                />
-          </LinearLayout>
-          <LinearLayout android:layout_width="0dip"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="10dp">
-                <TextView
-                        android:id="@+id/rowEnTitle"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/eroareLoading"
-                        android:textAppearance="?android:attr/textAppearanceMedium"/>
-                <TextView
-                        android:id="@+id/rowRoTitle"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/eroareLoading"
-                        android:textAppearance="?android:attr/textAppearanceSmall"/>
-                <TextView
-                        android:id="@+id/rowCinema"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/eroareLoading"
-                        android:textAppearance="?android:attr/textAppearanceSmall"/>
-          </LinearLayout>
-          <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="10dp" >
-                <TextView
-                        android:id="@+id/rowOra"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"/>
-                <TextView
-                        android:id="@+id/rowKM"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:layout_below="@id/rowOra" />
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.24"
+                android:orientation="vertical"
+
+                >
+
+            <ImageView
+                    android:contentDescription="IMG"
+                    android:id="@+id/cinemaPoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <TextView
+                    android:id="@+id/rowEnTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eroareLoading"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                    android:id="@+id/rowRoTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eroareLoading"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                    android:id="@+id/rowCinema"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eroareLoading"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+            <TextView
+                    android:id="@+id/rowOra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                    android:id="@+id/rowKM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_below="@id/rowOra"/>
         </RelativeLayout>
     </LinearLayout>
 

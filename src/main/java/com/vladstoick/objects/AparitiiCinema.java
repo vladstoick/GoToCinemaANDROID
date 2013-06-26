@@ -21,8 +21,8 @@ public class AparitiiCinema implements Parcelable {
     public final String actori;
     public final String gen;
     public final String id;
-    public String distanta="-", durataDrum="-";
-    public String latCinema="-" , lonCinema="-";
+    public String distanta="null", durataDrum="null";
+    public String latCinema="null" , lonCinema="null";
     public static final Parcelable.Creator<AparitiiCinema> CREATOR = new Parcelable.Creator<AparitiiCinema>() {
         @Override
         public AparitiiCinema createFromParcel(Parcel in) {

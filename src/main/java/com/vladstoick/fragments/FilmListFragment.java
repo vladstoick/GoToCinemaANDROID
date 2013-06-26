@@ -3,9 +3,16 @@ package com.vladstoick.fragments;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragment;
@@ -29,8 +36,10 @@ import java.util.Comparator;
 public class FilmListFragment extends SherlockFragment {
     private static final String ARG_MOVIES = "movies";
     private OnFragmentInteractionListener mListener;
+    private ArrayList <AparitiiCinema> allMovies;
     private ArrayList <AparitiiCinema> moviesToBeShown;
     private SwipeListView slv;
+    private int sortingTypeUsed = 1;
     private AparitiiCinemaAdapter adapter;
     private static Context mContext;
 	private class ArrayComparatorByDistance implements Comparator<AparitiiCinema> {
@@ -82,7 +91,9 @@ public class FilmListFragment extends SherlockFragment {
         setHasOptionsMenu(true);
         View view = inflater.inflate(R.layout.fragment_film_list, container, false);
         if (getArguments() != null) {
-            moviesToBeShown=getArguments().getParcelableArrayList(ARG_MOVIES);
+            allMovies = getArguments().getParcelableArrayList(ARG_MOVIES);
+            moviesToBeShown = new ArrayList<AparitiiCinema>(allMovies);
+            Log.w("lungime",moviesToBeShown.size()+"lungime");
             Collections.sort(moviesToBeShown, new ArrayComparatorByTime());
             adapter = new AparitiiCinemaAdapter(getActivity(), moviesToBeShown);
             slv = (SwipeListView) view.findViewById(R.id.swipelistview);
@@ -95,6 +106,33 @@ public class FilmListFragment extends SherlockFragment {
             });
         }
         mContext=getActivity();
+        final EditText searchInput = (EditText) view.findViewById(R.id.searchInput);
+        searchInput.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                InputMethodManager inputManager = (InputMethodManager)mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputManager.toggleSoftInput(0, 0);
+                return false;
+            }
+        });
+        searchInput.addTextChangedListener(new TextWatcher(){
+            public void afterTextChanged(Editable s) {
+                String text = searchInput.getText().toString();
+                System.out.println(text);
+                moviesToBeShown.clear();
+                for(int i=0;i<allMovies.size();i++)
+                    if(allMovies.get(i).enTitle.toLowerCase().startsWith(text.toLowerCase()) || allMovies.get(i).roTitle.toLowerCase().startsWith(text.toLowerCase()))
+                        moviesToBeShown.add(allMovies.get(i));
+                switch (sortingTypeUsed)
+                {
+                    case 1 :sortByTime();
+                    case 2 :sortByDistance();
+                    case 3: sortByTime();
+                }
+            }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after){}
+            public void onTextChanged(CharSequence s, int start, int before, int count){}
+        });
         return view;
     }
 
@@ -132,33 +170,50 @@ public class FilmListFragment extends SherlockFragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         getSherlockActivity().getSupportMenuInflater().inflate(R.menu.menu_list, menu);
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.sort_by_time:
             {
-                Collections.sort(moviesToBeShown,new ArrayComparatorByTime());
-                slv.setSelectionAfterHeaderView();
-                adapter.notifyDataSetChanged();
+                sortByTime();
                 return true;
             }
             case R.id.sort_by_distance:{
-                Collections.sort(moviesToBeShown,new ArrayComparatorByDistance());
-                adapter.notifyDataSetChanged();
-                slv.setSelectionAfterHeaderView();
+                sortByDistance();
                 return true;
             }
             case R.id.sort_by_name:{
-                Collections.sort(moviesToBeShown,new ArrayComparatorByName());
-                adapter.notifyDataSetChanged();
-                slv.setSelectionAfterHeaderView();
+                sortByName();
                 return true;
             }
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+    private void sortByDistance()
+    {
+        Collections.sort(moviesToBeShown,new ArrayComparatorByDistance());
+        adapter.notifyDataSetChanged();
+        slv.setSelectionAfterHeaderView();
+        sortingTypeUsed=1;
+    }
+    private void sortByName() {
+        Collections.sort(moviesToBeShown, new ArrayComparatorByName());
+        adapter.notifyDataSetChanged();
+        slv.setSelectionAfterHeaderView();
+        sortingTypeUsed=2;
+    }
+
+
+    private void sortByTime() {
+        Collections.sort(moviesToBeShown, new ArrayComparatorByTime());
+        slv.setSelectionAfterHeaderView();
+        adapter.notifyDataSetChanged();
+        sortingTypeUsed=3;
+    }
+
     @Override
 	public void onDetach() {
 		super.onDetach();

@@ -2,11 +2,12 @@ package com.vladstoick.utility;
 
 import android.annotation.SuppressLint;
 
+import com.vladstoick.objects.AparitiiCinema;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import com.vladstoick.objects.AparitiiCinema;
 
 
 
@@ -18,8 +19,12 @@ public class Utils {
         ArrayList<AparitiiCinema> listToBeReturned = new ArrayList<AparitiiCinema>();
         System.out.println(list.get(1).durataDrum);
         for (AparitiiCinema aList : list)
+        {
+            if(aList.durataDrum.equals('-'))
+                continue;
             if (dateToBeUsed.getTime() + (new Date(Integer.parseInt(aList.durataDrum) * 1000)).getTime() - aList.ora.getTime() < 0)
                 listToBeReturned.add(aList);
+        }
         return listToBeReturned;
     }
 

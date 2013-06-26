@@ -1,24 +1,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    tools:context=".SearchFragment" >
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              tools:context=".SearchFragment">
 
     <EditText
-        android:id="@+id/searchInput"
-        android:inputType="text"
-        android:hint="@string/searchField"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:ems="10" >
-        <requestFocus />
+            android:id="@+id/searchInput"
+            android:inputType="text"
+            android:hint="@string/searchField"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10">
     </EditText>
-	<ListView
-    	android:id="@+id/searchResults"
-   		android:layout_width="fill_parent"
-    	android:layout_height="fill_parent"
-    	android:textColor="@color/android:white"
-    	
-    /> 
+
+    <ListView
+            android:id="@+id/searchResults"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/android:white"
+
+            />
 </LinearLayout>
