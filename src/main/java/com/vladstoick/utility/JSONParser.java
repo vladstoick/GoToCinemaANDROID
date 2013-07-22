@@ -1,7 +1,12 @@
 package com.vladstoick.utility;
 
+import android.content.ContentValues;
+import android.net.Uri;
+
 import com.vladstoick.objects.AparitiiCinema;
 import com.vladstoick.objects.Cinema;
+import com.vladstoick.provider.MoviesContract;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -55,6 +60,13 @@ public class JSONParser {
                     String cinema = showTime.getString("place");
                     String oraString = showTime.getString("hour");
                     AparitiiCinema aparitie = new AparitiiCinema(titluRo, titluEn, cinema, oraString, nota, regizor, actori, gen,imgUrl,id);
+                    Uri mNewUri;
+                    ContentValues mNewValues = new ContentValues();
+                    mNewValues.put(MoviesContract.Movies.ENTITLE,aparitie.enTitle);
+                    mNewValues.put(MoviesContract.Movies.ROTITLE,aparitie.roTitle);
+                    mNewValues.put(MoviesContract.Movies.ACTORI,aparitie.actori);
+                    mNewUri = getContentResolver(
+                            MoviesContract.Movies.getMovyId)
                     list.add(aparitie);
                 }
 
